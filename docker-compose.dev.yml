@@ -87,6 +87,11 @@ services:
       - 'service-config:/config'
     depends_on: [log]
 
+  db:
+    image: openlmis/postgres:9.6
+    env_file: .env
+    depends_on: [consul]
+
   log:
     image: openlmis/rsyslog:1
     volumes:
