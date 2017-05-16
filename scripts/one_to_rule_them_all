@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Usage:
+# First argument - username
+# Second argument - database host
+# Third argument - database port
+# Fourth argument - database name
+# Fifth argument - password
+
+./auth_add_reports_service "$@"
+./insert_req_config "$@"
+./insert_req_templates "$@"
