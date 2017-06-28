@@ -23,7 +23,7 @@ services:
     depends_on: [consul]
 
   reference-ui:
-    image: openlmismw/reference-ui:1.0.0-SNAPSHOT
+    image: openlmismw/reference-ui:1.1.0-SNAPSHOT
     env_file: .env
     depends_on: [consul]
 
@@ -38,7 +38,7 @@ services:
     depends_on: [log]
 
   mw-requisition:
-    image: openlmismw/requisition:1.0.0-SNAPSHOT
+    image: openlmismw/requisition:1.1.0-SNAPSHOT
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration,filesystem:/demo-data'
@@ -88,7 +88,7 @@ services:
     depends_on: [log]
 
   reports:
-    image: openlmismw/reports:1.0.0-SNAPSHOT
+    image: openlmismw/reports:1.0.1-SNAPSHOT
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration,filesystem:/demo-data'
