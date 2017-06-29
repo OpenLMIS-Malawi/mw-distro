@@ -22,8 +22,8 @@ services:
       - 'consul-template-log:/var/log/consul-template'
     depends_on: [consul]
 
-  reference-ui:
-    image: openlmismw/reference-ui:1.1.0-SNAPSHOT
+  ui:
+    image: openlmismw/ui:1.1.0-SNAPSHOT
     env_file: .env
     depends_on: [consul]
 
