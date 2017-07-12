@@ -10,7 +10,7 @@
 OLDPGPASSWORD=$PGPASSWORD
 export PGPASSWORD=$5;
 
-COMMAND="UPDATE auth.oauth_client_details SET resourceids = resourceids || ',reports' where (clientid = 'trusted-client' or clientid = 'user-client')";
+COMMAND="UPDATE auth.oauth_client_details SET resourceids = resourceids || ',reports' where clientid IS NOT NULL";
 
 psql -U "$1" -h "$2" -p "$3" -d "$4" -t -c "$COMMAND"
 
