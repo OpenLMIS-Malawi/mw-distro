@@ -1,0 +1,59 @@
+#!/usr/bin/python
+
+import os
+import argparse
+import csv
+
+def get_arguments():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--orderables", required=True, help="Path to Orderables.csv", type=str)
+    parser.add_argument("--program-orderables", required=True, help="Path to ProgramOrderables.csv", type=str)
+
+    args = parser.parse_args()
+
+    is_valid_file(parser, args.orderables)
+    is_valid_file(parser, args.program_orderables)
+
+    return args
+
+def is_valid_file(parser, file_name):
+    if not os.path.exists(file_name):
+        parser.error("The file '{}' does not exist!".format(file_name))
+        sys.exit(1)
+
+def parse_orderables(file_name):
+    with open(file_name, 'r') as file:
+        reader = csv.reader(file, delimiter = ',', quotechar = '"')
+        header = reader.next()
+
+        updates = []
+
+        for row in reader:
+            row[6] = row[6].split(':')[1]
+            list = [x.strip().replace("'", "''") for x in row]
+            updates.append("UPDATE referencedata.orderables SET fullproductname = '{1}', description = '{2}', packroundingthreshold = {3}, netcontent = {4}, roundtozero = {5}, dispensingunit = '{6}' WHERE code = '{0}';".format(*list))
+
+        return updates
+
+def parse_program_orderables(file_name):
+    with open(file_name, 'r') as file:
+        reader = csv.reader(file, delimiter = ',', quotechar = '"')
+        header = reader.next()
+
+        updates = []
+
+        for row in reader:
+            list = map(str.strip, row)
+            updates.append("UPDATE referencedata.program_orderables po SET programid = p.id, orderabledisplaycategoryid = c.id, dosesperpatient = {3}, active = {4}, fullsupply = {5}, displayorder = {6}, priceperpack = {7} FROM referencedata.orderables o, referencedata.programs p, referencedata.orderable_display_categories c WHERE po.orderableid = o.id AND o.code = '{0}' AND p.code = '{1}' AND c.code = '{2}';".format(*list))
+
+        return updates
+
+if __name__ == "__main__":
+    arguments = get_arguments()
+
+    updates = []
+    updates += parse_orderables(arguments.orderables)
+    updates += parse_program_orderables(arguments.program_orderables)
+
+    for row in updates:
+        print row
