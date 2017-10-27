@@ -107,8 +107,6 @@ def update_program_orderables(connection, cursor, file_name):
         UPDATE
             referencedata.program_orderables po
         SET
-            programid = p.id,
-            orderabledisplaycategoryid = c.id,
             dosesperpatient = %s,
             active = %s,
             fullsupply = %s,
@@ -120,6 +118,8 @@ def update_program_orderables(connection, cursor, file_name):
             referencedata.orderable_display_categories c
         WHERE
             po.orderableid = o.id
+            AND po.programid = p.id
+            AND po.orderabledisplaycategoryid = c.id
             AND o.code = %s
             AND p.code = %s
             AND c.code = %s;
