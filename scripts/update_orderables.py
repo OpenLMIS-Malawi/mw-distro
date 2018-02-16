@@ -66,7 +66,11 @@ def update_orderables(connection, cursor, file_name):
             row[6] = row[6].split(':')[1]
             list = [x.strip().replace("'", "''") for x in row]
 
-            cursor.execute(SQL, (list[1], list[2], list[3], list[4], list[5], list[6], list[0]))
+            try:
+            	cursor.execute(SQL, (list[1], list[2], list[3], list[4], list[5], list[6], list[0]))
+            except:
+            	print list
+            	raise
             print cursor.statusmessage
             connection.commit()
 
