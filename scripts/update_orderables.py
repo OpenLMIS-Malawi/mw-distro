@@ -45,6 +45,19 @@ def is_valid_file(parser, file_name):
 
 def update_orderables(connection, cursor, file_name):
     SQL = """
+        UPDATE 
+            referencedata.dispensable_attributes attr
+        SET 
+            value = %s
+        FROM 
+            referencedata.dispensables dispensable
+        JOIN 
+            referencedata.orderables orderable ON orderable.dispensableid = dispensable.id
+        WHERE 
+            orderable.code = %s 
+            AND attr.dispensableid = dispensable.id 
+            AND attr.key = 'dispensingUnit';
+
         UPDATE
             referencedata.orderables
         SET
@@ -52,8 +65,7 @@ def update_orderables(connection, cursor, file_name):
             description = %s,
             packroundingthreshold = %s,
             netcontent = %s,
-            roundtozero = %s,
-            dispensingunit = %s
+            roundtozero = %s
         WHERE
             code = %s;
     """
@@ -67,7 +79,7 @@ def update_orderables(connection, cursor, file_name):
             list = [x.strip().replace("'", "''") for x in row]
 
             try:
-            	cursor.execute(SQL, (list[1], list[2], list[3], list[4], list[5], list[6], list[0]))
+            	cursor.execute(SQL, (list[6], list[0], list[1], list[2], list[3], list[4], list[5], list[0]))
             except:
             	print list
             	raise
