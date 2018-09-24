@@ -23,12 +23,12 @@ services:
     depends_on: [consul]
 
   ui:
-    image: openlmismw/ui:1.3.0-SNAPSHOT
+    image: openlmismw/ui:1.4.0
     env_file: .env
     depends_on: [consul]
 
   requisition:
-    image: openlmis/requisition:5.1.0
+    image: openlmis/requisition:7.0.0
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -38,7 +38,7 @@ services:
     depends_on: [log]
 
   referencedata:
-    image: openlmis/referencedata:9.0.0
+    image: openlmis/referencedata:11.0.0
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -48,7 +48,7 @@ services:
     depends_on: [log]
 
   auth:
-    image: openlmis/auth:3.1.1
+    image: openlmis/auth:4.0.0
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -58,7 +58,7 @@ services:
     depends_on: [log]
 
   notification:
-    image: openlmis/notification:3.0.4
+    image: openlmis/notification:4.0.0
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml'
@@ -68,7 +68,7 @@ services:
     depends_on: [log]
 
   fulfillment:
-    image: openlmis/fulfillment:6.1.0
+    image: openlmis/fulfillment:7.0.1
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -78,7 +78,7 @@ services:
     depends_on: [log]
 
   reports:
-    image: openlmismw/reports:1.6.0-SNAPSHOT
+    image: openlmismw/reports:1.7.0
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -88,7 +88,7 @@ services:
     depends_on: [log]
 
   stockmanagement:
-    image: openlmis/stockmanagement:2.0.0
+    image: openlmis/stockmanagement:3.1.0
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -110,6 +110,9 @@ services:
       context: ./config
     volumes:
       - service-config:/config
+  redis:
+      image: redis:3.2.12
+      depends_on: [consul]
 
 volumes:
   syslog:
