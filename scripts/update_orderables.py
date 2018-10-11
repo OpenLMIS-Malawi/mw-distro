@@ -93,15 +93,12 @@ def update_program_orderables(connection, cursor, file_name):
         FROM
             referencedata.program_orderables po
             CROSS JOIN referencedata.orderables o,
-                       referencedata.programs p,
-                       referencedata.orderable_display_categories c
+                       referencedata.programs p
         WHERE
             po.orderableid = o.id
             AND po.programid = p.id
-            AND po.orderabledisplaycategoryid = c.id
             AND o.code = %s
-            AND p.code = %s
-            AND c.code = %s;
+            AND p.code = %s;
     """
 
     INSERT_SQL = """
@@ -127,7 +124,8 @@ def update_program_orderables(connection, cursor, file_name):
             active = %s,
             fullsupply = %s,
             displayorder = %s,
-            priceperpack = %s
+            priceperpack = %s,
+            orderabledisplaycategoryid = c.id
         FROM
             referencedata.orderables o,
             referencedata.programs p,
@@ -135,7 +133,6 @@ def update_program_orderables(connection, cursor, file_name):
         WHERE
             po.orderableid = o.id
             AND po.programid = p.id
-            AND po.orderabledisplaycategoryid = c.id
             AND o.code = %s
             AND p.code = %s
             AND c.code = %s;
@@ -148,7 +145,7 @@ def update_program_orderables(connection, cursor, file_name):
         for row in reader:
             list = map(str.strip, row)
 
-            cursor.execute(SELECT_SQL, (list[0], list[1], list[2]))
+            cursor.execute(SELECT_SQL, (list[0], list[1]))
             result = cursor.fetchone()
 
             if result is None:
