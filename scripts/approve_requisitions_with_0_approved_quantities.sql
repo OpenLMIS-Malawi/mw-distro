@@ -13,14 +13,6 @@ WITH program_ids AS (
 		      FROM referencedata.processing_periods AS pp
 		      WHERE pp.enddate < '2018-11-1'
 		        AND pp.startdate > '2018-06-30')
-		  AND facilityid in (
-			    SELECT rgm.facilityid
-			    FROM referencedata.requisition_group_members AS rgm
-          WHERE rgm.requisitiongroupid in (
-              SELECT DISTINCT rg.id
-              FROM referencedata.requisition_groups AS rg
-                JOIN referencedata.requisition_group_program_schedules rgps ON rgps.requisitiongroupid = rg.id
-              WHERE rgps.programid in (SELECT p.id FROM program_ids AS p)))
 )
 UPDATE requisition.requisition_line_items AS rli
 SET approvedquantity = 0
@@ -41,14 +33,6 @@ WITH program_ids AS (
 		      FROM referencedata.processing_periods AS pp
 		      WHERE pp.enddate < '2018-11-1'
 		        AND pp.startdate > '2018-06-30')
-		  AND facilityid in (
-			    SELECT rgm.facilityid
-			    FROM referencedata.requisition_group_members AS rgm
-          WHERE rgm.requisitiongroupid in (
-              SELECT DISTINCT rg.id
-              FROM referencedata.requisition_groups AS rg
-                JOIN referencedata.requisition_group_program_schedules rgps ON rgps.requisitiongroupid = rg.id
-              WHERE rgps.programid in (SELECT p.id FROM program_ids AS p)))
 )
 INSERT INTO requisition.status_changes (id, createddate, modifieddate, authorid, status, requisitionid)
 SELECT uuid_generate_v4(), now(), now(), '35316636-6264-6331-2d34-3933322d3462', 'APPROVED', r.id
@@ -69,14 +53,6 @@ WITH program_ids AS (
 		      FROM referencedata.processing_periods AS pp
 		      WHERE pp.enddate < '2018-11-1'
 		        AND pp.startdate > '2018-06-30')
-		  AND facilityid in (
-			    SELECT rgm.facilityid
-			    FROM referencedata.requisition_group_members AS rgm
-          WHERE rgm.requisitiongroupid in (
-              SELECT DISTINCT rg.id
-              FROM referencedata.requisition_groups AS rg
-                JOIN referencedata.requisition_group_program_schedules rgps ON rgps.requisitiongroupid = rg.id
-              WHERE rgps.programid in (SELECT p.id FROM program_ids AS p)))
 )
 UPDATE requisition.requisitions AS req
 SET status = 'APPROVED'
