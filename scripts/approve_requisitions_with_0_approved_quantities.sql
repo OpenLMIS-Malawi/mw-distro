@@ -6,7 +6,7 @@ WITH program_ids AS (
 ), requisition_ids AS (
     SELECT r.id
 	  FROM requisition.requisitions AS r
-	  WHERE status = 'AUTHORIZED'
+	  WHERE status in ('AUTHORIZED', 'IN_APPROVAL')
 		  AND programid in (SELECT p.id FROM program_ids AS p)
 		  AND processingperiodid in (
 		      SELECT pp.id
@@ -26,7 +26,7 @@ WITH program_ids AS (
 ), requisition_ids AS (
     SELECT r.id
 	  FROM requisition.requisitions AS r
-	  WHERE status = 'AUTHORIZED'
+	  WHERE status in ('AUTHORIZED', 'IN_APPROVAL')
 		  AND programid in (SELECT p.id FROM program_ids AS p)
 		  AND processingperiodid in (
 		      SELECT pp.id
@@ -46,7 +46,7 @@ WITH program_ids AS (
 ), requisition_ids AS (
     SELECT r.id
 	  FROM requisition.requisitions AS r
-	  WHERE status = 'AUTHORIZED'
+	  WHERE status in ('AUTHORIZED', 'IN_APPROVAL')
 		  AND programid in (SELECT p.id FROM program_ids AS p)
 		  AND processingperiodid in (
 		      SELECT pp.id
