@@ -23,7 +23,7 @@ services:
     depends_on: [consul]
 
   ui:
-    image: openlmismw/ui:1.5.0-SNAPSHOT
+    image: openlmismw/ui:1.5.1-SNAPSHOT
     env_file: .env
     depends_on: [consul]
 
@@ -78,7 +78,7 @@ services:
     depends_on: [log]
 
   reports:
-    image: openlmismw/reports:1.8.0-SNAPSHOT
+    image: openlmismw/reports:1.8.1-SNAPSHOT
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
