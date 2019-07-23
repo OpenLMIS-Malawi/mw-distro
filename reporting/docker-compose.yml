@@ -51,10 +51,6 @@ services:
       && openssl passwd -apr1 $NGINX_BASIC_AUTH_PW >> /etc/nginx/.htpasswd
       && sleep 120
       && /home/run.sh"
-    logging:
-      driver: syslog
-      options:
-        syslog-address: "udp://127.0.0.1:${SYSLOG_UDP_PORT}"
     depends_on: [consul, log, config-container]
 
   nifi:
