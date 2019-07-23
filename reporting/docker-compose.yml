@@ -44,7 +44,8 @@ services:
       NGINX_LOG_DIR: '/var/log/nginx/log'
     volumes:
       - config-volume:/config
-    entrypoint: bash -c "/config/nginx/init.sh"
+    entrypoint: >
+      /bin/sh -c "/config/nginx/init.sh"
     depends_on: [consul, log, config-container]
 
   nifi:

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 openssl dhparam -dsaparam -out /etc/ssl/certs/dhparam.pem 4096
       && cp -r /config/nginx/consul-template/* /etc/consul-template/
