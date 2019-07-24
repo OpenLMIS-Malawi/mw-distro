@@ -102,6 +102,7 @@ RUN cd $APP_DIR/assets && yarn install
 RUN mkdir -p /home/superset/.cache
 RUN mv /usr/local/share/.cache/yarn /home/superset/.cache
 RUN chown -R superset:superset /home/superset/.cache/yarn
+RUN chown -R superset:superset ${NVM_DIR}
 
 # Configure Filesystem
 RUN chown -R superset:superset ${APP_DIR}
