@@ -74,11 +74,6 @@ CSV_EXPORT = {
 
 # Custom security manager
 CUSTOM_SECURITY_MANAGER = CustomSecurityManager
-ENABLE_CORS = True
-CORS_OPTIONS = {
-    'origins': [os.environ['OL_BASE_URL']],
-    'supports_credentials': True
-}
 
 # Add custom roles
 ADD_CUSTOM_ROLES = True
