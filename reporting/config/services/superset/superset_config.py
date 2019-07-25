@@ -74,6 +74,7 @@ CSV_EXPORT = {
 
 # Custom security manager
 CUSTOM_SECURITY_MANAGER = CustomSecurityManager
+ENABLE_CORS = False
 
 # Add custom roles
 ADD_CUSTOM_ROLES = True
