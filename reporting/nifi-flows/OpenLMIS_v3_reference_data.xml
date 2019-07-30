@@ -2247,7 +2247,7 @@
     </entry>
     <entry>
         <key>jolt-spec</key>
-        <value>${joltspec:unescapeJson()}</value>
+        <value>${'$1':replace('"', '\\\\"')}</value>
     </entry>
     <entry>
         <key>Transform Cache Size</key>
