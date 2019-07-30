@@ -83,11 +83,9 @@
 
     <!-- valid logging levels: TRACE, DEBUG, INFO, WARN, ERROR -->
 
-    <logger name="org.apache.nifi" level="INFO"/>
-    <logger name="org.apache.nifi.processors" level="WARN"/>
-    <logger name="org.apache.nifi.processors.standard.LogAttribute" level="INFO"/>
-    <logger name="org.apache.nifi.processors.standard.LogMessage" level="INFO"/>
-    <logger name="org.apache.nifi.controller.repository.StandardProcessSession" level="WARN" />
+    <logger name="org.apache.nifi" level="DEBUG"/> 
+    <logger name="org.apache.nifi.engine.FlowEngine" level="INFO"/>
+    <logger name="org.apache.nifi.controller.repository" level="INFO"/>
 
     <logger name="org.apache.zookeeper.ClientCnxn" level="ERROR" />
     <logger name="org.apache.zookeeper.server.NIOServerCnxn" level="ERROR" />
@@ -100,12 +98,6 @@
 
     <logger name="org.apache.curator.framework.recipes.leader.LeaderSelector" level="OFF" />
     <logger name="org.apache.curator.ConnectionState" level="OFF" />
-
-    <!-- Logger for managing logging statements for nifi clusters. -->
-    <logger name="org.apache.nifi.cluster" level="INFO"/>
-
-    <!-- Logger for logging HTTP requests received by the web server. -->
-    <logger name="org.apache.nifi.server.JettyServer" level="INFO"/>
 
     <!-- Logger for managing logging statements for jetty -->
     <logger name="org.eclipse.jetty" level="INFO"/>
