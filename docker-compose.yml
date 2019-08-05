@@ -87,6 +87,16 @@ services:
       - 'service-config:/config'
     depends_on: [log]
 
+  dhis2-integration:
+    image: openlmismw/dhis2-integration:1.0.0-SNAPSHOT
+    env_file: .env
+    environment:
+      JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
+      spring_profiles_active: ${spring_profiles_active}
+    volumes:
+      - 'service-config:/config'
+    depends_on: [log]
+
   stockmanagement:
     image: openlmis/stockmanagement:4.0.0
     env_file: .env
