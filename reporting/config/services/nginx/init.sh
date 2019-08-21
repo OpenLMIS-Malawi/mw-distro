@@ -9,6 +9,7 @@ cp -r /config/nginx/consul-template/* /etc/consul-template/
 echo -n "${NGINX_BASIC_AUTH_USER}:" >> /etc/nginx/.htpasswd
 openssl passwd -apr1 ${NGINX_BASIC_AUTH_PW} >> /etc/nginx/.htpasswd
 
-sleep 120
+echo "Waiting for consul to be available"
+sleep 240;
 
 /home/run.sh

@@ -12,8 +12,6 @@ def stringToBase64(s):
 
 
 def lookup_password(url):
-    if os.environ['OLMIS_DATABASE_URL'] in url.__repr__():
-        return os.environ['OLMIS_DATABASE_PASSWORD']
     return os.environ['POSTGRES_PASSWORD']
 
 
