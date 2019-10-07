@@ -59,7 +59,7 @@ RUN useradd -U -m superset && \
         gevent==1.2.2 \
         impyla==0.14.0 \
         infi.clickhouse-orm==1.0.2 \
-        psycopg2==2.7.7 \
+        psycopg2-binary==2.8.3 \
         pyathena==1.2.5 \
         pybigquery==0.4.10 \
         pyhive==0.5.1 \
@@ -70,6 +70,7 @@ RUN useradd -U -m superset && \
         werkzeug==0.14.1 && \
     pip install --no-cache-dir git+https://github.com/onaio/superset-patchup.git@${SUPERSET_PATCHUP_VERSION} && \
     pip install superset==${SUPERSET_VERSION}
+RUN pip uninstall -y pandas && pip install pandas==0.23.4
 
 # Configure Filesystem
 COPY superset /usr/local/bin
