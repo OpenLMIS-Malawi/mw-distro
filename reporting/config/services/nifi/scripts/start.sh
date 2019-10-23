@@ -1,12 +1,14 @@
 #!/bin/bash
 
+set -x
+
 updateProperty() {
   grep -q "^${1}" ${3} && sed -i "s|^${1}=.*$|${1}=${2}|" ${3} || echo "${1}=${2}" >> ${3}
 }
 
 createOpenLmisProperties() {
-  CONFIG="conf/nifi.properties"
-  FILE="conf/openlmis.properties"
+  CONFIG="./conf/nifi.properties"
+  FILE="./conf/openlmis.properties"
 
   if [ ! -f ${FILE} ];
   then
