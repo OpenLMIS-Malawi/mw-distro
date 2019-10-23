@@ -7,15 +7,12 @@ updateProperty() {
 }
 
 createOpenLmisProperties() {
-  CONFIG="./conf/nifi.properties"
   FILE="./conf/openlmis.properties"
 
   if [ ! -f ${FILE} ];
   then
     touch ${FILE}
   fi
-
-  updateProperty "nifi.variable.registry.properties" "${FILE}" "${CONFIG}"
 
   updateProperty "openlmis.baseUrl" "${OL_BASE_URL}" "${FILE}"
   updateProperty "openlmis.trustedHostname" "${TRUSTED_HOSTNAME}" "${FILE}"
