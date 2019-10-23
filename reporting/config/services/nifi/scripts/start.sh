@@ -30,6 +30,7 @@ createOpenLmisProperties() {
   updateProperty "openlmis.postgres.password" "${POSTGRES_PASSWORD}" "${FILE}"
 }
 
+${NIFI_HOME}/bin/nifi.sh stop &&
 cp /config/nifi/libs/* lib/ &&
 cp /config/nifi/conf/* conf &&
 createOpenLmisProperties &&
