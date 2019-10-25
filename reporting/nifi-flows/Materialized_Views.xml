@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <template encoding-version="1.2">
     <description></description>
-    <groupId>b0227720-016a-1000-6d37-28dd0a742081</groupId>
-    <name>Mat views</name>
+    <groupId>f89a5518-016d-1000-a424-8150cbc684aa</groupId>
+    <name>Materialized_Views</name>
     <snippet>
         <processGroups>
-            <id>1b137a02-2282-3ed3-0000-000000000000</id>
-            <parentGroupId>a1303c58-8286-327b-0000-000000000000</parentGroupId>
+            <id>1dfa3e87-e64c-3492-0000-000000000000</id>
+            <parentGroupId>5fff0e7e-1736-37b8-0000-000000000000</parentGroupId>
             <position>
                 <x>0.0</x>
                 <y>0.0</y>
@@ -14,37 +14,40 @@
             <comments></comments>
             <contents>
                 <connections>
-                    <id>b822dce3-c816-34e3-0000-000000000000</id>
-                    <parentGroupId>1b137a02-2282-3ed3-0000-000000000000</parentGroupId>
+                    <id>a64c775a-ef84-3dea-0000-000000000000</id>
+                    <parentGroupId>1dfa3e87-e64c-3492-0000-000000000000</parentGroupId>
                     <versionedComponentId>7357b55c-c4e4-3586-9cc4-02f7fdf8e625</versionedComponentId>
                     <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
                     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
                     <destination>
-                        <groupId>1b137a02-2282-3ed3-0000-000000000000</groupId>
-                        <id>f9c9f390-4a18-3d7c-0000-000000000000</id>
+                        <groupId>1dfa3e87-e64c-3492-0000-000000000000</groupId>
+                        <id>dc2aa6e5-6519-3485-0000-000000000000</id>
                         <type>PROCESSOR</type>
                         <versionedComponentId>e1188b50-fd53-3c12-bd75-1983ab9c9521</versionedComponentId>
                     </destination>
                     <flowFileExpiration>0 sec</flowFileExpiration>
                     <labelIndex>1</labelIndex>
+                    <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+                    <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+                    <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
                     <name></name>
                     <selectedRelationships>success</selectedRelationships>
                     <source>
-                        <groupId>1b137a02-2282-3ed3-0000-000000000000</groupId>
-                        <id>9cbb64cc-3124-3dcf-0000-000000000000</id>
+                        <groupId>1dfa3e87-e64c-3492-0000-000000000000</groupId>
+                        <id>8853304f-43e6-3339-0000-000000000000</id>
                         <type>PROCESSOR</type>
                         <versionedComponentId>a2266b8c-b53d-36e5-a520-af9965c7716a</versionedComponentId>
                     </source>
                     <zIndex>0</zIndex>
                 </connections>
                 <controllerServices>
-                    <id>a1c5ef1d-4f87-3862-0000-000000000000</id>
-                    <parentGroupId>1b137a02-2282-3ed3-0000-000000000000</parentGroupId>
+                    <id>36017a52-354d-3daa-0000-000000000000</id>
+                    <parentGroupId>1dfa3e87-e64c-3492-0000-000000000000</parentGroupId>
                     <versionedComponentId>4c8f04a4-6026-3ffc-a676-87752f84e7fc</versionedComponentId>
                     <bundle>
                         <artifact>nifi-dbcp-service-nar</artifact>
                         <group>org.apache.nifi</group>
-                        <version>1.7.0</version>
+                        <version>1.9.2</version>
                     </bundle>
                     <comments></comments>
                     <descriptors>
@@ -64,6 +67,13 @@
                             <key>database-driver-locations</key>
                             <value>
 <name>database-driver-locations</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>kerberos-credentials-service</key>
+                            <value>
+<identifiesControllerService>org.apache.nifi.kerberos.KerberosCredentialsService</identifiesControllerService>
+<name>kerberos-credentials-service</name>
                             </value>
                         </entry>
                         <entry>
@@ -96,6 +106,42 @@
 <name>Validation-query</name>
                             </value>
                         </entry>
+                        <entry>
+                            <key>dbcp-min-idle-conns</key>
+                            <value>
+<name>dbcp-min-idle-conns</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>dbcp-max-idle-conns</key>
+                            <value>
+<name>dbcp-max-idle-conns</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>dbcp-max-conn-lifetime</key>
+                            <value>
+<name>dbcp-max-conn-lifetime</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>dbcp-time-between-eviction-runs</key>
+                            <value>
+<name>dbcp-time-between-eviction-runs</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>dbcp-min-evictable-idle-time</key>
+                            <value>
+<name>dbcp-min-evictable-idle-time</name>
+                            </value>
+                        </entry>
+                        <entry>
+                            <key>dbcp-soft-min-evictable-idle-time</key>
+                            <value>
+<name>dbcp-soft-min-evictable-idle-time</name>
+                            </value>
+                        </entry>
                     </descriptors>
                     <name>DBCPConnectionPool</name>
                     <persistsState>false</persistsState>
@@ -110,6 +156,9 @@
                         </entry>
                         <entry>
                             <key>database-driver-locations</key>
+                        </entry>
+                        <entry>
+                            <key>kerberos-credentials-service</key>
                         </entry>
                         <entry>
                             <key>Database User</key>
@@ -129,13 +178,37 @@
                         <entry>
                             <key>Validation-query</key>
                         </entry>
+                        <entry>
+                            <key>dbcp-min-idle-conns</key>
+                            <value>0</value>
+                        </entry>
+                        <entry>
+                            <key>dbcp-max-idle-conns</key>
+                            <value>8</value>
+                        </entry>
+                        <entry>
+                            <key>dbcp-max-conn-lifetime</key>
+                            <value>-1</value>
+                        </entry>
+                        <entry>
+                            <key>dbcp-time-between-eviction-runs</key>
+                            <value>-1</value>
+                        </entry>
+                        <entry>
+                            <key>dbcp-min-evictable-idle-time</key>
+                            <value>30 mins</value>
+                        </entry>
+                        <entry>
+                            <key>dbcp-soft-min-evictable-idle-time</key>
+                            <value>-1</value>
+                        </entry>
                     </properties>
                     <state>ENABLED</state>
                     <type>org.apache.nifi.dbcp.DBCPConnectionPool</type>
                 </controllerServices>
                 <processors>
-                    <id>9cbb64cc-3124-3dcf-0000-000000000000</id>
-                    <parentGroupId>1b137a02-2282-3ed3-0000-000000000000</parentGroupId>
+                    <id>8853304f-43e6-3339-0000-000000000000</id>
+                    <parentGroupId>1dfa3e87-e64c-3492-0000-000000000000</parentGroupId>
                     <position>
                         <x>497.5455322265625</x>
                         <y>79.63633728027344</y>
@@ -144,7 +217,7 @@
                     <bundle>
                         <artifact>nifi-standard-nar</artifact>
                         <group>org.apache.nifi</group>
-                        <version>1.7.0</version>
+                        <version>1.9.2</version>
                     </bundle>
                     <config>
                         <bulletinLevel>WARN</bulletinLevel>
@@ -232,8 +305,8 @@
                     <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
                 </processors>
                 <processors>
-                    <id>f9c9f390-4a18-3d7c-0000-000000000000</id>
-                    <parentGroupId>1b137a02-2282-3ed3-0000-000000000000</parentGroupId>
+                    <id>dc2aa6e5-6519-3485-0000-000000000000</id>
+                    <parentGroupId>1dfa3e87-e64c-3492-0000-000000000000</parentGroupId>
                     <position>
                         <x>1052.6364135742188</x>
                         <y>59.09088134765625</y>
@@ -242,7 +315,7 @@
                     <bundle>
                         <artifact>nifi-standard-nar</artifact>
                         <group>org.apache.nifi</group>
-                        <version>1.7.0</version>
+                        <version>1.9.2</version>
                     </bundle>
                     <config>
                         <bulletinLevel>WARN</bulletinLevel>
@@ -257,9 +330,21 @@
 </value>
                             </entry>
                             <entry>
+<key>sql-pre-query</key>
+<value>
+    <name>sql-pre-query</name>
+</value>
+                            </entry>
+                            <entry>
 <key>SQL select query</key>
 <value>
     <name>SQL select query</name>
+</value>
+                            </entry>
+                            <entry>
+<key>sql-post-query</key>
+<value>
+    <name>sql-post-query</name>
 </value>
                             </entry>
                             <entry>
@@ -281,6 +366,12 @@
 </value>
                             </entry>
                             <entry>
+<key>compression-format</key>
+<value>
+    <name>compression-format</name>
+</value>
+                            </entry>
+                            <entry>
 <key>dbf-default-precision</key>
 <value>
     <name>dbf-default-precision</name>
@@ -292,6 +383,18 @@
     <name>dbf-default-scale</name>
 </value>
                             </entry>
+                            <entry>
+<key>esql-max-rows</key>
+<value>
+    <name>esql-max-rows</name>
+</value>
+                            </entry>
+                            <entry>
+<key>esql-output-batch-size</key>
+<value>
+    <name>esql-output-batch-size</name>
+</value>
+                            </entry>
                         </descriptors>
                         <executionNode>ALL</executionNode>
                         <lossTolerant>false</lossTolerant>
@@ -299,13 +402,19 @@
                         <properties>
                             <entry>
 <key>Database Connection Pooling Service</key>
-<value>a1c5ef1d-4f87-3862-0000-000000000000</value>
+<value>36017a52-354d-3daa-0000-000000000000</value>
+                            </entry>
+                            <entry>
+<key>sql-pre-query</key>
                             </entry>
                             <entry>
 <key>SQL select query</key>
 <value>REFRESH MATERIALIZED VIEW reporting_rate_and_timeliness;
 REFRESH MATERIALIZED VIEW adjustments;
 REFRESH MATERIALIZED VIEW stock_status_and_consumption;</value>
+                            </entry>
+                            <entry>
+<key>sql-post-query</key>
                             </entry>
                             <entry>
 <key>Max Wait Time</key>
@@ -320,11 +429,23 @@ REFRESH MATERIALIZED VIEW stock_status_and_consumption;</value>
 <value>false</value>
                             </entry>
                             <entry>
+<key>compression-format</key>
+<value>NONE</value>
+                            </entry>
+                            <entry>
 <key>dbf-default-precision</key>
 <value>10</value>
                             </entry>
                             <entry>
 <key>dbf-default-scale</key>
+<value>0</value>
+                            </entry>
+                            <entry>
+<key>esql-max-rows</key>
+<value>0</value>
+                            </entry>
+                            <entry>
+<key>esql-output-batch-size</key>
 <value>0</value>
                             </entry>
                         </properties>
@@ -356,14 +477,14 @@ REFRESH MATERIALIZED VIEW stock_status_and_consumption;</value>
                 </entry>
                 <entry>
                     <key>baseUrl</key>
-                    <value>https://uat.openlmis.org</value>
+                    <value>https://lmis-dev.health.gov.mw</value>
                 </entry>
                 <entry>
                     <key>username</key>
-                    <value>administrator</value>
+                    <value>superuser</value>
                 </entry>
             </variables>
         </processGroups>
     </snippet>
-    <timestamp>05/13/2019 08:31:18 UTC</timestamp>
+    <timestamp>10/25/2019 09:24:49 UTC</timestamp>
 </template>
