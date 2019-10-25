@@ -57,7 +57,6 @@ services:
     environment:
       - NIFI_JVM_HEAP_INIT=${NIFI_JVM_HEAP_INIT}
       - NIFI_JVM_HEAP_MAX=${NIFI_JVM_HEAP_MAX}
-      - NIFI_VARIABLE_REGISTRY_PROPERTIES=./conf/openlmis.properties
     depends_on: [log, config-container, nginx]
     env_file: settings.env
 
