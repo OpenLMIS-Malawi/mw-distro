@@ -83,4 +83,4 @@ ADD_CUSTOM_ROLES = True
 CUSTOM_ROLES = {'OLMIS_Gamma': {'all_datasource_access'}}
 
 # Increase timeout time 
-SUPERSET_WEBSERVER_TIMEOUT = 60
+SUPERSET_WEBSERVER_TIMEOUT = 900
