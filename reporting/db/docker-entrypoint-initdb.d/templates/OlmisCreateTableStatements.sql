@@ -555,8 +555,7 @@ ON f.id::VARCHAR = authorized_reqs.facility_id::VARCHAR
 LEFT JOIN reporting_dates rd ON f.country = rd.country
 LEFT JOIN supported_programs sp ON sp.facilityid = f.id AND sp.programid::VARCHAR = authorized_reqs.program_id::VARCHAR
 LEFT JOIN requisition_group_members rgm ON rgm.facilityid = f.id
-LEFT JOIN requisition_group_program_schedules rgps ON rgps.requisitionGroupId = rgm.requisitionGroupId
-ORDER BY authorized_reqs.processing_period_enddate DESC;
+LEFT JOIN requisition_group_program_schedules rgps ON rgps.requisitionGroupId = rgm.requisitionGroupId;
 
 
 ALTER VIEW reporting_rate_and_timeliness OWNER TO postgres;
@@ -579,8 +578,7 @@ LEFT JOIN requisition_line_item li ON r.id::VARCHAR = li.requisition_id
 LEFT JOIN requisitions_status_history sh ON r.id::VARCHAR = sh.requisition_id
 LEFT JOIN requisitions_adjustment_lines al ON li.requisition_line_item_id::VARCHAR = al.requisition_line_item_id
 LEFT JOIN stock_adjustment_reasons sar ON sar.id::VARCHAR = al.reasonid::VARCHAR
-WHERE sh.status NOT IN ('SKIPPED', 'INITIATED', 'SUBMITTED')
-ORDER BY li.requisition_line_item_id, r.modified_date DESC NULLS LAST;
+WHERE sh.status NOT IN ('SKIPPED', 'INITIATED', 'SUBMITTED');
 
 ALTER VIEW adjustments OWNER TO postgres;
 
