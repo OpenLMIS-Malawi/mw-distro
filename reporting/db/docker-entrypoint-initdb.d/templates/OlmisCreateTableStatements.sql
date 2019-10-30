@@ -524,7 +524,7 @@ authorized_reqs.modified_date, authorized_reqs.emergency_status, authorized_reqs
 authorized_reqs.program_active_status, authorized_reqs.processing_schedule_name, 
 authorized_reqs.processing_period_name, authorized_reqs.processing_period_startdate,
 sp.programid as supported_program, sp.startdate, sp.active as supported_program_active,
-rgm.requisitiongroupid, rgps.processingscheduleid
+rgm.requisitiongroupid, rgps.processingscheduleid,
 CASE
     WHEN authorized_reqs.statuschangedate <= (authorized_reqs.processing_period_enddate::DATE + rd.due_days::INT) 
         AND authorized_reqs.status = 'AUTHORIZED' THEN 'On time'
