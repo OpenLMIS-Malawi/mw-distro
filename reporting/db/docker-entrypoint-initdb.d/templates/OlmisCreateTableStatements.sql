@@ -515,7 +515,7 @@ INSERT INTO reporting_dates(due_days, late_days, country)
 ---
 --- Name: reporting_rate_and_timeliness; Type: TABLE; Schema: referencedata; Owner: postgres
 ---
-CREATE VIEW reporting_rate_and_timeliness AS
+CREATE MATERIALIZED VIEW reporting_rate_and_timeliness AS
 SELECT f.id, f.name, f.district, f.region, f.country, f.type, f.operator_name, 
 f.status as facility_active_status,
 authorized_reqs.program_id, authorized_reqs.req_id, authorized_reqs.processing_period_id, 
@@ -555,15 +555,15 @@ ON f.id::VARCHAR = authorized_reqs.facility_id::VARCHAR
 LEFT JOIN reporting_dates rd ON f.country = rd.country
 LEFT JOIN supported_programs sp ON sp.facilityid = f.id AND sp.programid::VARCHAR = authorized_reqs.program_id::VARCHAR
 LEFT JOIN requisition_group_members rgm ON rgm.facilityid = f.id
-LEFT JOIN requisition_group_program_schedules rgps ON rgps.requisitionGroupId = rgm.requisitionGroupId;
+LEFT JOIN requisition_group_program_schedules rgps ON rgps.requisitionGroupId = rgm.requisitionGroupId WITH DATA;
 
 
-ALTER VIEW reporting_rate_and_timeliness OWNER TO postgres;
+ALTER MATERIALIZED VIEW reporting_rate_and_timeliness OWNER TO postgres;
 
 ---
 --- Name: adjustments; Type: TABLE; Schema: referencedata; Owner: postgres
 ---
-CREATE VIEW adjustments AS
+CREATE MATERIALIZED VIEW adjustments AS
 SELECT DISTINCT ON (li.requisition_line_item_id) li.requisition_line_item_id, 
 r.id AS requisition_id, r.created_date, r.modified_date, r.emergency_status, 
 r.supervisory_node, r.facility_name, r.facility_type_name, r.facility_operator_name, 
@@ -575,18 +575,17 @@ al.id AS adjustment_lines_id, al.quantity,
 sar.name AS stock_adjustment_reason
 FROM requisitions r
 LEFT JOIN requisition_line_item li ON r.id::VARCHAR = li.requisition_id
-LEFT JOIN requisitions_status_history sh ON r.id::VARCHAR = sh.requisition_id
+LEFT JOIN requisitions_status_history sh ON r.id::VARCHAR = sh.requisition_id AND sh.status NOT IN ('SKIPPED', 'INITIATED', 'SUBMITTED')
 LEFT JOIN requisitions_adjustment_lines al ON li.requisition_line_item_id::VARCHAR = al.requisition_line_item_id
-LEFT JOIN stock_adjustment_reasons sar ON sar.id::VARCHAR = al.reasonid::VARCHAR
-WHERE sh.status NOT IN ('SKIPPED', 'INITIATED', 'SUBMITTED');
+LEFT JOIN stock_adjustment_reasons sar ON sar.id::VARCHAR = al.reasonid::VARCHAR WITH DATA;
 
-ALTER VIEW adjustments OWNER TO postgres;
+ALTER MATERIALIZED VIEW adjustments OWNER TO postgres;
 
 
 ---
 --- Name: stock_status_and_consumption; Type: TABLE; Schema: referencedata; Owner: postgres
 ---
-CREATE VIEW stock_status_and_consumption AS
+CREATE MATERIALIZED VIEW stock_status_and_consumption AS
 SELECT li.requisition_line_item_id, r.id, 
 r.created_date as req_created_date, r.modified_date, r.emergency_status, r.supplying_facility, 
 r.supervisory_node, r.facility_id, r.facility_code, r.facility_name, r.facilty_active_status, 
@@ -634,6 +633,6 @@ GROUP BY requisition_line_item_id, requisition_id, orderable_id, product_code, f
 trade_item_id, beginning_balance, total_consumed_quantity, average_consumption, 
 total_losses_and_adjustments, stock_on_hand, total_stockout_days, max_periods_of_stock, 
 calculated_order_quantity, requested_quantity, approved_quantity, packs_to_ship, 
-price_per_pack, total_cost, total_received_quantity) li ON r.id::VARCHAR = li.requisition_id;
+price_per_pack, total_cost, total_received_quantity) li ON r.id::VARCHAR = li.requisition_id WITH DATA;
 
-ALTER VIEW stock_status_and_consumption OWNER TO postgres;
+ALTER MATERIALIZED VIEW stock_status_and_consumption OWNER TO postgres;
