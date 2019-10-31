@@ -547,8 +547,8 @@ LEFT JOIN (
             LEFT JOIN (
                 SELECT rh.created_date, rh.status, rh.requisition_id
                 FROM requisitions_status_history rh
-                WHERE rh.status = 'AUTHORIZED') rh
-            ON rh.requisition_id::VARCHAR = r.id::VARCHAR) items
+                WHERE rh.status = 'AUTHORIZED') rh ON rh.requisition_id::VARCHAR = r.id::VARCHAR
+            WHERE r.created_date BETWEEN NOW() - INTERVAL '3 year' AND NOW()) items
         ORDER BY items.facility_id, items.processing_period_id, items.statuschangedate DESC) status_rank
     WHERE status_rank.rank = 1) authorized_reqs
 ON f.id::VARCHAR = authorized_reqs.facility_id::VARCHAR
@@ -577,7 +577,8 @@ FROM requisitions r
 LEFT JOIN requisition_line_item li ON r.id::VARCHAR = li.requisition_id
 LEFT JOIN requisitions_status_history sh ON r.id::VARCHAR = sh.requisition_id AND sh.status NOT IN ('SKIPPED', 'INITIATED', 'SUBMITTED')
 LEFT JOIN requisitions_adjustment_lines al ON li.requisition_line_item_id::VARCHAR = al.requisition_line_item_id
-LEFT JOIN stock_adjustment_reasons sar ON sar.id::VARCHAR = al.reasonid::VARCHAR WITH DATA;
+LEFT JOIN stock_adjustment_reasons sar ON sar.id::VARCHAR = al.reasonid::VARCHAR
+WHERE r.created_date BETWEEN NOW() - INTERVAL '3 year' AND NOW() WITH DATA;
 
 ALTER MATERIALIZED VIEW adjustments OWNER TO postgres;
 
@@ -633,6 +634,7 @@ GROUP BY requisition_line_item_id, requisition_id, orderable_id, product_code, f
 trade_item_id, beginning_balance, total_consumed_quantity, average_consumption, 
 total_losses_and_adjustments, stock_on_hand, total_stockout_days, max_periods_of_stock, 
 calculated_order_quantity, requested_quantity, approved_quantity, packs_to_ship, 
-price_per_pack, total_cost, total_received_quantity) li ON r.id::VARCHAR = li.requisition_id WITH DATA;
+price_per_pack, total_cost, total_received_quantity) li ON r.id::VARCHAR = li.requisition_id
+WHERE r.created_date BETWEEN NOW() - INTERVAL '3 year' AND NOW() WITH DATA;
 
 ALTER MATERIALIZED VIEW stock_status_and_consumption OWNER TO postgres;
