@@ -25,7 +25,7 @@
                             "datasource_type": "table",
                             "slice_name": "Stock Filter",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -47,7 +47,7 @@
                             "datasource_type": "table",
                             "slice_name": "Logistics Summary Report",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:02"
@@ -69,7 +69,7 @@
                             "datasource_type": "table",
                             "slice_name": "Consumption Report",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:02"
@@ -91,7 +91,7 @@
                             "datasource_type": "table",
                             "slice_name": "Total Adjusted Consumption per Facility",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:02"
@@ -134,7 +134,7 @@
                             "datasource_type": "table",
                             "slice_name": "All-Time Reporting Timeliness",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -156,7 +156,7 @@
                             "datasource_type": "table",
                             "slice_name": "Reporting Rate and Timeliness",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -178,7 +178,7 @@
                             "datasource_type": "table",
                             "slice_name": "Reporting Rate Filter",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:02"
@@ -200,7 +200,7 @@
                             "datasource_type": "table",
                             "slice_name": "Expected Facilities per Period",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:02"
@@ -222,7 +222,7 @@
                             "datasource_type": "table",
                             "slice_name": "Reporting Rate Trend",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-28T13:35:13"
@@ -242,9 +242,9 @@
                             "description": null,
                             "viz_type": "dist_bar",
                             "datasource_type": "table",
-                            "slice_name": "Reporting timeliness by week",
+                            "slice_name": "Reporting Timeliness By Week",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-29T12:30:36"
@@ -287,7 +287,7 @@
                             "datasource_type": "table",
                             "slice_name": "Facility List",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -330,7 +330,7 @@
                             "datasource_type": "table",
                             "slice_name": "All-Time Reporting Timeliness",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -352,7 +352,7 @@
                             "datasource_type": "table",
                             "slice_name": "Reporting Rate and Timeliness",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -374,7 +374,7 @@
                             "datasource_type": "table",
                             "slice_name": "Stock Filter",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -396,7 +396,7 @@
                             "datasource_type": "table",
                             "slice_name": "Stock Status over Time",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:59"
+                                "__datetime__": "2019-10-31T09:06:31"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -418,7 +418,7 @@
                             "datasource_type": "table",
                             "slice_name": "Stock Status Table",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:59"
+                                "__datetime__": "2019-10-31T09:06:31"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -461,7 +461,7 @@
                             "datasource_type": "table",
                             "slice_name": "All-Time Reporting Timeliness",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -483,7 +483,7 @@
                             "datasource_type": "table",
                             "slice_name": "Reporting Rate and Timeliness",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -505,7 +505,7 @@
                             "datasource_type": "table",
                             "slice_name": "Orders Filter",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:59"
+                                "__datetime__": "2019-10-31T09:06:31"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:02"
@@ -527,7 +527,7 @@
                             "datasource_type": "table",
                             "slice_name": "Emergency v. Regular Orders",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:59"
+                                "__datetime__": "2019-10-31T09:06:31"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:02"
@@ -549,7 +549,7 @@
                             "datasource_type": "table",
                             "slice_name": "Total Cost of Orders",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:59"
+                                "__datetime__": "2019-10-31T09:06:31"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:02"
@@ -592,7 +592,7 @@
                             "datasource_type": "table",
                             "slice_name": "All-Time Reporting Timeliness",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -614,7 +614,7 @@
                             "datasource_type": "table",
                             "slice_name": "Reporting Rate and Timeliness",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -636,7 +636,7 @@
                             "datasource_type": "table",
                             "slice_name": "Stock Filter",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -658,7 +658,7 @@
                             "datasource_type": "table",
                             "slice_name": "District Stockout Rates over Time",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:59"
+                                "__datetime__": "2019-10-31T09:06:31"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:02"
@@ -701,7 +701,7 @@
                             "datasource_type": "table",
                             "slice_name": "All-Time Reporting Timeliness",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -723,7 +723,7 @@
                             "datasource_type": "table",
                             "slice_name": "Reporting Rate and Timeliness",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:58"
+                                "__datetime__": "2019-10-31T09:06:30"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:01"
@@ -745,7 +745,7 @@
                             "datasource_type": "table",
                             "slice_name": "Adjustments Filter",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:59"
+                                "__datetime__": "2019-10-31T09:06:31"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:02"
@@ -767,7 +767,7 @@
                             "datasource_type": "table",
                             "slice_name": "Adjustment Summary",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:59"
+                                "__datetime__": "2019-10-31T09:06:31"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T09:33:02"
@@ -789,14 +789,14 @@
                             "datasource_type": "table",
                             "slice_name": "Mathematical Error Trends",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:59"
+                                "__datetime__": "2019-10-31T09:06:31"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-29T14:41:16"
                             },
                             "created_by_fk": 1,
                             "cache_timeout": null,
-                            "params": "{\"datasource\": \"2__table\", \"viz_type\": \"line\", \"slice_id\": 22, \"url_params\": {}, \"granularity_sqla\": \"status_history_created_date\", \"time_grain_sqla\": \"P1M\", \"time_range\": \"Last year\", \"metrics\": [{\"expressionType\": \"SIMPLE\", \"column\": {\"id\": 74, \"column_name\": \"quantity\", \"verbose_name\": null, \"description\": null, \"expression\": \"\", \"filterable\": false, \"groupby\": false, \"is_dttm\": false, \"type\": \"INTEGER\", \"database_expression\": null, \"python_date_format\": null, \"optionName\": \"_col_quantity\"}, \"aggregate\": \"SUM\", \"sqlExpression\": null, \"hasCustomLabel\": true, \"fromFormData\": true, \"label\": \"Quantity\", \"optionName\": \"metric_0wpqlr9eilbo_mj79b0mah1b\"}], \"adhoc_filters\": [{\"expressionType\": \"SIMPLE\", \"subject\": \"stock_adjustment_reason\", \"operator\": \"in\", \"comparator\": [\"Positive Mathematical Error\", \"Negative Mathematical Error\"], \"clause\": \"WHERE\", \"sqlExpression\": null, \"fromFormData\": true, \"filterOptionName\": \"filter_qrj8lzolg6_0n86ytirjk3d\"}], \"groupby\": [\"program_name\", \"district_name\"], \"limit\": null, \"timeseries_limit_metric\": {\"expressionType\": \"SIMPLE\", \"column\": {\"id\": 88, \"column_name\": \"modified_date\", \"verbose_name\": null, \"description\": null, \"expression\": \"\", \"filterable\": false, \"groupby\": false, \"is_dttm\": true, \"type\": \"DATE\", \"database_expression\": null, \"python_date_format\": null, \"optionName\": \"_col_modified_date\"}, \"aggregate\": \"MAX\", \"sqlExpression\": null, \"hasCustomLabel\": false, \"fromFormData\": true, \"label\": \"MAX(modified_date)\", \"optionName\": \"metric_yc8tq9pl62_3jru11kohsf\"}, \"order_desc\": true, \"contribution\": false, \"row_limit\": null, \"color_scheme\": \"bnbColors\", \"show_brush\": \"no\", \"send_time_range\": true, \"show_legend\": false, \"rich_tooltip\": true, \"show_markers\": false, \"line_interpolation\": \"linear\", \"x_axis_label\": \"\", \"bottom_margin\": \"auto\", \"x_ticks_layout\": \"auto\", \"x_axis_format\": \"smart_date\", \"x_axis_showminmax\": false, \"y_axis_label\": \"\", \"left_margin\": \"auto\", \"y_axis_showminmax\": false, \"y_log_scale\": false, \"y_axis_format\": \".3s\", \"y_axis_bounds\": [null, null], \"rolling_type\": \"None\", \"comparison_type\": \"values\", \"resample_how\": null, \"resample_rule\": null, \"resample_fillmethod\": null, \"annotation_layers\": [], \"remote_id\": 22, \"datasource_name\": \"adjustments\", \"schema\": \"adjustments\", \"database_name\": \"main\"}",
+                            "params": "{\"datasource\": \"2__table\", \"viz_type\": \"line\", \"slice_id\": 22, \"url_params\": {}, \"granularity_sqla\": \"status_history_created_date\", \"time_grain_sqla\": \"P1M\", \"time_range\": \"Last year\", \"metrics\": [{\"expressionType\": \"SIMPLE\", \"column\": {\"id\": 74, \"column_name\": \"quantity\", \"verbose_name\": null, \"description\": null, \"expression\": \"\", \"filterable\": false, \"groupby\": false, \"is_dttm\": false, \"type\": \"INTEGER\", \"database_expression\": null, \"python_date_format\": null, \"optionName\": \"_col_quantity\"}, \"aggregate\": \"SUM\", \"sqlExpression\": null, \"hasCustomLabel\": true, \"fromFormData\": true, \"label\": \"Quantity\", \"optionName\": \"metric_0wpqlr9eilbo_mj79b0mah1b\"}], \"adhoc_filters\": [{\"expressionType\": \"SIMPLE\", \"subject\": \"stock_adjustment_reason\", \"operator\": \"in\", \"comparator\": [\"Positive Mathematical Error\", \"Negative Mathematical Error\"], \"clause\": \"WHERE\", \"sqlExpression\": null, \"fromFormData\": true, \"filterOptionName\": \"filter_qrj8lzolg6_0n86ytirjk3d\"}], \"groupby\": [\"stock_adjustment_reason\"], \"limit\": null, \"timeseries_limit_metric\": {\"expressionType\": \"SIMPLE\", \"column\": {\"id\": 88, \"column_name\": \"modified_date\", \"verbose_name\": null, \"description\": null, \"expression\": \"\", \"filterable\": false, \"groupby\": false, \"is_dttm\": true, \"type\": \"DATE\", \"database_expression\": null, \"python_date_format\": null, \"optionName\": \"_col_modified_date\"}, \"aggregate\": \"MAX\", \"sqlExpression\": null, \"hasCustomLabel\": false, \"fromFormData\": true, \"label\": \"MAX(modified_date)\", \"optionName\": \"metric_yc8tq9pl62_3jru11kohsf\"}, \"order_desc\": true, \"contribution\": false, \"row_limit\": null, \"color_scheme\": \"bnbColors\", \"show_brush\": \"no\", \"send_time_range\": true, \"show_legend\": false, \"rich_tooltip\": true, \"show_markers\": false, \"line_interpolation\": \"linear\", \"x_axis_label\": \"\", \"bottom_margin\": \"auto\", \"x_ticks_layout\": \"auto\", \"x_axis_format\": \"smart_date\", \"x_axis_showminmax\": false, \"y_axis_label\": \"\", \"left_margin\": \"auto\", \"y_axis_showminmax\": false, \"y_log_scale\": false, \"y_axis_format\": \".3s\", \"y_axis_bounds\": [null, null], \"rolling_type\": \"None\", \"comparison_type\": \"values\", \"resample_how\": null, \"resample_rule\": null, \"resample_fillmethod\": null, \"annotation_layers\": [], \"remote_id\": 22, \"datasource_name\": \"adjustments\", \"schema\": \"adjustments\", \"database_name\": \"main\"}",
                             "datasource_name": "adjustments",
                             "datasource_id": 2,
                             "id": 22,
@@ -811,7 +811,7 @@
                             "datasource_type": "table",
                             "slice_name": "% of adjustments by reason",
                             "changed_on": {
-                                "__datetime__": "2019-10-30T14:09:59"
+                                "__datetime__": "2019-10-31T09:06:31"
                             },
                             "created_on": {
                                 "__datetime__": "2019-10-30T12:32:26"
@@ -3411,36 +3411,6 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": null,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": null,
-                            "description": null,
-                            "created_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "type": "VARCHAR",
-                            "table_id": 1,
-                            "groupby": true,
-                            "is_dttm": false,
-                            "count_distinct": false,
-                            "changed_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "expression": "",
-                            "sum": false,
-                            "id": 73,
-                            "python_date_format": null,
-                            "avg": false,
-                            "column_name": "username",
-                            "database_expression": null,
-                            "max": false
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "min": false,
                             "verbose_name": "Stock Status",
                             "created_by_fk": null,
                             "filterable": true,
@@ -4740,22 +4710,22 @@
                 "schema": "",
                 "params": "{\"remote_id\": 2, \"database_name\": \"main\", \"import_time\": 1572427979}",
                 "changed_on": {
-                    "__datetime__": "2019-10-30T09:33:01"
+                    "__datetime__": "2019-10-31T08:57:38"
                 },
-                "sql": null,
+                "sql": "",
                 "perm": "[main].[adjustments](id:2)",
                 "id": 2,
                 "is_sqllab_view": false,
                 "table_name": "adjustments",
-                "description": null,
-                "template_params": null,
+                "description": "",
+                "template_params": "",
                 "main_dttm_col": "created_date",
-                "default_endpoint": null,
+                "default_endpoint": "",
                 "created_by_fk": null,
                 "database_id": 1,
                 "is_featured": false,
                 "changed_by_fk": 1,
-                "fetch_values_predicate": null,
+                "fetch_values_predicate": "",
                 "filter_select_enabled": false,
                 "user_id": null,
                 "offset": 0,
@@ -4914,13 +4884,13 @@
                             "created_on": {
                                 "__datetime__": "2019-10-25T09:43:27"
                             },
-                            "type": "DATE",
+                            "type": "TIMESTAMP WITHOUT TIME ZONE",
                             "table_id": 2,
                             "groupby": false,
                             "is_dttm": true,
                             "count_distinct": false,
                             "changed_on": {
-                                "__datetime__": "2019-10-30T11:28:29"
+                                "__datetime__": "2019-10-31T08:57:38"
                             },
                             "expression": "",
                             "sum": false,
@@ -5138,36 +5108,6 @@
                             "python_date_format": null,
                             "avg": false,
                             "column_name": "emergency_status",
-                            "database_expression": null,
-                            "max": false
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": null,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": null,
-                            "description": null,
-                            "created_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "type": "VARCHAR",
-                            "table_id": 2,
-                            "groupby": true,
-                            "is_dttm": false,
-                            "count_distinct": false,
-                            "changed_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "expression": "",
-                            "sum": false,
-                            "id": 82,
-                            "python_date_format": null,
-                            "avg": false,
-                            "column_name": "facility",
                             "database_expression": null,
                             "max": false
                         }
@@ -5417,36 +5357,6 @@
                             "min": false,
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "filterable": true,
-                            "is_active": true,
-                            "changed_by_fk": null,
-                            "description": null,
-                            "created_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "type": "VARCHAR",
-                            "table_id": 2,
-                            "groupby": true,
-                            "is_dttm": false,
-                            "count_distinct": false,
-                            "changed_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "expression": "",
-                            "sum": false,
-                            "id": 92,
-                            "python_date_format": null,
-                            "avg": false,
-                            "column_name": "program",
-                            "database_expression": null,
-                            "max": false
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": null,
                             "filterable": false,
                             "is_active": true,
                             "changed_by_fk": null,
@@ -5528,66 +5438,6 @@
                             "python_date_format": null,
                             "avg": false,
                             "column_name": "region_name",
-                            "database_expression": null,
-                            "max": false
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": null,
-                            "filterable": false,
-                            "is_active": true,
-                            "changed_by_fk": null,
-                            "description": null,
-                            "created_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "type": "UUID",
-                            "table_id": 2,
-                            "groupby": false,
-                            "is_dttm": false,
-                            "count_distinct": false,
-                            "changed_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "expression": "",
-                            "sum": false,
-                            "id": 96,
-                            "python_date_format": null,
-                            "avg": false,
-                            "column_name": "requisition_id",
-                            "database_expression": null,
-                            "max": false
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "min": false,
-                            "verbose_name": null,
-                            "created_by_fk": null,
-                            "filterable": false,
-                            "is_active": true,
-                            "changed_by_fk": null,
-                            "description": null,
-                            "created_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "type": "UUID",
-                            "table_id": 2,
-                            "groupby": false,
-                            "is_dttm": false,
-                            "count_distinct": false,
-                            "changed_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "expression": "",
-                            "sum": false,
-                            "id": 97,
-                            "python_date_format": null,
-                            "avg": false,
-                            "column_name": "requisition_line_item_id",
                             "database_expression": null,
                             "max": false
                         }
@@ -5747,27 +5597,27 @@
                             "min": false,
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "filterable": true,
+                            "filterable": false,
                             "is_active": true,
-                            "changed_by_fk": null,
+                            "changed_by_fk": 1,
                             "description": null,
                             "created_on": {
                                 "__datetime__": "2019-10-25T09:43:27"
                             },
                             "type": "VARCHAR",
                             "table_id": 2,
-                            "groupby": true,
+                            "groupby": false,
                             "is_dttm": false,
                             "count_distinct": false,
                             "changed_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
+                                "__datetime__": "2019-10-31T08:57:38"
                             },
                             "expression": "",
                             "sum": false,
-                            "id": 103,
+                            "id": 97,
                             "python_date_format": null,
                             "avg": false,
-                            "column_name": "username",
+                            "column_name": "requisition_line_item_id",
                             "database_expression": null,
                             "max": false
                         }
@@ -5784,13 +5634,13 @@
                             "created_on": {
                                 "__datetime__": "2019-10-25T09:43:27"
                             },
-                            "type": "DATE",
+                            "type": "TIMESTAMP WITHOUT TIME ZONE",
                             "table_id": 2,
                             "groupby": false,
                             "is_dttm": true,
                             "count_distinct": false,
                             "changed_on": {
-                                "__datetime__": "2019-10-30T11:28:20"
+                                "__datetime__": "2019-10-31T08:57:38"
                             },
                             "expression": "",
                             "sum": false,
@@ -5799,6 +5649,36 @@
                             "avg": false,
                             "column_name": "modified_date",
                             "database_expression": "",
+                            "max": false
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "min": false,
+                            "verbose_name": null,
+                            "created_by_fk": null,
+                            "filterable": false,
+                            "is_active": true,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-10-25T09:43:27"
+                            },
+                            "type": "VARCHAR",
+                            "table_id": 2,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": false,
+                            "changed_on": {
+                                "__datetime__": "2019-10-31T08:57:38"
+                            },
+                            "expression": "",
+                            "sum": false,
+                            "id": 96,
+                            "python_date_format": null,
+                            "avg": false,
+                            "column_name": "requisition_id",
+                            "database_expression": null,
                             "max": false
                         }
                     }
@@ -5814,7 +5694,7 @@
                 "schema": "",
                 "params": "{\"remote_id\": 3, \"database_name\": \"main\", \"import_time\": 1572427979}",
                 "changed_on": {
-                    "__datetime__": "2019-10-30T10:04:34"
+                    "__datetime__": "2019-10-31T08:56:13"
                 },
                 "sql": "",
                 "perm": "[main].[reporting_rate_and_timeliness](id:3)",
@@ -5822,14 +5702,14 @@
                 "is_sqllab_view": false,
                 "table_name": "reporting_rate_and_timeliness",
                 "description": "",
-                "template_params": null,
+                "template_params": "",
                 "main_dttm_col": "processing_period_enddate",
                 "default_endpoint": "",
                 "created_by_fk": null,
                 "database_id": 1,
                 "is_featured": false,
                 "changed_by_fk": 1,
-                "fetch_values_predicate": null,
+                "fetch_values_predicate": "",
                 "filter_select_enabled": false,
                 "user_id": null,
                 "offset": 0,
@@ -5993,6 +5873,66 @@
                     {
                         "__TableColumn__": {
                             "min": null,
+                            "verbose_name": null,
+                            "created_by_fk": null,
+                            "filterable": true,
+                            "is_active": null,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-10-25T09:43:27"
+                            },
+                            "type": "VARCHAR",
+                            "table_id": 3,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": null,
+                            "changed_on": {
+                                "__datetime__": "2019-10-31T08:56:13"
+                            },
+                            "expression": "",
+                            "sum": null,
+                            "id": 120,
+                            "python_date_format": null,
+                            "avg": null,
+                            "column_name": "processingscheduleid",
+                            "database_expression": null,
+                            "max": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "min": null,
+                            "verbose_name": null,
+                            "created_by_fk": null,
+                            "filterable": true,
+                            "is_active": null,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-10-25T09:43:27"
+                            },
+                            "type": "VARCHAR",
+                            "table_id": 3,
+                            "groupby": true,
+                            "is_dttm": false,
+                            "count_distinct": null,
+                            "changed_on": {
+                                "__datetime__": "2019-10-31T08:56:13"
+                            },
+                            "expression": "",
+                            "sum": null,
+                            "id": 130,
+                            "python_date_format": null,
+                            "avg": null,
+                            "column_name": "supported_program",
+                            "database_expression": null,
+                            "max": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "min": null,
                             "verbose_name": "Country",
                             "created_by_fk": null,
                             "filterable": true,
@@ -6092,36 +6032,6 @@
                             "created_on": {
                                 "__datetime__": "2019-10-25T09:43:27"
                             },
-                            "type": "VARCHAR",
-                            "table_id": 3,
-                            "groupby": true,
-                            "is_dttm": false,
-                            "count_distinct": null,
-                            "changed_on": {
-                                "__datetime__": "2019-10-30T10:04:34"
-                            },
-                            "expression": "",
-                            "sum": null,
-                            "id": 108,
-                            "python_date_format": "",
-                            "avg": null,
-                            "column_name": "facility",
-                            "database_expression": "",
-                            "max": null
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "min": null,
-                            "verbose_name": "Facility",
-                            "created_by_fk": null,
-                            "filterable": true,
-                            "is_active": null,
-                            "changed_by_fk": 1,
-                            "description": "",
-                            "created_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
                             "type": "VARCHAR(255)",
                             "table_id": 3,
                             "groupby": true,
@@ -6196,66 +6106,6 @@
                             "python_date_format": "",
                             "avg": null,
                             "column_name": "processing_schedule_name",
-                            "database_expression": "",
-                            "max": null
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "min": null,
-                            "verbose_name": null,
-                            "created_by_fk": null,
-                            "filterable": true,
-                            "is_active": null,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "created_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "type": "UUID",
-                            "table_id": 3,
-                            "groupby": true,
-                            "is_dttm": false,
-                            "count_distinct": null,
-                            "changed_on": {
-                                "__datetime__": "2019-10-30T10:04:34"
-                            },
-                            "expression": "",
-                            "sum": null,
-                            "id": 120,
-                            "python_date_format": null,
-                            "avg": null,
-                            "column_name": "processingscheduleid",
-                            "database_expression": null,
-                            "max": null
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "min": null,
-                            "verbose_name": "Program",
-                            "created_by_fk": null,
-                            "filterable": true,
-                            "is_active": null,
-                            "changed_by_fk": 1,
-                            "description": "",
-                            "created_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "type": "VARCHAR",
-                            "table_id": 3,
-                            "groupby": true,
-                            "is_dttm": false,
-                            "count_distinct": null,
-                            "changed_on": {
-                                "__datetime__": "2019-10-30T10:04:34"
-                            },
-                            "expression": "",
-                            "sum": null,
-                            "id": 121,
-                            "python_date_format": "",
-                            "avg": null,
-                            "column_name": "program",
                             "database_expression": "",
                             "max": null
                         }
@@ -6362,36 +6212,6 @@
                             "created_on": {
                                 "__datetime__": "2019-10-25T09:43:27"
                             },
-                            "type": "UUID",
-                            "table_id": 3,
-                            "groupby": true,
-                            "is_dttm": false,
-                            "count_distinct": null,
-                            "changed_on": {
-                                "__datetime__": "2019-10-30T10:04:34"
-                            },
-                            "expression": "",
-                            "sum": null,
-                            "id": 130,
-                            "python_date_format": null,
-                            "avg": null,
-                            "column_name": "supported_program",
-                            "database_expression": null,
-                            "max": null
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "min": null,
-                            "verbose_name": null,
-                            "created_by_fk": null,
-                            "filterable": true,
-                            "is_active": null,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "created_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
                             "type": "BOOLEAN",
                             "table_id": 3,
                             "groupby": true,
@@ -6436,66 +6256,6 @@
                             "python_date_format": null,
                             "avg": null,
                             "column_name": "type",
-                            "database_expression": null,
-                            "max": null
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "min": null,
-                            "verbose_name": null,
-                            "created_by_fk": null,
-                            "filterable": true,
-                            "is_active": null,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "created_on": {
-                                "__datetime__": "2019-10-25T09:43:28"
-                            },
-                            "type": "VARCHAR",
-                            "table_id": 3,
-                            "groupby": true,
-                            "is_dttm": false,
-                            "count_distinct": null,
-                            "changed_on": {
-                                "__datetime__": "2019-10-30T10:04:34"
-                            },
-                            "expression": "",
-                            "sum": null,
-                            "id": 133,
-                            "python_date_format": null,
-                            "avg": null,
-                            "column_name": "username",
-                            "database_expression": null,
-                            "max": null
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "min": null,
-                            "verbose_name": null,
-                            "created_by_fk": null,
-                            "filterable": false,
-                            "is_active": null,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "created_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "type": "DATE",
-                            "table_id": 3,
-                            "groupby": false,
-                            "is_dttm": true,
-                            "count_distinct": null,
-                            "changed_on": {
-                                "__datetime__": "2019-10-30T10:04:34"
-                            },
-                            "expression": "",
-                            "sum": null,
-                            "id": 105,
-                            "python_date_format": null,
-                            "avg": null,
-                            "column_name": "created_date",
                             "database_expression": null,
                             "max": null
                         }
@@ -6556,66 +6316,6 @@
                             "python_date_format": null,
                             "avg": null,
                             "column_name": "facility_id",
-                            "database_expression": null,
-                            "max": null
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "min": null,
-                            "verbose_name": null,
-                            "created_by_fk": null,
-                            "filterable": false,
-                            "is_active": null,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "created_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "type": "UUID",
-                            "table_id": 3,
-                            "groupby": false,
-                            "is_dttm": false,
-                            "count_distinct": null,
-                            "changed_on": {
-                                "__datetime__": "2019-10-30T10:04:34"
-                            },
-                            "expression": "",
-                            "sum": null,
-                            "id": 111,
-                            "python_date_format": null,
-                            "avg": null,
-                            "column_name": "id",
-                            "database_expression": null,
-                            "max": null
-                        }
-                    },
-                    {
-                        "__TableColumn__": {
-                            "min": null,
-                            "verbose_name": null,
-                            "created_by_fk": null,
-                            "filterable": false,
-                            "is_active": null,
-                            "changed_by_fk": 1,
-                            "description": null,
-                            "created_on": {
-                                "__datetime__": "2019-10-25T09:43:27"
-                            },
-                            "type": "DATE",
-                            "table_id": 3,
-                            "groupby": false,
-                            "is_dttm": true,
-                            "count_distinct": null,
-                            "changed_on": {
-                                "__datetime__": "2019-10-30T10:04:34"
-                            },
-                            "expression": "",
-                            "sum": null,
-                            "id": 112,
-                            "python_date_format": null,
-                            "avg": null,
-                            "column_name": "modified_date",
                             "database_expression": null,
                             "max": null
                         }
@@ -6842,13 +6542,103 @@
                             "created_on": {
                                 "__datetime__": "2019-10-25T09:43:27"
                             },
-                            "type": "UUID",
+                            "type": "VARCHAR",
                             "table_id": 3,
                             "groupby": false,
                             "is_dttm": false,
                             "count_distinct": null,
                             "changed_on": {
-                                "__datetime__": "2019-10-30T10:04:34"
+                                "__datetime__": "2019-10-31T08:56:13"
+                            },
+                            "expression": "",
+                            "sum": null,
+                            "id": 111,
+                            "python_date_format": null,
+                            "avg": null,
+                            "column_name": "id",
+                            "database_expression": null,
+                            "max": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "min": null,
+                            "verbose_name": null,
+                            "created_by_fk": null,
+                            "filterable": false,
+                            "is_active": null,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-10-25T09:43:27"
+                            },
+                            "type": "TIMESTAMP WITHOUT TIME ZONE",
+                            "table_id": 3,
+                            "groupby": false,
+                            "is_dttm": true,
+                            "count_distinct": null,
+                            "changed_on": {
+                                "__datetime__": "2019-10-31T08:56:13"
+                            },
+                            "expression": "",
+                            "sum": null,
+                            "id": 105,
+                            "python_date_format": null,
+                            "avg": null,
+                            "column_name": "created_date",
+                            "database_expression": null,
+                            "max": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "min": null,
+                            "verbose_name": null,
+                            "created_by_fk": null,
+                            "filterable": false,
+                            "is_active": null,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-10-25T09:43:27"
+                            },
+                            "type": "TIMESTAMP WITHOUT TIME ZONE",
+                            "table_id": 3,
+                            "groupby": false,
+                            "is_dttm": true,
+                            "count_distinct": null,
+                            "changed_on": {
+                                "__datetime__": "2019-10-31T08:56:13"
+                            },
+                            "expression": "",
+                            "sum": null,
+                            "id": 112,
+                            "python_date_format": null,
+                            "avg": null,
+                            "column_name": "modified_date",
+                            "database_expression": null,
+                            "max": null
+                        }
+                    },
+                    {
+                        "__TableColumn__": {
+                            "min": null,
+                            "verbose_name": null,
+                            "created_by_fk": null,
+                            "filterable": false,
+                            "is_active": null,
+                            "changed_by_fk": 1,
+                            "description": null,
+                            "created_on": {
+                                "__datetime__": "2019-10-25T09:43:27"
+                            },
+                            "type": "VARCHAR",
+                            "table_id": 3,
+                            "groupby": false,
+                            "is_dttm": false,
+                            "count_distinct": null,
+                            "changed_on": {
+                                "__datetime__": "2019-10-31T08:56:13"
                             },
                             "expression": "",
                             "sum": null,
@@ -6872,13 +6662,13 @@
                             "created_on": {
                                 "__datetime__": "2019-10-25T09:43:27"
                             },
-                            "type": "UUID",
+                            "type": "VARCHAR",
                             "table_id": 3,
                             "groupby": false,
                             "is_dttm": false,
                             "count_distinct": null,
                             "changed_on": {
-                                "__datetime__": "2019-10-30T10:04:34"
+                                "__datetime__": "2019-10-31T08:56:13"
                             },
                             "expression": "",
                             "sum": null,
