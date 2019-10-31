@@ -1,6 +1,7 @@
 #!/bin/bash
 
-${NIFI_HOME}/bin/nifi.sh stop &&
+/config/nifi/scripts/hideUsernameWithinNifi.sh $1 &
+
 cp /config/nifi/libs/* lib/ &&
 cp /config/nifi/conf/* conf &&
 /config/nifi/scripts/download-toolkit.sh $1 &&

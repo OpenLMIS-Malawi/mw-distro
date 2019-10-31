@@ -256,11 +256,7 @@ restartFlows() {
   sleep 180
   materializedViewProcessorGroupId=$(<tempFileforMatViewId.txt)
   echo ${materializedViewProcessorGroupId}
-
-  if [ ! -z "${materializedViewProcessorGroupId}" ];
-  then
-    curl -s -X PUT -H 'Content-Type: application/json' -d '{"id":"'"${materializedViewProcessorGroupId}"'","state":"RUNNING"}' $NIFI_BASE_URL/nifi-api/flow/process-groups/${materializedViewProcessorGroupId}
-  fi
+  curl -s -X PUT -H 'Content-Type: application/json' -d '{"id":"'"${materializedViewProcessorGroupId}"'","state":"RUNNING"}' $NIFI_BASE_URL/nifi-api/flow/process-groups/${materializedViewProcessorGroupId}
   rm tempFileforMatViewId.txt
 }
 
