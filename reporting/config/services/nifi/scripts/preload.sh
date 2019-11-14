@@ -238,26 +238,7 @@ restartFlows() {
         continue
       fi
     done
-
-    # Restart flows
-    sleep 5 # necessary to ensure all changes have taken effect
-
-    # Start all processor groups except 'materialized view' process group. 
-    # Save its id for reference to start it after 3 mins when data has been loaded into the table
-    processorGroupName=$(curl -s -X GET $NIFI_BASE_URL/nifi-api/process-groups/root/process-groups | jq -r ".[][$key].component.name")
-    if [ "$processorGroupName" == "Materialized Views" ];
-    then
-      echo ${processorGroupId} > tempFileforMatViewId.txt
-    else
-      #curl -s -X PUT -H 'Content-Type: application/json' -d '{"id":"'"${processorGroupId}"'","state":"RUNNING"}' $NIFI_BASE_URL/nifi-api/flow/process-groups/${processorGroupId}
-    fi
   done
-
-  sleep 180
-  materializedViewProcessorGroupId=$(<tempFileforMatViewId.txt)
-  echo ${materializedViewProcessorGroupId}
-  curl -s -X PUT -H 'Content-Type: application/json' -d '{"id":"'"${materializedViewProcessorGroupId}"'","state":"RUNNING"}' $NIFI_BASE_URL/nifi-api/flow/process-groups/${materializedViewProcessorGroupId}
-  rm tempFileforMatViewId.txt
 }
 
 getCliPath() {
