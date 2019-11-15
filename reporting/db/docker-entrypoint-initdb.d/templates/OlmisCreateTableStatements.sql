@@ -621,7 +621,7 @@ li.price_per_pack, li.total_cost, li.total_received_quantity, sh.requisition_id 
 sh.status as req_status, sh.author_id, sh.created_date as status_date,
 li.closing_balance, li.AMC, li.Consumption, li.adjusted_consumption,
 li.order_quantity, f.status as facility_status, rd.due_days, rd.late_days,
-li.combined_stockout, li.stock_status
+li.combined_stockout, li.stock_status, f.enabled as facility_enabled, f.openlmisaccessible as facility_openlmisaccessible
 FROM requisitions r 
 LEFT JOIN requisitions_status_history sh ON r.id::VARCHAR = sh.requisition_id
 LEFT JOIN reporting_dates rd ON r.country_name = rd.country
