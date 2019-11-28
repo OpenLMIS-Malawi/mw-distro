@@ -527,7 +527,7 @@ ALTER TABLE measure_reports OWNER TO postgres;
 
 -- Insert default values for reporting dates --
 INSERT INTO reporting_dates(due_days, late_days, country) 
-    VALUES(14, 7, 'Malawi'), (14, 7, 'Mozambique');
+    VALUES(20, 7, 'Malawi');
 
 ---
 --- Name: reporting_rate_and_timeliness; Type: TABLE; Schema: referencedata; Owner: postgres
@@ -543,14 +543,9 @@ authorized_reqs.processing_period_name, authorized_reqs.processing_period_startd
 sp.programid as supported_program, sp.startdate, sp.active as supported_program_active,
 rgm.requisitiongroupid, rgps.processingscheduleid,
 CASE
-    WHEN authorized_reqs.statuschangedate <= (authorized_reqs.processing_period_enddate::DATE + rd.due_days::INT) 
-        AND authorized_reqs.status = 'AUTHORIZED' THEN 'On time'
-    WHEN authorized_reqs.statuschangedate > (authorized_reqs.processing_period_enddate::DATE + rd.due_days::INT + rd.late_days::INT) 
-        AND authorized_reqs.status = 'AUTHORIZED' THEN 'Unscheduled'
-    WHEN authorized_reqs.statuschangedate < (authorized_reqs.processing_period_enddate::DATE + rd.due_days::INT + rd.late_days::INT) 
-        AND authorized_reqs.statuschangedate >= (authorized_reqs.processing_period_enddate::DATE + rd.due_days::INT) 
-        AND authorized_reqs.status = 'AUTHORIZED' THEN 'Late'
-    ELSE 'Did not report' END as reporting_timeliness
+    WHEN authorized_reqs.statuschangedate <= (authorized_reqs.processing_period_enddate + rd.due_days)
+        AND authorized_reqs.status = 'SUBMITTED' THEN 'Reported'
+    ELSE 'Did not report' END AS reporting_timeliness
 FROM facilities f
 LEFT JOIN (
     SELECT DISTINCT status_rank.facility_id, status_rank.req_id, status_rank.program_id, status_rank.processing_period_id, status_rank.statuschangedate, status_rank.status, status_rank.rank, status_rank.processing_period_enddate, status_rank.created_date, status_rank.modified_date, status_rank.emergency_status, status_rank.program_name, status_rank.program_active_status, status_rank.processing_schedule_name, status_rank.processing_period_name, status_rank.processing_period_startdate
@@ -564,7 +559,7 @@ LEFT JOIN (
             LEFT JOIN (
                 SELECT rh.created_date, rh.status, rh.requisition_id
                 FROM requisitions_status_history rh
-                WHERE rh.status = 'AUTHORIZED') rh ON rh.requisition_id::VARCHAR = r.id::VARCHAR
+                WHERE rh.status = 'SUBMITTED') rh ON rh.requisition_id::VARCHAR = r.id::VARCHAR
             WHERE r.created_date BETWEEN NOW() - INTERVAL '3 year' AND NOW()) items
         ORDER BY items.facility_id, items.processing_period_id, items.statuschangedate DESC) status_rank
     WHERE status_rank.rank = 1) authorized_reqs
