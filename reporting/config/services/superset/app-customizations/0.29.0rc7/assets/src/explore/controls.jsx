@@ -513,6 +513,7 @@ export const controls = {
     label: t('Country Name'),
     default: 'France',
     choices: [
+      'Angola',
       'Belgium',
       'Brazil',
       'China',
@@ -521,6 +522,7 @@ export const controls = {
       'Germany',
       'Italy',
       'Portugal',
+      'Malawi',
       'Morocco',
       'Myanmar',
       'Netherlands',
@@ -532,8 +534,7 @@ export const controls = {
       'Uk',
       'Ukraine',
       'Usa',
-      'Zambia',
-      'Malawi'
+      'Zambia'      
     ].map(s => [s, s]),
     description: t('The name of the country that Superset should display'),
   },
