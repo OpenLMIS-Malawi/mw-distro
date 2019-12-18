@@ -513,7 +513,6 @@ export const controls = {
     label: t('Country Name'),
     default: 'France',
     choices: [
-      'Angola',
       'Belgium',
       'Brazil',
       'China',
