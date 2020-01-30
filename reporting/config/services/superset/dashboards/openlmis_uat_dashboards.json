@@ -218,6 +218,28 @@
                     {
                         "__Slice__": {
                             "description": null,
+                            "viz_type": "line",
+                            "datasource_type": "table",
+                            "slice_name": "Reporting Rate Trend",
+                            "changed_on": {
+                                "__datetime__": "2019-10-31T09:06:30"
+                            },
+                            "created_on": {
+                                "__datetime__": "2019-10-28T13:35:13"
+                            },
+                            "created_by_fk": 1,
+                            "cache_timeout": null,
+                            "params": "{\"datasource\": \"3__table\", \"viz_type\": \"line\", \"slice_id\": 20, \"url_params\": {}, \"granularity_sqla\": \"processing_period_enddate\", \"time_grain_sqla\": \"P1D\", \"time_range\": \"Last 100 years\", \"metrics\": [\"rateTrend\"], \"adhoc_filters\": [], \"groupby\": [\"program_name\"], \"timeseries_limit_metric\": null, \"order_desc\": true, \"contribution\": false, \"row_limit\": 50000, \"color_scheme\": \"bnbColors\", \"show_brush\": \"auto\", \"send_time_range\": false, \"show_legend\": true, \"rich_tooltip\": true, \"show_markers\": false, \"line_interpolation\": \"linear\", \"x_axis_label\": \"\", \"bottom_margin\": \"auto\", \"x_ticks_layout\": \"auto\", \"x_axis_format\": \"smart_date\", \"x_axis_showminmax\": false, \"y_axis_label\": \"\", \"left_margin\": \"auto\", \"y_axis_showminmax\": false, \"y_log_scale\": false, \"y_axis_format\": \",.1%\", \"y_axis_bounds\": [null, null], \"rolling_type\": null, \"comparison_type\": \"values\", \"resample_how\": null, \"resample_rule\": null, \"resample_fillmethod\": null, \"annotation_layers\": [], \"remote_id\": 20, \"datasource_name\": \"reporting_rate_and_timeliness\", \"schema\": \"reporting_rate_and_timeliness\", \"database_name\": \"main\"}",
+                            "datasource_name": "reporting_rate_and_timeliness",
+                            "datasource_id": 3,
+                            "id": 20,
+                            "changed_by_fk": 1,
+                            "perm": "[main].[reporting_rate_and_timeliness](id:3)"
+                        }
+                    },
+                    {
+                        "__Slice__": {
+                            "description": null,
                             "viz_type": "dist_bar",
                             "datasource_type": "table",
                             "slice_name": "Reporting Timeliness By Week",
