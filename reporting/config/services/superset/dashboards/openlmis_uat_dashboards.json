@@ -5235,7 +5235,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Full Product Name",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -5295,7 +5295,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Processing Period",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -5385,7 +5385,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Program",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -6503,7 +6503,7 @@
                     {
                         "__TableColumn__": {
                             "min": null,
-                            "verbose_name": null,
+                            "verbose_name": "Program",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": null,
