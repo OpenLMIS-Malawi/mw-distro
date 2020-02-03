@@ -3741,7 +3741,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": "Consumption",
+                            "verbose_name": null,
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
