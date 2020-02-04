@@ -2661,7 +2661,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": "Facility Code",
+                            "verbose_name": null,
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -3021,7 +3021,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": "Processing Period Start Date",
+                            "verbose_name": null,
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
