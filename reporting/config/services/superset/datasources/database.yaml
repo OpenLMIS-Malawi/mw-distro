@@ -34,28 +34,28 @@ databases:
     - {column_name: country_name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: district_code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: district_id, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: district_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: district_name, verbose_name: District Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: emergency_status, type: BOOLEAN}
     - {column_name: facility, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facility_code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facility_id, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: facility_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: facility_name, verbose_name: Facility Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facility_operator_code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facility_operator_id, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facility_operator_name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facility_status, type: BOOLEAN}
     - {column_name: facility_type_code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facility_type_id, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: facility_type_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: facility_type_name, verbose_name: Facility Type Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facilty_active_status, type: BOOLEAN}
-    - {column_name: full_product_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: full_product_name, verbose_name: Full Product Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: id, type: UUID}
     - {column_name: li_req_id, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: modified_date, is_dttm: true, type: DATE}
     - {column_name: orderable_id, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: processing_period_enddate, is_dttm: true, type: DATE}
     - {column_name: processing_period_id, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: processing_period_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: processing_period_name, verbose_name: Processing Period Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: processing_period_startdate, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: processing_schedule_code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: processing_schedule_id, filterable: true, groupby: true, type: VARCHAR}
@@ -68,7 +68,7 @@ databases:
     - {column_name: program_name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: region_code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: region_id, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: region_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: region_name, verbose_name: Region Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: req_created_date, is_dttm: true, type: DATE}
     - {column_name: req_status, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: requisition_line_item_id, type: UUID}
@@ -152,27 +152,27 @@ databases:
     - {column_name: author_id, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: country_name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: created_date, is_dttm: true, type: DATE}
-    - {column_name: district_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: district_name, verbose_name: District Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: emergency_status, type: BOOLEAN}
     - {column_name: facility, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: facility_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: facility_name, verbose_name: Facility Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facility_operator_name, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: facility_type_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: facility_type_name, verbose_name: Facility Type Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facilty_active_status, type: BOOLEAN}
-    - {column_name: full_product_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: full_product_name, verbose_name: Full Product Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: modified_date, is_dttm: true, type: DATE}
     - {column_name: orderable_id, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: processing_period_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: processing_period_name, verbose_name: Processing Period Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: product_code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: program, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: program_active_status, type: BOOLEAN}
     - {column_name: program_name, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: region_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: region_name, verbose_name: Region Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: requisition_id, type: UUID}
     - {column_name: requisition_line_item_id, type: UUID}
     - {column_name: status, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: status_history_created_date, is_dttm: true, type: DATE}
-    - {column_name: stock_adjustment_reason, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: stock_adjustment_reason, verbose_name: Stock Adjustment Reason, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: supervisory_node, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: trade_item_id, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: username, filterable: true, groupby: true, type: VARCHAR}
@@ -201,7 +201,7 @@ databases:
     - {column_name: operator_name, filterable: true, groupby: true, type: VARCHAR(255)}
     - {column_name: processing_period_enddate, is_dttm: true, type: DATE}
     - {column_name: processing_period_id, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: processing_period_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: processing_period_name, verbose_name: Processing Period Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: processing_period_startdate, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: processing_schedule_name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: processingscheduleid, type: UUID}
@@ -353,9 +353,9 @@ databases:
         PRECISION}
     - {avg: true, column_name: total_received_quantity, sum: true, type: DOUBLE PRECISION}
     - {avg: true, column_name: total_stockout_days, sum: true, type: DOUBLE PRECISION}
-    - {column_name: full_product_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: full_product_name, verbose_name: Full Product Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: orderable_id, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: product_code, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: product_code, verbose_name: Product Code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: requisition_id, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: requisition_line_item_id, type: UUID}
     - {column_name: trade_item_id, filterable: true, groupby: true, type: VARCHAR}
@@ -427,7 +427,7 @@ databases:
     - {column_name: name, filterable: true, groupby: true, type: VARCHAR(255)}
     - {column_name: processingscheduleid, filterable: true, groupby: true, type: VARCHAR(255)}
     - {column_name: programid, filterable: true, groupby: true, type: VARCHAR(255)}
-    - {column_name: programname, filterable: true, groupby: true, type: VARCHAR(255)}
+    - {column_name: programname, verbose_name: Program Name, filterable: true, groupby: true, type: VARCHAR(255)}
     - {column_name: supervisorynodecode, filterable: true, groupby: true, type: VARCHAR(255)}
     - {column_name: supervisorynodeid, type: UUID}
     - {column_name: supervisorynodename, filterable: true, groupby: true, type: VARCHAR(255)}
@@ -684,23 +684,23 @@ databases:
     - {column_name: created_date, is_dttm: true, type: DATE}
     - {column_name: district_code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: district_id, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: district_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: district_name, verbose_name: District Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: emergency_status, type: BOOLEAN}
     - {column_name: facility_code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facility_id, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: facility_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: facility_name, verbose_name: Facility Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facility_operator_code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facility_operator_id, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facility_operator_name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facility_type_code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facility_type_id, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: facility_type_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: facility_type_name, verbose_name: Facility Type Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: facilty_active_status, type: BOOLEAN}
     - {column_name: id, type: UUID}
     - {column_name: modified_date, is_dttm: true, type: DATE}
     - {column_name: processing_period_enddate, is_dttm: true, type: DATE}
     - {column_name: processing_period_id, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: processing_period_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: processing_period_name, verbose_name: Processing Period Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: processing_period_startdate, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: processing_schedule_code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: processing_schedule_id, filterable: true, groupby: true, type: VARCHAR}
@@ -708,10 +708,10 @@ databases:
     - {column_name: program_active_status, type: BOOLEAN}
     - {column_name: program_code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: program_id, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: program_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: program_name, verbose_name: Program Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: region_code, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: region_id, filterable: true, groupby: true, type: VARCHAR}
-    - {column_name: region_name, filterable: true, groupby: true, type: VARCHAR}
+    - {column_name: region_name, verbose_name: Region Name, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: supervisory_node, filterable: true, groupby: true, type: VARCHAR}
     - {column_name: supplying_facility, filterable: true, groupby: true, type: VARCHAR}
     main_dttm_col: created_date
