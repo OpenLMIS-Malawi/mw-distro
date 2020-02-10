@@ -2661,7 +2661,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Facility Code",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -3021,7 +3021,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Processing Period Start Date",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -3111,7 +3111,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Program Code",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -3171,7 +3171,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Region Code",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -3471,7 +3471,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Total Consumed Quantity",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -3591,7 +3591,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Approved Quantity",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -3621,7 +3621,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Average Consumption",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -3681,7 +3681,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Calculated Order Quantity",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -3711,7 +3711,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Combined Stockout",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -4431,7 +4431,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Total Stockout Days",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -4461,7 +4461,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Requested Quantity",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -4875,7 +4875,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": "",
+                            "verbose_name": "Created Date",
                             "created_by_fk": null,
                             "filterable": false,
                             "is_active": true,
@@ -4905,7 +4905,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Quantity",
                             "created_by_fk": null,
                             "filterable": false,
                             "is_active": true,
@@ -4935,7 +4935,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Total Losses and Adjustments",
                             "created_by_fk": null,
                             "filterable": false,
                             "is_active": true,
@@ -5025,7 +5025,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Country",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -5055,7 +5055,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "District",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -5115,7 +5115,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Facility",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -5175,7 +5175,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Facility Type",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -5235,7 +5235,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Full Product Name",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -5295,7 +5295,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Processing Period",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -5325,7 +5325,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Product Code",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -5385,7 +5385,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Program",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -5415,7 +5415,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Region",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -5445,7 +5445,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Status",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -5505,7 +5505,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": null,
+                            "verbose_name": "Stock Adjustment Reason",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": true,
@@ -5625,7 +5625,7 @@
                     {
                         "__TableColumn__": {
                             "min": false,
-                            "verbose_name": "",
+                            "verbose_name": "Modified Date",
                             "created_by_fk": null,
                             "filterable": false,
                             "is_active": true,
@@ -5903,7 +5903,7 @@
                     {
                         "__TableColumn__": {
                             "min": null,
-                            "verbose_name": null,
+                            "verbose_name": "Supported Program",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": null,
@@ -6173,7 +6173,7 @@
                     {
                         "__TableColumn__": {
                             "min": null,
-                            "verbose_name": null,
+                            "verbose_name": "Start Date",
                             "created_by_fk": null,
                             "filterable": false,
                             "is_active": null,
@@ -6323,7 +6323,7 @@
                     {
                         "__TableColumn__": {
                             "min": null,
-                            "verbose_name": null,
+                            "verbose_name": "Operator",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": null,
@@ -6353,7 +6353,7 @@
                     {
                         "__TableColumn__": {
                             "min": null,
-                            "verbose_name": null,
+                            "verbose_name": "Processing Period End Date",
                             "created_by_fk": null,
                             "filterable": false,
                             "is_active": null,
@@ -6413,7 +6413,7 @@
                     {
                         "__TableColumn__": {
                             "min": null,
-                            "verbose_name": null,
+                            "verbose_name": "Processing Period Start Date",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": null,
@@ -6503,7 +6503,7 @@
                     {
                         "__TableColumn__": {
                             "min": null,
-                            "verbose_name": null,
+                            "verbose_name": "Program",
                             "created_by_fk": null,
                             "filterable": true,
                             "is_active": null,
@@ -6563,7 +6563,7 @@
                     {
                         "__TableColumn__": {
                             "min": null,
-                            "verbose_name": null,
+                            "verbose_name": "Created Date",
                             "created_by_fk": null,
                             "filterable": false,
                             "is_active": null,
@@ -6593,7 +6593,7 @@
                     {
                         "__TableColumn__": {
                             "min": null,
-                            "verbose_name": null,
+                            "verbose_name": "Modified Date",
                             "created_by_fk": null,
                             "filterable": false,
                             "is_active": null,
