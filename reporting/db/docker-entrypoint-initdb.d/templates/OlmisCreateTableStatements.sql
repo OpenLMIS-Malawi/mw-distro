@@ -640,7 +640,15 @@ CASE
     WHEN SUM(max_periods_of_stock) < 3 AND (SUM(stock_on_hand) = 0 OR SUM(total_stockout_days) > 0 OR SUM(beginning_balance) = 0 OR SUM(max_periods_of_stock) = 0) THEN 'Stocked Out'
     WHEN SUM(max_periods_of_stock) < 3 AND SUM(max_periods_of_stock) > 0 AND NOT(SUM(stock_on_hand) = 0 OR SUM(total_stockout_days) > 0 OR SUM(beginning_balance) = 0 OR SUM(max_periods_of_stock) = 0) THEN 'Understocked'
     WHEN SUM(max_periods_of_stock) = 0 AND NOT(SUM(stock_on_hand) = 0 OR SUM(total_stockout_days) > 0 OR SUM(beginning_balance) = 0 OR SUM(max_periods_of_stock) = 0) THEN 'Unknown'
-    ELSE 'Adequately stocked' END as stock_status
+    ELSE 'Adequately stocked' END as stock_status,
+CASE 
+	WHEN full_product_name in ('DN101000', 'PMI0004', 'AA039600', 'AA039900','AA040200','AA040500','DN002900','PMI0006','PMI0003','AA058200') THEN 'National Malaria Control Program'
+    WHEN full_product_name in ('HH039000', 'FP002400', 'ST062500', 'FP004100', 'FP003700', 'FP004700', 'FP004500', 'GF0096', 'BB049500', 'PMI0007', 'AA045000', 'FP000200', 'FP000600', 'BB059400') THEN 'Reproductive Health Program (FP and Maternal Health)'
+    WHEN full_product_name in ('EE002700', 'FD100000', 'DN261000', 'BB021301', 'ST009700', 'EE033900', 'EE034800', 'EE048300', 'FD007300') THEN 'IMCI Program (Neonatal and Child Health)'
+    -- WHEN full_product_name in (
+    ELSE NULL 
+END as malawi_program
+
 FROM requisition_line_item
 GROUP BY requisition_line_item_id, requisition_id, orderable_id, product_code, full_product_name, 
 trade_item_id, beginning_balance, total_consumed_quantity, average_consumption, 
