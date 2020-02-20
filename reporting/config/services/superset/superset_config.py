@@ -87,3 +87,8 @@ SUPERSET_WEBSERVER_TIMEOUT = 900
 
 # Whether to run the web server in debug mode or not
 DEBUG = False
+
+# Console Log Settings
+LOG_FORMAT = "%(asctime)s:%(levelname)s:%(name)s:%(message)s"
+# DEBUG, INFO, WARNING, ERROR, CRITICAL
+LOG_LEVEL = "WARNING"
