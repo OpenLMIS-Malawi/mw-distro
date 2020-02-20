@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <template encoding-version="1.2">
     <description></description>
-    <groupId>f89a5518-016d-1000-a424-8150cbc684aa</groupId>
+    <groupId>584c7536-0170-1000-9f4d-722cb87e5afe</groupId>
     <name>Materialized_Views</name>
     <snippet>
         <processGroups>
-            <id>1dfa3e87-e64c-3492-0000-000000000000</id>
-            <parentGroupId>5fff0e7e-1736-37b8-0000-000000000000</parentGroupId>
+            <id>c8ae319d-b681-3eba-0000-000000000000</id>
+            <parentGroupId>e3c93ba5-0e02-3027-0000-000000000000</parentGroupId>
             <position>
                 <x>0.0</x>
                 <y>0.0</y>
@@ -14,14 +14,14 @@
             <comments></comments>
             <contents>
                 <connections>
-                    <id>a64c775a-ef84-3dea-0000-000000000000</id>
-                    <parentGroupId>1dfa3e87-e64c-3492-0000-000000000000</parentGroupId>
+                    <id>c6f7a051-9283-3f16-0000-000000000000</id>
+                    <parentGroupId>c8ae319d-b681-3eba-0000-000000000000</parentGroupId>
                     <versionedComponentId>7357b55c-c4e4-3586-9cc4-02f7fdf8e625</versionedComponentId>
                     <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
                     <backPressureObjectThreshold>10000</backPressureObjectThreshold>
                     <destination>
-                        <groupId>1dfa3e87-e64c-3492-0000-000000000000</groupId>
-                        <id>dc2aa6e5-6519-3485-0000-000000000000</id>
+                        <groupId>c8ae319d-b681-3eba-0000-000000000000</groupId>
+                        <id>a2f532ba-16d9-34ef-0000-000000000000</id>
                         <type>PROCESSOR</type>
                         <versionedComponentId>e1188b50-fd53-3c12-bd75-1983ab9c9521</versionedComponentId>
                     </destination>
@@ -33,16 +33,16 @@
                     <name></name>
                     <selectedRelationships>success</selectedRelationships>
                     <source>
-                        <groupId>1dfa3e87-e64c-3492-0000-000000000000</groupId>
-                        <id>8853304f-43e6-3339-0000-000000000000</id>
+                        <groupId>c8ae319d-b681-3eba-0000-000000000000</groupId>
+                        <id>a014f91b-bb6f-30c6-0000-000000000000</id>
                         <type>PROCESSOR</type>
                         <versionedComponentId>a2266b8c-b53d-36e5-a520-af9965c7716a</versionedComponentId>
                     </source>
                     <zIndex>0</zIndex>
                 </connections>
                 <controllerServices>
-                    <id>36017a52-354d-3daa-0000-000000000000</id>
-                    <parentGroupId>1dfa3e87-e64c-3492-0000-000000000000</parentGroupId>
+                    <id>3e623724-9e96-32ff-0000-000000000000</id>
+                    <parentGroupId>c8ae319d-b681-3eba-0000-000000000000</parentGroupId>
                     <versionedComponentId>4c8f04a4-6026-3ffc-a676-87752f84e7fc</versionedComponentId>
                     <bundle>
                         <artifact>nifi-dbcp-service-nar</artifact>
@@ -207,8 +207,8 @@
                     <type>org.apache.nifi.dbcp.DBCPConnectionPool</type>
                 </controllerServices>
                 <processors>
-                    <id>8853304f-43e6-3339-0000-000000000000</id>
-                    <parentGroupId>1dfa3e87-e64c-3492-0000-000000000000</parentGroupId>
+                    <id>a014f91b-bb6f-30c6-0000-000000000000</id>
+                    <parentGroupId>c8ae319d-b681-3eba-0000-000000000000</parentGroupId>
                     <position>
                         <x>497.5455322265625</x>
                         <y>79.63633728027344</y>
@@ -305,8 +305,8 @@
                     <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
                 </processors>
                 <processors>
-                    <id>dc2aa6e5-6519-3485-0000-000000000000</id>
-                    <parentGroupId>1dfa3e87-e64c-3492-0000-000000000000</parentGroupId>
+                    <id>a2f532ba-16d9-34ef-0000-000000000000</id>
+                    <parentGroupId>c8ae319d-b681-3eba-0000-000000000000</parentGroupId>
                     <position>
                         <x>1052.6364135742188</x>
                         <y>59.09088134765625</y>
@@ -402,7 +402,7 @@
                         <properties>
                             <entry>
 <key>Database Connection Pooling Service</key>
-<value>36017a52-354d-3daa-0000-000000000000</value>
+<value>3e623724-9e96-32ff-0000-000000000000</value>
                             </entry>
                             <entry>
 <key>sql-pre-query</key>
@@ -486,5 +486,5 @@ REFRESH MATERIALIZED VIEW stock_status_and_consumption;</value>
             </variables>
         </processGroups>
     </snippet>
-    <timestamp>10/25/2019 09:24:49 UTC</timestamp>
+    <timestamp>02/20/2020 12:04:19 UTC</timestamp>
 </template>
