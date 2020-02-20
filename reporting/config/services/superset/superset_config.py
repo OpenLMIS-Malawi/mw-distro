@@ -84,3 +84,6 @@ CUSTOM_ROLES = {'OLMIS_Gamma': {'all_datasource_access'}}
 
 # Increase timeout time 
 SUPERSET_WEBSERVER_TIMEOUT = 900
+
+# Whether to run the web server in debug mode or not
+DEBUG = False
