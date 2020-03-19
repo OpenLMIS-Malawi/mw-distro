@@ -618,7 +618,7 @@ li.price_per_pack, li.total_cost, li.total_received_quantity, sh.requisition_id 
 sh.status as req_status, sh.author_id, sh.created_date as status_date,
 li.closing_balance, li.AMC, li.Consumption, li.adjusted_consumption,
 li.order_quantity, f.status as facility_status, rd.due_days, rd.late_days,
-li.combined_stockout, li.stock_status, li.malawi_program, f.enabled as facility_enabled, f.openlmisaccessible as facility_openlmisaccessible
+li.combined_stockout, li.stock_status, li.malawi_program, li.with_stock_not_issued, f.enabled as facility_enabled, f.openlmisaccessible as facility_openlmisaccessible
 FROM requisitions r 
 LEFT JOIN requisitions_status_history sh ON r.id::VARCHAR = sh.requisition_id
 LEFT JOIN reporting_dates rd ON r.country_name = rd.country
@@ -644,18 +644,20 @@ CASE
     WHEN SUM(max_periods_of_stock) = 0 AND NOT(SUM(stock_on_hand) = 0 OR SUM(total_stockout_days) > 0 OR SUM(beginning_balance) = 0 OR SUM(max_periods_of_stock) = 0) THEN 'Unknown'
     ELSE 'Adequately stocked' END as stock_status,
 CASE 
-    WHEN product_code in ('DN101000', 'PMI0004', 'AA039600', 'AA039900','AA040200','AA040500','DN002900','PMI0006','PMI0003','AA058200') THEN 'National Malaria Control Program'
-    WHEN product_code in ('HH039000', 'FP002400', 'ST062500', 'FP004100', 'FP003700', 'FP004700', 'FP004500', 'GF0096', 'BB049500', 'PMI0007', 'AA045000', 'FP000200', 'FP000600', 'BB059400') THEN 'Reproductive Health Program (FP and Maternal Health)'
-    WHEN product_code in ('EE002700', 'FD100000', 'DN261000', 'BB021301', 'ST009700', 'EE033900', 'EE034800', 'EE048300', 'FD007300') THEN 'IMCI Program (Neonatal and Child Health)'
-    WHEN product_code in ('GF0584', 'ST010900', 'AA026400', 'GF0221', 'GF0090', 'GF0058', 'GF0070' ) THEN 'National HIV/AIDS Program' 
-    WHEN product_code in ('DN999500', 'DN999400', 'DN043400') THEN 'National Nutrition Program'
-    WHEN product_code in ('TB000300', 'TB000700', 'TB000900', 'TB001000', 'TB001300', 'TB042500', 'TB160600', 'TB160700', 'TB004400') THEN 'National TB Program'
-    WHEN product_code in ('AA004200', 'BB005400', 'FD100000', 'FD251000', 'GF0402', 'ST010900', 'BB022200', 'BB024000', 'ST009700', 'HH077400', 'HH077700', 'HH078000', 'HH078300', 'HH080700', 'HH080400', 'HH081000', 'FP004500', 'DN002900', 'ST026100', 'EE033900', 'BB059400', 'BB069900', 'HH148800', 'HH149400', 'HH150000' ) THEN 'HSSP Tracer Items' 
-    WHEN product_code in ('AA001500', 'FD000200', 'AA003300', 'EE002700', 'AA007200', 'AA007800', 'AA007840', 'FD251700', 'EE008700', 'GG000600', 'AA015900', 'DN260600', 'FD251000', 'AA022500', 'AA023700', 'AA025200', 'EE021300', 'AA030900', 'AA032400', 'BB046800', 'FD005300','EE032700',  'AA049500', 'EE034800', 'FD006300', 'AA054000', 'FD006900') THEN 'Selected Tablets/Capsules/Galenicals'
-    WHEN product_code in ('TB000600', 'FD103800', 'BB006900', 'FD100000', 'BB013500', 'BB022800', 'ST009700', 'BB046900', 'BB077100') THEN 'Selected Injections'
-    WHEN product_code in ('KK000600', 'FF006300', 'FF007200', 'FD404700', 'FD404800', 'FD404900', 'FD405000', 'SM024200', 'FD300600', 'SM017000', 'FF015600', 'HH130800') THEN 'Selected Health Supplies/Sundries'
+    WHEN product_code in ('DN101000', 'PMI0004', 'AA039600', 'AA039900','AA040200','AA040500','DN002900','PMI0006','PMI0003','AA058200') THEN '0. National Malaria Control Program'
+    WHEN product_code in ('HH039000', 'FP002400', 'ST062500', 'FP004100', 'FP003700', 'FP004700', 'FP004500', 'GF0096', 'BB049500', 'PMI0007', 'AA045000', 'FP000200', 'FP000600', 'BB059400') THEN '1. Reproductive Health Program (FP and Maternal Health)'
+    WHEN product_code in ('EE002700', 'FD100000', 'DN261000', 'BB021301', 'ST009700', 'EE033900', 'EE034800', 'EE048300', 'FD007300') THEN '2. IMCI Program (Neonatal and Child Health)'
+    WHEN product_code in ('GF0584', 'ST010900', 'AA026400', 'GF0221', 'GF0090', 'GF0058', 'GF0070' ) THEN '3. National HIV/AIDS Program' 
+    WHEN product_code in ('DN999500', 'DN999400', 'DN043400') THEN '4. National Nutrition Program'
+    WHEN product_code in ('TB000300', 'TB000700', 'TB000900', 'TB001000', 'TB001300', 'TB042500', 'TB160600', 'TB160700', 'TB004400') THEN '5. National TB Program'
+    WHEN product_code in ('AA004200', 'BB005400', 'FD100000', 'FD251000', 'GF0402', 'ST010900', 'BB022200', 'BB024000', 'ST009700', 'HH077400', 'HH077700', 'HH078000', 'HH078300', 'HH080700', 'HH080400', 'HH081000', 'FP004500', 'DN002900', 'ST026100', 'EE033900', 'BB059400', 'BB069900', 'HH148800', 'HH149400', 'HH150000' ) THEN '6. HSSP Tracer Items' 
+    WHEN product_code in ('AA001500', 'FD000200', 'AA003300', 'EE002700', 'AA007200', 'AA007800', 'AA007840', 'FD251700', 'EE008700', 'GG000600', 'AA015900', 'DN260600', 'FD251000', 'AA022500', 'AA023700', 'AA025200', 'EE021300', 'AA030900', 'AA032400', 'BB046800', 'FD005300','EE032700',  'AA049500', 'EE034800', 'FD006300', 'AA054000', 'FD006900') THEN '7. Selected Tablets/Capsules/Galenicals'
+    WHEN product_code in ('TB000600', 'FD103800', 'BB006900', 'FD100000', 'BB013500', 'BB022800', 'ST009700', 'BB046900', 'BB077100') THEN '8. Selected Injections'
+    WHEN product_code in ('KK000600', 'FF006300', 'FF007200', 'FD404700', 'FD404800', 'FD404900', 'FD405000', 'SM024200', 'FD300600', 'SM017000', 'FF015600', 'HH130800') THEN '9. Selected Health Supplies/Sundries'
     ELSE '' 
-END as malawi_program
+END as malawi_program,
+CASE 
+    WHEN SUM(stock_on_hand) > 0 AND SUM(total_consumed_quantity) = 0 THEN 0 ELSE 1 END as with_stock_not_issued
 
 FROM requisition_line_item
 GROUP BY requisition_line_item_id, requisition_id, orderable_id, product_code, full_product_name, 
@@ -666,3 +668,37 @@ price_per_pack, total_cost, total_received_quantity) li ON r.id::VARCHAR = li.re
 WHERE r.created_date BETWEEN NOW() - INTERVAL '3 year' AND NOW() WITH DATA;
 
 ALTER MATERIALIZED VIEW stock_status_and_consumption OWNER TO postgres;
+
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+------------------------  Duplication of stock_status_and_consumption  ------------------------
+-----------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------
+---
+--- Name: stock_status_and_consumption; Type: TABLE; Schema: referencedata; Owner: postgres
+---
+CREATE MATERIALIZED VIEW stock_status_and_consumption_2 AS
+SELECT 
+li.full_product_name as full_product_name2, r.processing_period_enddate, r.facility_id, li.with_stock_not_issued
+FROM requisitions r 
+LEFT JOIN requisitions_status_history sh ON r.id::VARCHAR = sh.requisition_id
+LEFT JOIN reporting_dates rd ON r.country_name = rd.country
+LEFT JOIN facilities f ON r.facility_id::VARCHAR = f.id::VARCHAR
+LEFT JOIN (SELECT DISTINCT(requisition_line_item_id), requisition_id, orderable_id, product_code, full_product_name, 
+trade_item_id, beginning_balance, total_consumed_quantity, average_consumption, 
+total_losses_and_adjustments, stock_on_hand, total_stockout_days, max_periods_of_stock, 
+calculated_order_quantity, requested_quantity, approved_quantity, packs_to_ship, 
+price_per_pack, total_cost, total_received_quantity,
+CASE 
+    WHEN SUM(stock_on_hand) > 0 AND SUM(total_consumed_quantity) = 0 THEN 0 ELSE 1 
+END as with_stock_not_issued
+
+FROM requisition_line_item
+GROUP BY requisition_line_item_id, requisition_id, orderable_id, product_code, full_product_name, 
+trade_item_id, beginning_balance, total_consumed_quantity, average_consumption, 
+total_losses_and_adjustments, stock_on_hand, total_stockout_days, max_periods_of_stock, 
+calculated_order_quantity, requested_quantity, approved_quantity, packs_to_ship, 
+price_per_pack, total_cost, total_received_quantity) li ON r.id::VARCHAR = li.requisition_id
+WHERE r.created_date BETWEEN NOW() - INTERVAL '3 year' AND NOW() WITH DATA;
+
+ALTER MATERIALIZED VIEW stock_status_and_consumption_2 OWNER TO postgres;
