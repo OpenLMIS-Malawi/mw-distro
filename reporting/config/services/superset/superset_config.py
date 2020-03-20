@@ -93,5 +93,5 @@ LOG_FORMAT = "%(asctime)s:%(levelname)s:%(name)s:%(message)s"
 # DEBUG, INFO, WARNING, ERROR, CRITICAL
 LOG_LEVEL = "WARNING"
 
-# Timeout duration for queries
-SUPERSET_WEBSERVER_TIMEOUT = 60 = 900
+# Timeout duration for SQL Lab synchronous queries
+SQLLAB_TIMEOUT = 900
