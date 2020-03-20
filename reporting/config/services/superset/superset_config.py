@@ -94,4 +94,4 @@ LOG_FORMAT = "%(asctime)s:%(levelname)s:%(name)s:%(message)s"
 LOG_LEVEL = "WARNING"
 
 # Timeout duration for queries
-SUPERSET_WEBSERVER_TIMEOUT = 900
+SUPERSET_WEBSERVER_TIMEOUT = 60 = 900
