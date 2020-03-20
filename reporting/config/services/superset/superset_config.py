@@ -95,3 +95,5 @@ LOG_LEVEL = "WARNING"
 
 # Timeout duration for SQL Lab synchronous queries
 SQLLAB_TIMEOUT = 900
+
+SQLLAB_ASYNC_TIME_LIMIT_SEC = 900
