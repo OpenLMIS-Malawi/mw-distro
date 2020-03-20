@@ -92,3 +92,6 @@ DEBUG = False
 LOG_FORMAT = "%(asctime)s:%(levelname)s:%(name)s:%(message)s"
 # DEBUG, INFO, WARNING, ERROR, CRITICAL
 LOG_LEVEL = "WARNING"
+
+# Timeout duration for SQL Lab synchronous queries
+SQLLAB_TIMEOUT = 900
