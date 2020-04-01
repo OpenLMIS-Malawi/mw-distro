@@ -679,7 +679,7 @@ ALTER MATERIALIZED VIEW stock_status_and_consumption OWNER TO postgres;
 ---
 CREATE MATERIALIZED VIEW stock_status_and_consumption_2 AS
 SELECT 
-li.full_product_name as full_product_name2, r.processing_period_enddate, r.facility_id, li.with_stock_not_issued
+li.full_product_name as full_product_name2, r.processing_period_enddate, r.facility_id, li.with_stock_not_issued, li.total_consumed_quantity
 FROM requisitions r 
 LEFT JOIN requisitions_status_history sh ON r.id::VARCHAR = sh.requisition_id
 LEFT JOIN reporting_dates rd ON r.country_name = rd.country
