@@ -681,24 +681,15 @@ CREATE MATERIALIZED VIEW stock_status_and_consumption_2 AS
 SELECT 
 li.full_product_name as full_product_name2, r.processing_period_enddate, r.facility_id, li.with_stock_not_issued, li.total_consumed_quantity
 FROM requisitions r 
-LEFT JOIN requisitions_status_history sh ON r.id::VARCHAR = sh.requisition_id
-LEFT JOIN reporting_dates rd ON r.country_name = rd.country
-LEFT JOIN facilities f ON r.facility_id::VARCHAR = f.id::VARCHAR
-LEFT JOIN (SELECT DISTINCT(requisition_line_item_id), requisition_id, orderable_id, product_code, full_product_name, 
-trade_item_id, beginning_balance, total_consumed_quantity, average_consumption, 
-total_losses_and_adjustments, stock_on_hand, total_stockout_days, max_periods_of_stock, 
-calculated_order_quantity, requested_quantity, approved_quantity, packs_to_ship, 
-price_per_pack, total_cost, total_received_quantity,
+LEFT JOIN (SELECT DISTINCT(requisition_line_item_id), requisition_id,  product_code, full_product_name, total_consumed_quantity,
+stock_on_hand,
 CASE 
     WHEN SUM(stock_on_hand) > 0 AND SUM(total_consumed_quantity) = 0 THEN 0 ELSE 1 
 END as with_stock_not_issued
 
 FROM requisition_line_item
-GROUP BY requisition_line_item_id, requisition_id, orderable_id, product_code, full_product_name, 
-trade_item_id, beginning_balance, total_consumed_quantity, average_consumption, 
-total_losses_and_adjustments, stock_on_hand, total_stockout_days, max_periods_of_stock, 
-calculated_order_quantity, requested_quantity, approved_quantity, packs_to_ship, 
-price_per_pack, total_cost, total_received_quantity) li ON r.id::VARCHAR = li.requisition_id
+GROUP BY requisition_line_item_id, requisition_id,  product_code, full_product_name, 
+ total_consumed_quantity, average_consumption, stock_on_hand) li ON r.id::VARCHAR = li.requisition_id
 WHERE r.created_date BETWEEN NOW() - INTERVAL '3 year' AND NOW() WITH DATA;
 
 ALTER MATERIALIZED VIEW stock_status_and_consumption_2 OWNER TO postgres;

@@ -411,7 +411,8 @@
 <key>SQL select query</key>
 <value>REFRESH MATERIALIZED VIEW reporting_rate_and_timeliness;
 REFRESH MATERIALIZED VIEW adjustments;
-REFRESH MATERIALIZED VIEW stock_status_and_consumption;</value>
+REFRESH MATERIALIZED VIEW stock_status_and_consumption;
+REFRESH MATERIALIZED VIEW stock_status_and_consumption_2;</value>
                             </entry>
                             <entry>
 <key>sql-post-query</key>
