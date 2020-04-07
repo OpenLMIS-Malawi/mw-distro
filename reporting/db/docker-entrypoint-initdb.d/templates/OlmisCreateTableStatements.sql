@@ -616,7 +616,7 @@ li.total_losses_and_adjustments, li.stock_on_hand, li.total_stockout_days, li.ma
 li.calculated_order_quantity, li.requested_quantity, li.approved_quantity, li.packs_to_ship, 
 li.price_per_pack, li.total_cost, li.total_received_quantity, sh.requisition_id as status_req_id, 
 sh.status as req_status, sh.author_id, sh.created_date as status_date,
-li.closing_balance, li.AMC, li.Consumption, li.adjusted_consumption,
+li.closing_balance, li.AMC, li.MoS, li.Consumption, li.adjusted_consumption,
 li.order_quantity, f.status as facility_status, rd.due_days, rd.late_days,
 li.combined_stockout, li.stock_status, li.malawi_program, li.with_stock_not_issued, f.enabled as facility_enabled, f.openlmisaccessible as facility_openlmisaccessible
 FROM requisitions r 
@@ -631,6 +631,7 @@ calculated_order_quantity, requested_quantity, approved_quantity, packs_to_ship,
 price_per_pack, total_cost, total_received_quantity,
 SUM(stock_on_hand) as closing_balance,
 SUM(average_consumption) as AMC,
+CASE WHEN SUM(average_consumption) != 0 THEN SUM(stock_on_hand)/SUM(average_consumption) ELSE 0 END::integer as MoS,
 SUM(total_consumed_quantity) as Consumption,
 SUM(adjusted_consumption) as adjusted_consumption,
 SUM(approved_quantity) as order_quantity,
