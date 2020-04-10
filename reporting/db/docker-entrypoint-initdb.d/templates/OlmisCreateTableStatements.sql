@@ -382,7 +382,7 @@ ALTER TABLE requisitions OWNER TO postgres;
 --
 
 CREATE TABLE requisition_line_item (
-  requisition_line_item_id varchar,
+  requisition_line_item_id varchar UNIQUE,
   requisition_id varchar,
   orderable_id varchar,
   product_code varchar,
@@ -406,6 +406,9 @@ CREATE TABLE requisition_line_item (
 );
 
 ALTER TABLE requisition_line_item OWNER TO postgres;
+
+-- use only if unique doesn't exist
+ALTER TABLE requisition_line_item ADD UNIQUE (requisition_line_item_id);
 
 --
 -- Name: requisitions_status_history; Type: TABLE; Schema: referencedata; Owner: postgres
@@ -614,13 +617,11 @@ li.requisition_id as li_req_id, li.orderable_id, li.product_code, li.full_produc
 li.trade_item_id, li.beginning_balance, li.total_consumed_quantity, li.average_consumption, 
 li.total_losses_and_adjustments, li.stock_on_hand, li.total_stockout_days, li.max_periods_of_stock, 
 li.calculated_order_quantity, li.requested_quantity, li.approved_quantity, li.packs_to_ship, 
-li.price_per_pack, li.total_cost, li.total_received_quantity, sh.requisition_id as status_req_id, 
-sh.status as req_status, sh.author_id, sh.created_date as status_date,
+li.price_per_pack, li.total_cost, li.total_received_quantity, 
 li.closing_balance, li.AMC, li.MoS, li.Consumption, li.adjusted_consumption,
 li.order_quantity, f.status as facility_status, rd.due_days, rd.late_days,
 li.combined_stockout, li.stock_status, li.malawi_program, li.with_stock_not_issued, f.enabled as facility_enabled, f.openlmisaccessible as facility_openlmisaccessible
 FROM requisitions r 
-LEFT JOIN requisitions_status_history sh ON r.id::VARCHAR = sh.requisition_id
 LEFT JOIN reporting_dates rd ON r.country_name = rd.country
 LEFT JOIN facilities f ON r.facility_id::VARCHAR = f.id::VARCHAR
 LEFT JOIN (SELECT DISTINCT(requisition_line_item_id), requisition_id,
