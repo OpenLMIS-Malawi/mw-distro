@@ -152,7 +152,7 @@ const metric = {
 };
 
 const sandboxUrl = (
-  'https://github.com/apache/incubator-superset/' +
+  'https://github.com/apache/superset/' +
   'blob/master/superset/assets/src/modules/sandbox.js');
 const jsFunctionInfo = (
   <div>
