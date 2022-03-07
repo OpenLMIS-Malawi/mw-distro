@@ -546,11 +546,10 @@ authorized_reqs.processing_period_name, authorized_reqs.processing_period_startd
 sp.programid as supported_program, sp.startdate, sp.active as supported_program_active,
 rgm.requisitiongroupid, rgps.processingscheduleid,
 CASE
-    WHEN authorized_reqs.statuschangedate <= (authorized_reqs.processing_period_enddate + rd.due_days)
+    WHEN authorized_reqs.statuschangedate <= (authorized_reqs.processing_period_enddate + INTERVAL '20 day')
         AND authorized_reqs.status = 'SUBMITTED' THEN 'Reported'
     WHEN extract('day' from date_trunc('day', modified_date) - date_trunc('month', modified_date)) + 1 >= 25 THEN 'Did not report'
     ELSE 'Did not report' END AS reporting_timeliness
-
 FROM facilities f
 LEFT JOIN (
     SELECT DISTINCT status_rank.facility_id, status_rank.req_id, status_rank.program_id, status_rank.processing_period_id, status_rank.statuschangedate, status_rank.status, status_rank.rank, status_rank.processing_period_enddate, status_rank.created_date, status_rank.modified_date, status_rank.emergency_status, status_rank.program_name, status_rank.program_active_status, status_rank.processing_schedule_name, status_rank.processing_period_name, status_rank.processing_period_startdate
