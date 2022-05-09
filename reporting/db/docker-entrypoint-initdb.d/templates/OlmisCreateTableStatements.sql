@@ -535,43 +535,58 @@ INSERT INTO reporting_dates(due_days, late_days, country)
 ---
 --- Name: reporting_rate_and_timeliness; Type: TABLE; Schema: referencedata; Owner: postgres
 ---
-CREATE MATERIALIZED VIEW reporting_rate_and_timeliness AS
-SELECT f.id, f.name, f.district, f.region, f.country, f.type, f.operator_name, 
-f.status as facility_active_status,
-authorized_reqs.program_id, authorized_reqs.req_id, authorized_reqs.processing_period_id, 
-authorized_reqs.processing_period_enddate, authorized_reqs.facility_id, authorized_reqs.created_date, 
-authorized_reqs.modified_date, authorized_reqs.emergency_status, authorized_reqs.program_name, 
-authorized_reqs.program_active_status, authorized_reqs.processing_schedule_name, 
-authorized_reqs.processing_period_name, authorized_reqs.processing_period_startdate,
-sp.programid as supported_program, sp.startdate, sp.active as supported_program_active,
-rgm.requisitiongroupid, rgps.processingscheduleid,
-CASE
-    WHEN authorized_reqs.statuschangedate <= (authorized_reqs.processing_period_enddate + INTERVAL '20 day')
-        AND authorized_reqs.status = 'SUBMITTED' THEN 'Reported'
-    WHEN extract('day' from date_trunc('day', modified_date) - date_trunc('month', modified_date)) + 1 >= 25 THEN 'Did not report'
-    ELSE 'Did not report' END AS reporting_timeliness
+CREATE MATERIALIZED VIEW public.reporting_rate_and_timeliness AS
+SELECT f.id AS id,
+       f.name,
+       f.district,
+       f.region,
+       f.country,
+       f.type,
+       f.operator_name,
+       f.status     AS facility_active_status,
+       requisitions.program_id,
+       requisitions.id AS reqs_id,
+       requisitions.processing_period_id,
+       requisitions.processing_period_enddate,
+       requisitions.facility_id,
+       requisitions.created_date,
+       requisitions.modified_date,
+       requisitions.emergency_status,
+       requisitions.program_name,
+       requisitions.program_active_status,
+       requisitions.processing_schedule_name,
+       requisitions.processing_period_name,
+       requisitions.processing_period_startdate,
+       sp.programid AS supported_program,
+       sp.startdate,
+       sp.active    AS supported_program_active,
+       rgm.requisitiongroupid,
+       rgps.processingscheduleid,
+       CASE
+           WHEN requisitions.created_date notnull AND
+       started_reqs.status = 'SUBMITTED' THEN 'Reported'
+           ELSE 'Did not report'
+END AS reporting_timeliness
 FROM facilities f
-LEFT JOIN (
-    SELECT DISTINCT status_rank.facility_id, status_rank.req_id, status_rank.program_id, status_rank.processing_period_id, status_rank.statuschangedate, status_rank.status, status_rank.rank, status_rank.processing_period_enddate, status_rank.created_date, status_rank.modified_date, status_rank.emergency_status, status_rank.program_name, status_rank.program_active_status, status_rank.processing_schedule_name, status_rank.processing_period_name, status_rank.processing_period_startdate
-    FROM (
-        SELECT items.facility_id, items.program_id, items.req_id, items.processing_period_id, items.status, items.statuschangedate, items.processing_period_enddate, items.created_date, items.modified_date, items.emergency_status, items.program_name, items.program_active_status, items.processing_schedule_name, items.processing_period_name, items.processing_period_startdate,
-        rank() OVER (PARTITION BY items.program_id, items.facility_id, items.processing_period_id ORDER BY items.statuschangedate DESC) AS rank
-        FROM (
-            SELECT r.facility_id, r.program_id, r.id as req_id, r.processing_period_id, r.processing_period_enddate, r.created_date, r.modified_date, r.emergency_status, r.program_name, r.program_active_status, r.processing_schedule_name, r.processing_period_name, r.processing_period_startdate,
-            rh.status, rh.created_date AS statuschangedate
-            FROM requisitions r
-            LEFT JOIN (
-                SELECT rh.created_date, rh.status, rh.requisition_id
-                FROM requisitions_status_history rh
-                WHERE rh.status = 'SUBMITTED') rh ON rh.requisition_id::VARCHAR = r.id::VARCHAR
-            WHERE r.created_date BETWEEN NOW() - INTERVAL '3 year' AND NOW()) items
-        ORDER BY items.facility_id, items.processing_period_id, items.statuschangedate DESC) status_rank
-    WHERE status_rank.rank = 1) authorized_reqs
-ON f.id::VARCHAR = authorized_reqs.facility_id::VARCHAR
-LEFT JOIN reporting_dates rd ON f.country = rd.country
-LEFT JOIN supported_programs sp ON sp.facilityid = f.id AND sp.programid::VARCHAR = authorized_reqs.program_id::VARCHAR
-LEFT JOIN requisition_group_members rgm ON rgm.facilityid = f.id
-LEFT JOIN requisition_group_program_schedules rgps ON rgps.requisitionGroupId = rgm.requisitionGroupId WITH DATA;
+         LEFT JOIN supported_programs sp ON sp.facilityid = f.id
+         LEFT JOIN (
+         	SELECT *
+         	FROM requisitions r
+         	WHERE r.emergency_status = false
+         	AND r.created_date >= (NOW() - INTERVAL '3 year')
+         ) requisitions ON requisitions.facility_id = f.id
+         LEFT JOIN requisition_group_members rgm ON (rgm.facilityid = f.id AND sp.facilityid = rgm.facilityid)
+         LEFT JOIN requisition_group_program_schedules rgps
+                   ON rgps.requisitiongroupid = rgm.requisitiongroupid
+         LEFT JOIN processing_periods ON processing_periods.id = requisitions.processing_period_id
+         LEFT JOIN (
+		    SELECT rsh.created_date, rsh.status, rsh.requisition_id
+		    FROM requisitions_status_history rsh
+		    WHERE rsh.status = 'SUBMITTED'
+		    AND rsh.created_date >= (NOW() - INTERVAL '3 year')
+		) started_reqs ON started_reqs.requisition_id = requisitions.id
+WHERE f.status = true
+  AND f.enabled = true WITH DATA;
 
 
 ALTER MATERIALIZED VIEW reporting_rate_and_timeliness OWNER TO postgres;
