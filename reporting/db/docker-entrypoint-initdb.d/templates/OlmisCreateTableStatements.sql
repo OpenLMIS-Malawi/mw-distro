@@ -535,7 +535,7 @@ INSERT INTO reporting_dates(due_days, late_days, country)
 ---
 --- Name: reporting_rate_and_timeliness; Type: TABLE; Schema: referencedata; Owner: postgres
 ---
-CREATE MATERIALIZED VIEW public.reporting_rate_and_timeliness AS
+CREATE MATERIALIZED VIEW reporting_rate_and_timeliness AS
 SELECT f.id AS id,
        f.name,
        f.district,
