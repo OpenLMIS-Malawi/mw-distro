@@ -2753,9 +2753,9 @@ class PartitionViz(NVD3TimeSeriesViz):
         return self.nest_values(levels)
 
 
-viz_types = {
-    o.viz_type: o for o in globals().values()
-    if (
-        inspect.isclass(o) and
-        issubclass(o, BaseViz) and
-        o.viz_type not in config.get('VIZ_TYPE_BLACKLIST'))}
+# viz_types = {
+#    o.viz_type: o for o in globals().values()
+#    if (
+#        inspect.isclass(o) and
+#        issubclass(o, BaseViz) and
+#        o.viz_type not in config.get('VIZ_TYPE_BLACKLIST'))}
