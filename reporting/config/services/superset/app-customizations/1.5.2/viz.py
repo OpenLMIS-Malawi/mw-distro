@@ -31,7 +31,7 @@ from past.builtins import basestring
 import polyline
 import simplejson as json
 
-from superset import app, cache, get_css_manifest_files
+from superset import app, cache
 from superset.exceptions import NullValueException, SpatialException
 from superset.utils import core as utils
 from superset.utils.core import (
@@ -726,7 +726,7 @@ class MarkupViz(BaseViz):
         code = self.form_data.get('code', '')
         if markup_type == 'markdown':
             code = markdown(code)
-        return dict(html=code, theme_css=get_css_manifest_files('theme'))
+        return dict(html=code)
 
 
 class SeparatorViz(MarkupViz):
