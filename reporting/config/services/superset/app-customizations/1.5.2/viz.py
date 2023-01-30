@@ -2169,7 +2169,7 @@ class BaseDeckGLViz(BaseViz):
         elif expression_type == "SQL":
             result.update({"sqlExpression": filt.get(clause)})
 
-    return result
+        return result
 
     def add_null_filters(self):
         fd = self.form_data
