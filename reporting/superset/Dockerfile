@@ -74,6 +74,14 @@ RUN useradd -U -m superset && \
     # MarkupSafe, fix missing 'soft_unicode' from 'markupsafe'
     pip install -I --no-cache-dir MarkupSafe==2.0.1
 
+
+# Configure Filesystem
+RUN find ${APP_DIR} \! -type l -print0 | xargs -0 chown superset:superset
+COPY superset /usr/local/bin
+VOLUME /etc/superset \
+       /var/lib/superset
+WORKDIR $APP_DIR
+
 # Node & npm
 ENV NVM_DIR=/usr/local/nvm
 ENV NODE_VERSION=v16.16.0
