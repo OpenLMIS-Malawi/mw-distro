@@ -38,7 +38,6 @@ from superset.utils.core import (
     DTTM_ALIAS,
     JS_MAX_INTEGER,
     merge_extra_filters,
-    to_adhoc,
 )
 
 
@@ -2148,6 +2147,29 @@ class BaseDeckGLViz(BaseViz):
             raise NullValueException(_('Encountered invalid NULL spatial entry, \
                                        please consider filtering those out'))
         return df
+
+    def to_adhoc(
+        filt: Dict[str, Any], expression_type: str = "SIMPLE", clause: str = "where"
+    ) -> Dict[str, Any]:
+        result = {
+            "clause": clause.upper(),
+            "expressionType": expression_type,
+            "filterOptionName": str(uuid.uuid4()),
+            "isExtra": bool(filt.get("isExtra")),
+        }
+
+        if expression_type == "SIMPLE":
+            result.update(
+                {
+                    "comparator": filt.get("val"),
+                    "operator": filt.get("op"),
+                    "subject": filt.get("col"),
+                }
+            )
+        elif expression_type == "SQL":
+            result.update({"sqlExpression": filt.get(clause)})
+
+    return result
 
     def add_null_filters(self):
         fd = self.form_data
