@@ -2117,7 +2117,7 @@
                             "changed_by_fk": null,
                             "expression": "COUNT(*)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": "COUNT(*)",
                             "id": 146,
@@ -2802,8 +2802,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(max_periods_of_stock)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                    
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 12,
@@ -2824,8 +2823,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(order_quantity)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                    
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 13,
@@ -2846,8 +2844,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(packs_to_ship)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                   
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 14,
@@ -2868,8 +2865,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(price_per_pack)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                   
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 15,
@@ -2890,8 +2886,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(total_cost)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                   
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 19,
@@ -2912,8 +2907,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(total_stockout_days)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                  
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 22,
@@ -2934,8 +2928,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(total_losses_and_adjustments)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                    
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 20,
@@ -2956,8 +2949,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(total_received_quantity)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                   
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 21,
@@ -2978,8 +2970,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(combined_stockout)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                 
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 8,
@@ -3000,8 +2991,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(consumption)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                     
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 9,
@@ -3022,8 +3012,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(late_days)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                  
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 11,
@@ -3044,8 +3033,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(CASE WHEN combined_stockout = 0 THEN 1 END)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                   
                             "metric_type": null,
                             "verbose_name": "No. Of Stocked Out Products",
                             "id": 153,
@@ -3066,8 +3054,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "(SUM(30-total_stockout_days)/ COUNT(total_stockout_days*30))/30",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                    
                             "metric_type": null,
                             "verbose_name": "On-Shelf Availability For The Month (OSA)",
                             "id": 155,
@@ -3088,8 +3075,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(CASE WHEN stock_on_hand = 0 THEN facility_id END)::decimal/ COUNT( facility_id)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                  
                             "metric_type": null,
                             "verbose_name": "",
                             "id": 156,
@@ -3110,8 +3096,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(DISTINCT district_code)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                  
                             "metric_type": null,
                             "verbose_name": "No. of Districts Reporting ",
                             "id": 157,
@@ -3132,8 +3117,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(DISTINCT CASE WHEN stock_status = 'Overstocked' THEN facility_id END)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                    
                             "metric_type": null,
                             "verbose_name": "Overstocked",
                             "id": 158,
@@ -3154,8 +3138,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(DISTINCT CASE WHEN facility_operator_code = 'GoM' THEN facility_id END) ",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                   
                             "metric_type": null,
                             "verbose_name": "GOM Facilities Reporting ",
                             "id": 159,
@@ -3176,8 +3159,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(DISTINCT CASE WHEN facility_operator_code != 'GoM' THEN facility_id END) ",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                   
                             "metric_type": null,
                             "verbose_name": "CHAM Facilities Reporting",
                             "id": 160,
@@ -3198,8 +3180,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(DISTINCT CASE WHEN facility_type_code = 'CentH' THEN facility_id END) ",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                  
                             "metric_type": null,
                             "verbose_name": "Reporting Central Hospitals",
                             "id": 161,
@@ -3220,8 +3201,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(average_consumption)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                  
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 27,
@@ -3242,8 +3222,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(beginning_balance)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                   
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 28,
@@ -3264,8 +3243,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(calculated_order_quantity)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                   
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 29,
@@ -3286,8 +3264,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(closing_balance)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                   
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 30,
@@ -3308,8 +3285,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(combined_stockout)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                  
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 31,
@@ -3330,8 +3306,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(consumption)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                  
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 32,
@@ -3352,8 +3327,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": " SUM(CASE WHEN product_code = 'AA039600' THEN total_consumed_quantity/6               WHEN product_code = 'AA039900' THEN total_consumed_quantity/12              WHEN product_code = 'AA040200' THEN total_consumed_quantity/18               WHEN product_code = 'AA040500' THEN total_consumed_quantity/24              ELSE total_consumed_quantity         END)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                
                             "metric_type": null,
                             "verbose_name": "Aggregated consumption for reporting facilities",
                             "id": 164,
@@ -3374,8 +3348,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(DISTINCT CASE WHEN facilty_active_status = true AND facility_enabled = true THEN facility_id END) ",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                 
                             "metric_type": null,
                             "verbose_name": "Total number of active HF tracked",
                             "id": 165,
@@ -3396,8 +3369,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(DISTINCT CASE WHEN stock_status = 'Understocked' THEN facility_id END)/COUNT(DISTINCT facility_id)::decimal",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,               
                             "metric_type": null,
                             "verbose_name": "%HF Understocked",
                             "id": 166,
@@ -3418,8 +3390,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(DISTINCT CASE WHEN stock_status = 'Adequately stocked' THEN facility_id END)/COUNT(DISTINCT facility_id)::decimal",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,               
                             "metric_type": null,
                             "verbose_name": "%HF Adequately stocked",
                             "id": 167,
@@ -3440,8 +3411,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(DISTINCT CASE WHEN stock_status = 'Overstocked' THEN facility_id END)/COUNT(DISTINCT facility_id)::decimal",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                
                             "metric_type": null,
                             "verbose_name": "%HF Overstocked",
                             "id": 168,
@@ -3462,8 +3432,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(DISTINCT CASE WHEN stock_status = 'Understocked' THEN facility_id END)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,            
                             "metric_type": null,
                             "verbose_name": "Understocked",
                             "id": 169,
@@ -3484,8 +3453,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(DISTINCT CASE WHEN stock_status = 'Adequately stocked' THEN facility_id END)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                  
                             "metric_type": null,
                             "verbose_name": "Adequately stocked",
                             "id": 170,
@@ -3506,8 +3474,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(CASE                                   WHEN MoS > 3                                   AND MoS <= 6                                  THEN 1                                  ELSE 0                                  END)::NUMERIC/COUNT(*)::NUMERIC ",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                 
                             "metric_type": null,
                             "verbose_name": "Proportion of HF with MoS>3 & <6 (target 15%) ",
                             "id": 171,
@@ -3528,8 +3495,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": " SUM(CASE                                   WHEN MoS > 6                                  THEN 1                                  ELSE 0                                  END)::NUMERIC/COUNT(*)::NUMERIC ",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                
                             "metric_type": null,
                             "verbose_name": "Proportion of HF with MoS >6 (target 5%) ",
                             "id": 172,
@@ -3550,8 +3516,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(adjusted_consumption)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,               
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 1,
@@ -3572,8 +3537,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(requested_quantity)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,               
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 16,
@@ -3594,8 +3558,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(stock_on_hand)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,              
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 17,
@@ -3616,8 +3579,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(total_consumed_quantity)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                  
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 18,
@@ -3638,8 +3600,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(amc)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                 
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 2,
@@ -3660,8 +3621,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(CASE                                   WHEN MoS > 0                                   AND MoS < 1                                  THEN 1                                  ELSE 0                                  END)::NUMERIC/COUNT(*)::NUMERIC ",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                  
                             "metric_type": null,
                             "verbose_name": "Proportion of HF with MoS>0 & <1 (target  15%) ",
                             "id": 175,
@@ -3682,8 +3642,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(CASE WHEN stock_on_hand = 0 THEN facility_id END)::decimal/ COUNT( facility_id)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,              
                             "metric_type": null,
                             "verbose_name": "",
                             "id": 176,
@@ -3704,8 +3663,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM( CASE WHEN stock_on_hand = 0 THEN 1 ELSE 0 END)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,               
                             "metric_type": null,
                             "verbose_name": "",
                             "id": 177,
@@ -3726,8 +3684,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(CASE WHEN product_code = 'AA039600' THEN stock_on_hand/6               WHEN product_code = 'AA039900' THEN stock_on_hand/12              WHEN product_code = 'AA040200' THEN stock_on_hand/18               WHEN product_code = 'AA040500' THEN stock_on_hand/24              ELSE stock_on_hand         END)/CASE                     WHEN SUM(CASE WHEN product_code = 'AA039600' THEN amc/6                                    WHEN product_code = 'AA039900' THEN amc/12                                   WHEN product_code = 'AA040200' THEN amc/18                                    WHEN product_code = 'AA040500' THEN amc/24                                   ELSE amc                               END) = 0 THEN 1                     ELSE SUM(CASE WHEN product_code = 'AA039600' THEN amc/6                                    WHEN product_code = 'AA039900' THEN amc/12                                   WHEN product_code = 'AA040200' THEN amc/18                                    WHEN product_code = 'AA040500' THEN amc/24                                   ELSE amc                              END)                     END::INTEGER",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,             
                             "metric_type": null,
                             "verbose_name": " Estimated MOS at SDP\u2019s",
                             "id": 178,
@@ -3748,8 +3705,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(DISTINCT facility_id)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,           
                             "metric_type": null,
                             "verbose_name": "No of HF that reported on the product this period",
                             "id": 180,
@@ -3770,8 +3726,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": " COUNT(DISTINCT CASE                           WHEN stock_on_hand > 0 THEN facility_id                       END)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,    
                             "metric_type": null,
                             "verbose_name": "No of HF that have stock available at the end of the reporting period",
                             "id": 181,
@@ -3792,8 +3747,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(approved_quantity)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                  
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 3,
@@ -3814,8 +3768,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(average_consumption)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                 
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 4,
@@ -3836,8 +3789,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(beginning_balance)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                       
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 5,
@@ -3858,8 +3810,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(calculated_order_quantity)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                      
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 6,
@@ -3880,8 +3831,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(closing_balance)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                      
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 7,
@@ -3902,8 +3852,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "AVG(due_days)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                        
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 10,
@@ -3924,8 +3873,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(price_per_pack)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                        
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 38,
@@ -3946,8 +3894,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(adjusted_consumption)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                      
                             "metric_type": null,
                             "verbose_name": "Adjusted Consumption",
                             "id": 183,
@@ -3968,8 +3915,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(total_cost)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                        
                             "metric_type": null,
                             "verbose_name": "Total Order Cost",
                             "id": 184,
@@ -3990,8 +3936,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "MAX(processing_period_enddate)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                          
                             "metric_type": null,
                             "verbose_name": "Metric",
                             "id": 185,
@@ -4012,8 +3957,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(CASE                                   WHEN stock_on_hand = 0                                  THEN 1                                  ELSE 0                                  END)::NUMERIC/COUNT(*)::NUMERIC",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                       
                             "metric_type": null,
                             "verbose_name": "Proportion of HF with SoH=0 (target 5%)",
                             "id": 186,
@@ -4034,8 +3978,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": " SUM(CASE                                   WHEN MoS >= 1                                   AND MoS <= 3                                  THEN 1                                  ELSE 0                                  END)::NUMERIC/COUNT(*)::NUMERIC",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                
                             "metric_type": null,
                             "verbose_name": "Proportion of HF with MoS>1 & <3 (target 60%) ",
                             "id": 187,
@@ -4056,8 +3999,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(requested_quantity)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,             
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 39,
@@ -4078,8 +4020,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(stock_on_hand)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,             
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 40,
@@ -4100,8 +4041,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(total_consumed_quantity)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                       
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 41,
@@ -4122,8 +4062,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(total_cost)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                        
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 42,
@@ -4144,8 +4083,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(total_losses_and_adjustments)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                          
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 43,
@@ -4166,8 +4104,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(total_received_quantity)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                         
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 44,
@@ -4188,8 +4125,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(total_stockout_days)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                       
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 45,
@@ -4210,8 +4146,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "(SELECT COUNT(DISTINCT facility_id)   FROM (           (SELECT avg(ssac.with_stock_not_issued) as consumption,                   ssac.facility_id             FROM stock_status_and_consumption_2 ssac             WHERE (CASE                 WHEN extract('day'                              from date_trunc('day', current_date) - date_trunc('month', current_date)) + 1 < 15 THEN ssac.processing_period_enddate >= date_trunc('MONTH', current_date) - INTERVAL '7 MONTH + 1 day'                      AND ssac.processing_period_enddate <= date_trunc('MONTH', current_date) - INTERVAL '1 MONTH + 1 day'                 ELSE ssac.processing_period_enddate >= date_trunc('MONTH', current_date) - INTERVAL '6 MONTH + 1 day'                      AND ssac.processing_period_enddate <= date_trunc('MONTH', current_date) - INTERVAL '1 day'                 END)               AND ssac.full_product_name2 = full_product_name              group by ssac.facility_id)) as xx    WHERE xx.consumption = 0)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                   
                             "metric_type": null,
                             "verbose_name": "No of HF with stock but have not issued in last 6 months",
                             "id": 154,
@@ -4232,8 +4167,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(DISTINCT CASE WHEN facility_type_code = 'DHO' THEN facility_id END) ",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                           
                             "metric_type": null,
                             "verbose_name": "Reporting District Hospitals",
                             "id": 162,
@@ -4254,8 +4188,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(DISTINCT CASE WHEN stock_status = 'Stocked Out' THEN facility_id END)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,   
                             "metric_type": null,
                             "verbose_name": "Stocked Out",
                             "id": 163,
@@ -4276,8 +4209,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(CASE WHEN product_code = 'AA039600' THEN stock_on_hand/6               WHEN product_code = 'AA039900' THEN stock_on_hand/12              WHEN product_code = 'AA040200' THEN stock_on_hand/18               WHEN product_code = 'AA040500' THEN stock_on_hand/24              ELSE stock_on_hand         END)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                         
                             "metric_type": null,
                             "verbose_name": "Aggregated stock on hand for reporting facilities",
                             "id": 173,
@@ -4299,7 +4231,7 @@
                             "changed_by_fk": null,
                             "expression": "SUM(CASE WHEN product_code = 'AA039600' THEN amc/6               WHEN product_code = 'AA039900' THEN amc/12              WHEN product_code = 'AA040200' THEN amc/18               WHEN product_code = 'AA040500' THEN amc/24              ELSE amc         END)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": "AMC for reporting facilities",
                             "id": 174,
@@ -4321,7 +4253,7 @@
                             "changed_by_fk": null,
                             "expression": "(SELECT COUNT(DISTINCT facility_id)    FROM (            (SELECT sum(ssac.total_consumed_quantity) as sum_total_consumed_quantity,                    ssac.facility_id             FROM stock_status_and_consumption_2 ssac             WHERE (CASE                        WHEN extract('day'                                     from date_trunc('day', current_date) - date_trunc('month', current_date)) + 1 < 15 THEN ssac.processing_period_enddate >= date_trunc('MONTH', current_date) - INTERVAL '7 MONTH + 1 day'                             AND ssac.processing_period_enddate <= date_trunc('MONTH', current_date) - INTERVAL '1 MONTH + 1 day'                        ELSE ssac.processing_period_enddate >= date_trunc('MONTH', current_date) - INTERVAL '6 MONTH + 1 day'                             AND ssac.processing_period_enddate <= date_trunc('MONTH', current_date) - INTERVAL '1 day'                    END)               AND ssac.full_product_name2 = full_product_name             group by ssac.facility_id)) as xx    WHERE xx.sum_total_consumed_quantity > 0)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": "No of HF that issued the product atleast once in the last 6 months",
                             "id": 179,
@@ -4343,7 +4275,7 @@
                             "changed_by_fk": null,
                             "expression": " COUNT(DISTINCT CASE                           WHEN stock_on_hand = 0 THEN facility_id                       END)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": "No of HF that are out of stock at the end of the reporting period",
                             "id": 182,
@@ -4365,7 +4297,7 @@
                             "changed_by_fk": null,
                             "expression": "SUM(approved_quantity)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 26,
@@ -4387,7 +4319,7 @@
                             "changed_by_fk": null,
                             "expression": "SUM(due_days)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 33,
@@ -4409,7 +4341,7 @@
                             "changed_by_fk": null,
                             "expression": "SUM(late_days)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 34,
@@ -4431,7 +4363,7 @@
                             "changed_by_fk": null,
                             "expression": "SUM(max_periods_of_stock)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 35,
@@ -4453,7 +4385,7 @@
                             "changed_by_fk": null,
                             "expression": "SUM(order_quantity)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 36,
@@ -4475,7 +4407,7 @@
                             "changed_by_fk": null,
                             "expression": "SUM(packs_to_ship)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 37,
@@ -4497,7 +4429,7 @@
                             "changed_by_fk": null,
                             "expression": "COUNT(*)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": "COUNT(*)",
                             "id": 23,
@@ -4519,7 +4451,7 @@
                             "changed_by_fk": null,
                             "expression": "SUM(adjusted_consumption)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 24,
@@ -4541,7 +4473,7 @@
                             "changed_by_fk": null,
                             "expression": "SUM(amc)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": null,
                             "id": 25,
@@ -6937,7 +6869,6 @@
                             "changed_by_fk": null,
                             "expression": "AVG(quantity)",
                             "warning_text": null,
-                            "is_restricted": false,
                             "metric_type": "avg",
                             "verbose_name": null,
                             "id": 46,
@@ -6959,7 +6890,6 @@
                             "changed_by_fk": null,
                             "expression": "AVG(total_losses_and_adjustments)",
                             "warning_text": null,
-                            "is_restricted": false,
                             "metric_type": "avg",
                             "verbose_name": null,
                             "id": 47,
@@ -6981,7 +6911,6 @@
                             "changed_by_fk": null,
                             "expression": "COUNT(*)",
                             "warning_text": null,
-                            "is_restricted": false,
                             "metric_type": "count",
                             "verbose_name": "COUNT(*)",
                             "id": 48,
@@ -7003,7 +6932,6 @@
                             "changed_by_fk": null,
                             "expression": "SUM(quantity)",
                             "warning_text": null,
-                            "is_restricted": false,
                             "metric_type": "sum",
                             "verbose_name": null,
                             "id": 49,
@@ -7025,7 +6953,6 @@
                             "changed_by_fk": null,
                             "expression": "SUM(total_losses_and_adjustments)",
                             "warning_text": null,
-                            "is_restricted": false,
                             "metric_type": "sum",
                             "verbose_name": null,
                             "id": 50,
@@ -7047,7 +6974,7 @@
                             "changed_by_fk": null,
                             "expression": "SUM(total_losses_and_adjustments)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": "Total Losses and Adjustments",
                             "id": 188,
@@ -7069,7 +6996,7 @@
                             "changed_by_fk": null,
                             "expression": "SUM(quantity)",
                             "warning_text": null,
-                            "is_restricted": null,
+                            
                             "metric_type": null,
                             "verbose_name": "Quantity",
                             "id": 189,
@@ -8084,8 +8011,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": 1,
                             "expression": "sum(case when reporting_timeliness = 'Did not report' then 0.0 else 1.0 end) / number_of_facilities_per_district",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,         
                             "metric_type": null,
                             "verbose_name": "Reporting ratio",
                             "id": 200,
@@ -8106,8 +8032,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(CASE WHEN extract('day'                    from date_trunc('week', modified_date) - date_trunc('week', date_trunc('month', modified_date))) / 7 + 1 = 2 THEN 1 ELSE 0 END)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                
                             "metric_type": null,
                             "verbose_name": "week2",
                             "id": 190,
@@ -8128,8 +8053,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(CASE WHEN extract('day'                    from date_trunc('week', modified_date) - date_trunc('week', date_trunc('month', modified_date))) / 7 + 1 = 3 THEN 1 ELSE 0 END)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                   
                             "metric_type": null,
                             "verbose_name": "week3",
                             "id": 191,
@@ -8150,8 +8074,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(CASE WHEN extract('day'                    from date_trunc('week', modified_date) - date_trunc('week', date_trunc('month', modified_date))) / 7 + 1 = 4 THEN 1 ELSE 0 END)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,               
                             "metric_type": null,
                             "verbose_name": "week4",
                             "id": 192,
@@ -8172,8 +8095,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(CASE WHEN extract('day'                    from date_trunc('week', modified_date) - date_trunc('week', date_trunc('month', modified_date))) / 7 + 1 = 5 THEN 1 ELSE 0 END)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                 
                             "metric_type": null,
                             "verbose_name": "week5",
                             "id": 193,
@@ -8194,8 +8116,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "sum(case when reporting_timeliness = 'Did not report' then 0.0 else 1.0 end) / count(*)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                 
                             "metric_type": null,
                             "verbose_name": "rateTrend",
                             "id": 194,
@@ -8216,8 +8137,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "SUM(CASE WHEN extract('day'                    from date_trunc('week', modified_date) - date_trunc('week', date_trunc('month', modified_date))) / 7 + 1 = 1 THEN 1 ELSE 0 END)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                      
                             "metric_type": null,
                             "verbose_name": "week1",
                             "id": 195,
@@ -8238,8 +8158,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "sum(case when reporting_timeliness = 'Did not report' then 0.0 else 1.0 end) / count(*)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                  
                             "metric_type": null,
                             "verbose_name": "Reporting rate percentage ",
                             "id": 196,
@@ -8260,8 +8179,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "sum(case when reporting_timeliness = 'Did not report' then 0.0 else 1.0 end) / count(*) ",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,               
                             "metric_type": null,
                             "verbose_name": "Reporting rate",
                             "id": 197,
@@ -8282,8 +8200,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "sum(case when reporting_timeliness = 'Reported' then 0.0 else 1.0 end) / count(*) ",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                   
                             "metric_type": null,
                             "verbose_name": "No reporting rate",
                             "id": 198,
@@ -8304,8 +8221,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "sum(case when reporting_timeliness = 'Reported' then 0.0 else 1.0 end) / count(*) * 100",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                
                             "metric_type": null,
                             "verbose_name": "No reporting rate percentage ",
                             "id": 199,
@@ -8326,8 +8242,7 @@
                         "__SqlMetric__": {
                             "changed_by_fk": null,
                             "expression": "COUNT(*)",
-                            "warning_text": null,
-                            "is_restricted": null,
+                            "warning_text": null,                   
                             "metric_type": null,
                             "verbose_name": "COUNT(*)",
                             "id": 51,
