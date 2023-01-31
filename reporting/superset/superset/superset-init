@@ -9,7 +9,7 @@ flask fab create-admin $@
 superset db upgrade
 
 #load sample data
-# superset load_examples
+superset load_examples
 
 # Create default roles and permissions
 superset init
