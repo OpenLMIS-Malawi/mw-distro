@@ -100,5 +100,6 @@ SQLLAB_ASYNC_TIME_LIMIT_SEC = 900
 
 # Enable template processing in SQL - among others for {{current_username()}} macro
 FEATURE_FLAGS = {
-    "ENABLE_TEMPLATE_PROCESSING": True
+    "ENABLE_TEMPLATE_PROCESSING": True,
+    "VERSIONED_EXPORT": True
 }
