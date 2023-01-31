@@ -2140,10 +2140,10 @@
                         "__TableColumn__": {
                             "column_name": "code",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -2161,7 +2161,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 326,
                             "python_date_format": null
                         }
@@ -2170,10 +2170,10 @@
                         "__TableColumn__": {
                             "column_name": "comment",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -2191,7 +2191,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 327,
                             "python_date_format": null
                         }
@@ -2200,10 +2200,10 @@
                         "__TableColumn__": {
                             "column_name": "country",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -2221,7 +2221,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 328,
                             "python_date_format": null
                         }
@@ -2230,10 +2230,10 @@
                         "__TableColumn__": {
                             "column_name": "description",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -2251,7 +2251,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 329,
                             "python_date_format": null
                         }
@@ -2260,10 +2260,10 @@
                         "__TableColumn__": {
                             "column_name": "district",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -2281,7 +2281,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 330,
                             "python_date_format": null
                         }
@@ -2290,10 +2290,10 @@
                         "__TableColumn__": {
                             "column_name": "enabled",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -2311,7 +2311,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 331,
                             "python_date_format": null
                         }
@@ -2320,10 +2320,10 @@
                         "__TableColumn__": {
                             "column_name": "extradata",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -2341,7 +2341,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 332,
                             "python_date_format": null
                         }
@@ -2350,10 +2350,10 @@
                         "__TableColumn__": {
                             "column_name": "godowndate",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -2371,7 +2371,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 333,
                             "python_date_format": null
                         }
@@ -2380,10 +2380,10 @@
                         "__TableColumn__": {
                             "column_name": "id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -2401,7 +2401,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 335,
                             "python_date_format": null
                         }
@@ -2410,10 +2410,10 @@
                         "__TableColumn__": {
                             "column_name": "location",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -2431,7 +2431,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 336,
                             "python_date_format": null
                         }
@@ -2440,10 +2440,10 @@
                         "__TableColumn__": {
                             "column_name": "operator_code",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -2461,7 +2461,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 339,
                             "python_date_format": null
                         }
@@ -2470,10 +2470,10 @@
                         "__TableColumn__": {
                             "column_name": "operator_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -2491,7 +2491,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 340,
                             "python_date_format": null
                         }
@@ -2500,10 +2500,10 @@
                         "__TableColumn__": {
                             "column_name": "operator_name",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -2521,7 +2521,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 341,
                             "python_date_format": null
                         }
@@ -2530,10 +2530,10 @@
                         "__TableColumn__": {
                             "column_name": "region",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -2551,7 +2551,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 342,
                             "python_date_format": null
                         }
@@ -2560,10 +2560,10 @@
                         "__TableColumn__": {
                             "column_name": "golivedate",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -2581,7 +2581,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 334,
                             "python_date_format": null
                         }
@@ -2590,10 +2590,10 @@
                         "__TableColumn__": {
                             "column_name": "name",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -2611,7 +2611,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 337,
                             "python_date_format": null
                         }
@@ -2620,10 +2620,10 @@
                         "__TableColumn__": {
                             "column_name": "openlmisaccessible",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -2641,7 +2641,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 338,
                             "python_date_format": null
                         }
@@ -2650,10 +2650,10 @@
                         "__TableColumn__": {
                             "column_name": "status",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -2671,7 +2671,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 343,
                             "python_date_format": null
                         }
@@ -2680,10 +2680,10 @@
                         "__TableColumn__": {
                             "column_name": "type",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -2701,7 +2701,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 344,
                             "python_date_format": null
                         }
@@ -4496,10 +4496,10 @@
                         "__TableColumn__": {
                             "column_name": "total_received_quantity",
                             
-                            "max": null,
+                            
                             "verbose_name": "Total Received Quantity",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4517,7 +4517,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 21,
                             "python_date_format": ""
                         }
@@ -4526,10 +4526,10 @@
                         "__TableColumn__": {
                             "column_name": "total_stockout_days",
                             
-                            "max": null,
+                            
                             "verbose_name": "Total Stockout Days",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4547,7 +4547,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 22,
                             "python_date_format": null
                         }
@@ -4556,10 +4556,10 @@
                         "__TableColumn__": {
                             "column_name": "total_losses_and_adjustments",
                             
-                            "max": null,
+                            
                             "verbose_name": "Total Losses and Adjustments",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4577,7 +4577,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 20,
                             "python_date_format": ""
                         }
@@ -4586,10 +4586,10 @@
                         "__TableColumn__": {
                             "column_name": "order_quantity",
                             
-                            "max": null,
+                            
                             "verbose_name": "Quantity Ordered",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4607,7 +4607,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 13,
                             "python_date_format": ""
                         }
@@ -4616,10 +4616,10 @@
                         "__TableColumn__": {
                             "column_name": "stock_on_hand",
                             
-                            "max": null,
+                            
                             "verbose_name": "Stock on Hand",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4637,7 +4637,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 17,
                             "python_date_format": ""
                         }
@@ -4646,10 +4646,10 @@
                         "__TableColumn__": {
                             "column_name": "total_consumed_quantity",
                             
-                            "max": null,
+                            
                             "verbose_name": "Total Consumed Quantity",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4667,7 +4667,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 18,
                             "python_date_format": null
                         }
@@ -4676,10 +4676,10 @@
                         "__TableColumn__": {
                             "column_name": "max_periods_of_stock",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4697,7 +4697,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 12,
                             "python_date_format": null
                         }
@@ -4706,10 +4706,10 @@
                         "__TableColumn__": {
                             "column_name": "packs_to_ship",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4727,7 +4727,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 14,
                             "python_date_format": null
                         }
@@ -4736,10 +4736,10 @@
                         "__TableColumn__": {
                             "column_name": "price_per_pack",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4757,7 +4757,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 15,
                             "python_date_format": null
                         }
@@ -4766,10 +4766,10 @@
                         "__TableColumn__": {
                             "column_name": "requested_quantity",
                             
-                            "max": null,
+                            
                             "verbose_name": "Requested Quantity",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4787,7 +4787,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 16,
                             "python_date_format": null
                         }
@@ -4796,10 +4796,10 @@
                         "__TableColumn__": {
                             "column_name": "total_cost",
                             
-                            "max": null,
+                            
                             "verbose_name": "Total Cost",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4817,7 +4817,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 19,
                             "python_date_format": ""
                         }
@@ -4826,10 +4826,10 @@
                         "__TableColumn__": {
                             "column_name": "li_req_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4847,7 +4847,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 45,
                             "python_date_format": null
                         }
@@ -4856,10 +4856,10 @@
                         "__TableColumn__": {
                             "column_name": "modified_date",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -4877,7 +4877,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 46,
                             "python_date_format": null
                         }
@@ -4886,10 +4886,10 @@
                         "__TableColumn__": {
                             "column_name": "orderable_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4907,7 +4907,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 47,
                             "python_date_format": null
                         }
@@ -4916,10 +4916,10 @@
                         "__TableColumn__": {
                             "column_name": "username",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4937,7 +4937,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 73,
                             "python_date_format": null
                         }
@@ -4946,10 +4946,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_period_enddate",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -4967,7 +4967,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 48,
                             "python_date_format": null
                         }
@@ -4976,10 +4976,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_period_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -4997,7 +4997,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 49,
                             "python_date_format": null
                         }
@@ -5006,10 +5006,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_period_startdate",
                             
-                            "max": null,
+                            
                             "verbose_name": "Processing Period Start Date",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5027,7 +5027,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 51,
                             "python_date_format": null
                         }
@@ -5036,10 +5036,10 @@
                         "__TableColumn__": {
                             "column_name": "author_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5057,7 +5057,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 23,
                             "python_date_format": null
                         }
@@ -5066,10 +5066,10 @@
                         "__TableColumn__": {
                             "column_name": "country_code",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5087,7 +5087,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 24,
                             "python_date_format": null
                         }
@@ -5096,10 +5096,10 @@
                         "__TableColumn__": {
                             "column_name": "country_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5117,7 +5117,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 25,
                             "python_date_format": null
                         }
@@ -5126,10 +5126,10 @@
                         "__TableColumn__": {
                             "column_name": "district_code",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5147,7 +5147,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 27,
                             "python_date_format": null
                         }
@@ -5156,10 +5156,10 @@
                         "__TableColumn__": {
                             "column_name": "district_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5177,7 +5177,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 28,
                             "python_date_format": null
                         }
@@ -5186,10 +5186,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_code",
                             
-                            "max": null,
+                            
                             "verbose_name": "Facility Code",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5207,7 +5207,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 32,
                             "python_date_format": null
                         }
@@ -5216,10 +5216,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5237,7 +5237,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 33,
                             "python_date_format": null
                         }
@@ -5246,10 +5246,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_operator_code",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5267,7 +5267,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 35,
                             "python_date_format": null
                         }
@@ -5276,10 +5276,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_operator_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5297,7 +5297,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 36,
                             "python_date_format": null
                         }
@@ -5306,10 +5306,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_type_code",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5327,7 +5327,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 39,
                             "python_date_format": null
                         }
@@ -5336,10 +5336,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_schedule_code",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5357,7 +5357,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 52,
                             "python_date_format": null
                         }
@@ -5366,10 +5366,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_schedule_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5387,7 +5387,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 53,
                             "python_date_format": null
                         }
@@ -5396,10 +5396,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_type_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5417,7 +5417,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 40,
                             "python_date_format": null
                         }
@@ -5426,10 +5426,10 @@
                         "__TableColumn__": {
                             "column_name": "id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -5447,7 +5447,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 44,
                             "python_date_format": null
                         }
@@ -5456,10 +5456,10 @@
                         "__TableColumn__": {
                             "column_name": "program_code",
                             
-                            "max": null,
+                            
                             "verbose_name": "Program Code",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5477,7 +5477,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 58,
                             "python_date_format": null
                         }
@@ -5486,10 +5486,10 @@
                         "__TableColumn__": {
                             "column_name": "program_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5507,7 +5507,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 59,
                             "python_date_format": null
                         }
@@ -5516,10 +5516,10 @@
                         "__TableColumn__": {
                             "column_name": "region_code",
                             
-                            "max": null,
+                            
                             "verbose_name": "Region Code",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5537,7 +5537,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 61,
                             "python_date_format": null
                         }
@@ -5546,10 +5546,10 @@
                         "__TableColumn__": {
                             "column_name": "region_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5567,7 +5567,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 62,
                             "python_date_format": null
                         }
@@ -5576,10 +5576,10 @@
                         "__TableColumn__": {
                             "column_name": "req_created_date",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -5597,7 +5597,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 64,
                             "python_date_format": null
                         }
@@ -5606,10 +5606,10 @@
                         "__TableColumn__": {
                             "column_name": "with_stock_not_issued",
                             
-                            "max": null,
+                            
                             "verbose_name": "None",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -5627,7 +5627,7 @@
                                 "__datetime__": "2022-04-11T07:21:07"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 386,
                             "python_date_format": ""
                         }
@@ -5636,10 +5636,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_period_name",
                             
-                            "max": null,
+                            
                             "verbose_name": "Processing Period",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5657,7 +5657,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 50,
                             "python_date_format": ""
                         }
@@ -5666,10 +5666,10 @@
                         "__TableColumn__": {
                             "column_name": "program_name",
                             
-                            "max": null,
+                            
                             "verbose_name": "Program",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5687,7 +5687,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 60,
                             "python_date_format": ""
                         }
@@ -5696,10 +5696,10 @@
                         "__TableColumn__": {
                             "column_name": "req_status",
                             
-                            "max": null,
+                            
                             "verbose_name": "Req Status",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5717,7 +5717,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 65,
                             "python_date_format": ""
                         }
@@ -5726,10 +5726,10 @@
                         "__TableColumn__": {
                             "column_name": "supplying_facility",
                             
-                            "max": null,
+                            
                             "verbose_name": "Supplying Facility",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5747,7 +5747,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 71,
                             "python_date_format": ""
                         }
@@ -5756,10 +5756,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_status",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5777,7 +5777,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 38,
                             "python_date_format": null
                         }
@@ -5786,10 +5786,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_type_name",
                             
-                            "max": null,
+                            
                             "verbose_name": "Facility Type",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5807,7 +5807,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 41,
                             "python_date_format": ""
                         }
@@ -5816,10 +5816,10 @@
                         "__TableColumn__": {
                             "column_name": "facilty_active_status",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5837,7 +5837,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 42,
                             "python_date_format": null
                         }
@@ -5846,10 +5846,10 @@
                         "__TableColumn__": {
                             "column_name": "full_product_name",
                             
-                            "max": null,
+                            
                             "verbose_name": "Full Product Name",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5867,7 +5867,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 43,
                             "python_date_format": ""
                         }
@@ -5876,10 +5876,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_schedule_name",
                             
-                            "max": null,
+                            
                             "verbose_name": "Processing Schedule",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5897,7 +5897,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 54,
                             "python_date_format": ""
                         }
@@ -5906,10 +5906,10 @@
                         "__TableColumn__": {
                             "column_name": "program",
                             
-                            "max": null,
+                            
                             "verbose_name": "Program",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5927,7 +5927,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 56,
                             "python_date_format": ""
                         }
@@ -5936,10 +5936,10 @@
                         "__TableColumn__": {
                             "column_name": "program_active_status",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -5957,7 +5957,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 57,
                             "python_date_format": null
                         }
@@ -5966,10 +5966,10 @@
                         "__TableColumn__": {
                             "column_name": "requisition_line_item_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -5987,7 +5987,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 66,
                             "python_date_format": null
                         }
@@ -5996,10 +5996,10 @@
                         "__TableColumn__": {
                             "column_name": "status_date",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -6017,7 +6017,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 67,
                             "python_date_format": null
                         }
@@ -6026,10 +6026,10 @@
                         "__TableColumn__": {
                             "column_name": "status_req_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6047,7 +6047,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 68,
                             "python_date_format": null
                         }
@@ -6056,10 +6056,10 @@
                         "__TableColumn__": {
                             "column_name": "stock_status",
                             
-                            "max": null,
+                            
                             "verbose_name": "Stock Status",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6077,7 +6077,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 69,
                             "python_date_format": ""
                         }
@@ -6086,10 +6086,10 @@
                         "__TableColumn__": {
                             "column_name": "supervisory_node",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6107,7 +6107,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 70,
                             "python_date_format": null
                         }
@@ -6116,10 +6116,10 @@
                         "__TableColumn__": {
                             "column_name": "trade_item_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6137,7 +6137,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 72,
                             "python_date_format": null
                         }
@@ -6146,10 +6146,10 @@
                         "__TableColumn__": {
                             "column_name": "district_name",
                             
-                            "max": null,
+                            
                             "verbose_name": "District",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6167,7 +6167,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 29,
                             "python_date_format": ""
                         }
@@ -6176,10 +6176,10 @@
                         "__TableColumn__": {
                             "column_name": "emergency_status",
                             
-                            "max": null,
+                            
                             "verbose_name": "Emergency Status",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6197,7 +6197,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 30,
                             "python_date_format": ""
                         }
@@ -6206,10 +6206,10 @@
                         "__TableColumn__": {
                             "column_name": "facility",
                             
-                            "max": null,
+                            
                             "verbose_name": "Facility",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6227,7 +6227,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 31,
                             "python_date_format": ""
                         }
@@ -6236,10 +6236,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_name",
                             
-                            "max": null,
+                            
                             "verbose_name": "Facility",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6257,7 +6257,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 34,
                             "python_date_format": ""
                         }
@@ -6266,10 +6266,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_operator_name",
                             
-                            "max": null,
+                            
                             "verbose_name": "Facility Operator",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6287,7 +6287,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 37,
                             "python_date_format": ""
                         }
@@ -6296,10 +6296,10 @@
                         "__TableColumn__": {
                             "column_name": "country_name",
                             
-                            "max": null,
+                            
                             "verbose_name": "Country",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6317,7 +6317,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 26,
                             "python_date_format": ""
                         }
@@ -6326,10 +6326,10 @@
                         "__TableColumn__": {
                             "column_name": "product_code",
                             
-                            "max": null,
+                            
                             "verbose_name": "Product Code",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6347,7 +6347,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 55,
                             "python_date_format": ""
                         }
@@ -6356,10 +6356,10 @@
                         "__TableColumn__": {
                             "column_name": "region_name",
                             
-                            "max": null,
+                            
                             "verbose_name": "Region",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6377,7 +6377,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 63,
                             "python_date_format": ""
                         }
@@ -6386,10 +6386,10 @@
                         "__TableColumn__": {
                             "column_name": "due_days",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6407,7 +6407,7 @@
                                 "__datetime__": "2023-01-30T11:37:49"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 10,
                             "python_date_format": null
                         }
@@ -6416,10 +6416,10 @@
                         "__TableColumn__": {
                             "column_name": "late_days",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6437,7 +6437,7 @@
                                 "__datetime__": "2023-01-30T11:37:49"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 11,
                             "python_date_format": null
                         }
@@ -6446,10 +6446,10 @@
                         "__TableColumn__": {
                             "column_name": "average_consumption",
                             
-                            "max": null,
+                            
                             "verbose_name": "Average Consumption",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6467,7 +6467,7 @@
                                 "__datetime__": "2023-01-30T11:37:49"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 4,
                             "python_date_format": null
                         }
@@ -6476,10 +6476,10 @@
                         "__TableColumn__": {
                             "column_name": "closing_balance",
                             
-                            "max": null,
+                            
                             "verbose_name": "Closing Balance",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6497,7 +6497,7 @@
                                 "__datetime__": "2023-01-30T11:37:49"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 7,
                             "python_date_format": ""
                         }
@@ -6506,10 +6506,10 @@
                         "__TableColumn__": {
                             "column_name": "approved_quantity",
                             
-                            "max": null,
+                            
                             "verbose_name": "Approved Quantity",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6527,7 +6527,7 @@
                                 "__datetime__": "2023-01-30T11:37:49"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 3,
                             "python_date_format": null
                         }
@@ -6536,10 +6536,10 @@
                         "__TableColumn__": {
                             "column_name": "beginning_balance",
                             
-                            "max": null,
+                            
                             "verbose_name": "Beginning Balance",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6557,7 +6557,7 @@
                                 "__datetime__": "2023-01-30T11:37:49"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 5,
                             "python_date_format": ""
                         }
@@ -6566,10 +6566,10 @@
                         "__TableColumn__": {
                             "column_name": "calculated_order_quantity",
                             
-                            "max": null,
+                            
                             "verbose_name": "Calculated Order Quantity",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6587,7 +6587,7 @@
                                 "__datetime__": "2023-01-30T11:37:49"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 6,
                             "python_date_format": null
                         }
@@ -6596,10 +6596,10 @@
                         "__TableColumn__": {
                             "column_name": "Order Timeliness",
                             
-                            "max": null,
+                            
                             "verbose_name": "Order Timeliness",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -6617,7 +6617,7 @@
                                 "__datetime__": "2022-04-11T07:21:07"
                             },
                             "expression": "CASE            WHEN extract('day'                         from date_trunc('day', modified_date) - date_trunc('month', modified_date)) + 1 <= 10 THEN 'Before 10th'            WHEN extract('day'                         from date_trunc('day', modified_date) - date_trunc('month', modified_date)) + 1 > 10 AND extract('day'                         from date_trunc('day', modified_date) - date_trunc('month', modified_date)) + 1 <=20 THEN 'Between 10th - 20th'            WHEN extract('day'                         from date_trunc('day', modified_date) - date_trunc('month', modified_date)) + 1 > 20 THEN 'After 20th'        END ",
-                            "avg": null,
+                            
                             "id": 387,
                             "python_date_format": null
                         }
@@ -6626,10 +6626,10 @@
                         "__TableColumn__": {
                             "column_name": "Period",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -6647,7 +6647,7 @@
                                 "__datetime__": "2022-04-11T07:21:07"
                             },
                             "expression": "to_char(processing_period_enddate, 'Month YYYY')",
-                            "avg": null,
+                            
                             "id": 388,
                             "python_date_format": null
                         }
@@ -6656,10 +6656,10 @@
                         "__TableColumn__": {
                             "column_name": "Date",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6677,7 +6677,7 @@
                                 "__datetime__": "2022-04-11T07:21:07"
                             },
                             "expression": "to_char(processing_period_enddate, 'Month YYYY')",
-                            "avg": null,
+                            
                             "id": 389,
                             "python_date_format": null
                         }
@@ -6686,10 +6686,10 @@
                         "__TableColumn__": {
                             "column_name": "malawi_program",
                             
-                            "max": null,
+                            
                             "verbose_name": "Malawi Program",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6707,7 +6707,7 @@
                                 "__datetime__": "2022-04-11T07:21:07"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 390,
                             "python_date_format": ""
                         }
@@ -6716,10 +6716,10 @@
                         "__TableColumn__": {
                             "column_name": "combined_stockout",
                             
-                            "max": null,
+                            
                             "verbose_name": "Combined Stockout",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6737,7 +6737,7 @@
                                 "__datetime__": "2023-01-30T11:37:49"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 8,
                             "python_date_format": null
                         }
@@ -6746,10 +6746,10 @@
                         "__TableColumn__": {
                             "column_name": "adjusted_consumption",
                             
-                            "max": null,
+                            
                             "verbose_name": "Adjusted Consumption",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6767,7 +6767,7 @@
                                 "__datetime__": "2023-01-30T11:37:49"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 1,
                             "python_date_format": ""
                         }
@@ -6776,10 +6776,10 @@
                         "__TableColumn__": {
                             "column_name": "amc",
                             
-                            "max": null,
+                            
                             "verbose_name": "AMC",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6797,7 +6797,7 @@
                                 "__datetime__": "2023-01-30T11:37:49"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 2,
                             "python_date_format": ""
                         }
@@ -6806,10 +6806,10 @@
                         "__TableColumn__": {
                             "column_name": "consumption",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -6827,7 +6827,7 @@
                                 "__datetime__": "2023-01-30T11:37:49"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 9,
                             "python_date_format": null
                         }
@@ -7019,10 +7019,10 @@
                         "__TableColumn__": {
                             "column_name": "adjustment_lines_id",
                             
-                            "max": false,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7040,7 +7040,7 @@
                                 "__datetime__": "2022-04-08T07:39:49"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 76,
                             "python_date_format": null
                         }
@@ -7049,10 +7049,10 @@
                         "__TableColumn__": {
                             "column_name": "author_id",
                             
-                            "max": false,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7070,7 +7070,7 @@
                                 "__datetime__": "2022-04-08T07:39:49"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 77,
                             "python_date_format": null
                         }
@@ -7079,10 +7079,10 @@
                         "__TableColumn__": {
                             "column_name": "emergency_status",
                             
-                            "max": false,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -7100,7 +7100,7 @@
                                 "__datetime__": "2022-04-08T07:39:49"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 81,
                             "python_date_format": null
                         }
@@ -7109,10 +7109,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_operator_name",
                             
-                            "max": false,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7130,7 +7130,7 @@
                                 "__datetime__": "2022-04-08T07:39:49"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 84,
                             "python_date_format": null
                         }
@@ -7139,10 +7139,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_period_enddate",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7160,7 +7160,7 @@
                                 "__datetime__": "2022-04-11T07:21:07"
                             },
                             "expression": "DATE_TRUNC('month', TO_DATE(processing_period_name, 'MonYYYY')) + INTERVAL '1 Month - 1 Second'",
-                            "avg": null,
+                            
                             "id": 391,
                             "python_date_format": null
                         }
@@ -7169,10 +7169,10 @@
                         "__TableColumn__": {
                             "column_name": "facilty_active_status",
                             
-                            "max": false,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -7190,7 +7190,7 @@
                                 "__datetime__": "2022-04-08T07:39:49"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 86,
                             "python_date_format": null
                         }
@@ -7199,10 +7199,10 @@
                         "__TableColumn__": {
                             "column_name": "orderable_id",
                             
-                            "max": false,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7220,7 +7220,7 @@
                                 "__datetime__": "2022-04-08T07:39:50"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 89,
                             "python_date_format": null
                         }
@@ -7229,10 +7229,10 @@
                         "__TableColumn__": {
                             "column_name": "program_active_status",
                             
-                            "max": false,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -7250,7 +7250,7 @@
                                 "__datetime__": "2022-04-08T07:39:50"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 93,
                             "python_date_format": null
                         }
@@ -7259,10 +7259,10 @@
                         "__TableColumn__": {
                             "column_name": "status_history_created_date",
                             
-                            "max": false,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -7280,7 +7280,7 @@
                                 "__datetime__": "2022-04-08T07:39:50"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 99,
                             "python_date_format": null
                         }
@@ -7289,10 +7289,10 @@
                         "__TableColumn__": {
                             "column_name": "supervisory_node",
                             
-                            "max": false,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7310,7 +7310,7 @@
                                 "__datetime__": "2022-04-08T07:39:50"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 101,
                             "python_date_format": null
                         }
@@ -7319,10 +7319,10 @@
                         "__TableColumn__": {
                             "column_name": "trade_item_id",
                             
-                            "max": false,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7340,7 +7340,7 @@
                                 "__datetime__": "2022-04-08T07:39:50"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 102,
                             "python_date_format": null
                         }
@@ -7349,10 +7349,10 @@
                         "__TableColumn__": {
                             "column_name": "program",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7370,7 +7370,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 92,
                             "python_date_format": null
                         }
@@ -7379,10 +7379,10 @@
                         "__TableColumn__": {
                             "column_name": "username",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7400,7 +7400,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 103,
                             "python_date_format": null
                         }
@@ -7409,10 +7409,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_period_name",
                             
-                            "max": false,
+                            
                             "verbose_name": "Processing Period",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7430,7 +7430,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 90,
                             "python_date_format": null
                         }
@@ -7439,10 +7439,10 @@
                         "__TableColumn__": {
                             "column_name": "product_code",
                             
-                            "max": false,
+                            
                             "verbose_name": "Product Code",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7460,7 +7460,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 91,
                             "python_date_format": null
                         }
@@ -7469,10 +7469,10 @@
                         "__TableColumn__": {
                             "column_name": "program_name",
                             
-                            "max": false,
+                            
                             "verbose_name": "Program",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7490,7 +7490,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 94,
                             "python_date_format": null
                         }
@@ -7499,10 +7499,10 @@
                         "__TableColumn__": {
                             "column_name": "region_name",
                             
-                            "max": false,
+                            
                             "verbose_name": "Region",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7520,7 +7520,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 95,
                             "python_date_format": null
                         }
@@ -7529,10 +7529,10 @@
                         "__TableColumn__": {
                             "column_name": "status",
                             
-                            "max": false,
+                            
                             "verbose_name": "Status",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7550,7 +7550,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 98,
                             "python_date_format": null
                         }
@@ -7559,10 +7559,10 @@
                         "__TableColumn__": {
                             "column_name": "facility",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7580,7 +7580,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 82,
                             "python_date_format": null
                         }
@@ -7589,10 +7589,10 @@
                         "__TableColumn__": {
                             "column_name": "quantity",
                             
-                            "max": false,
+                            
                             "verbose_name": "Quantity",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -7619,10 +7619,10 @@
                         "__TableColumn__": {
                             "column_name": "total_losses_and_adjustments",
                             
-                            "max": false,
+                            
                             "verbose_name": "Total Losses and Adjustments",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -7649,10 +7649,10 @@
                         "__TableColumn__": {
                             "column_name": "country_name",
                             
-                            "max": false,
+                            
                             "verbose_name": "Country",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7670,7 +7670,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 78,
                             "python_date_format": null
                         }
@@ -7679,10 +7679,10 @@
                         "__TableColumn__": {
                             "column_name": "district_name",
                             
-                            "max": false,
+                            
                             "verbose_name": "District",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7700,7 +7700,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 80,
                             "python_date_format": null
                         }
@@ -7709,10 +7709,10 @@
                         "__TableColumn__": {
                             "column_name": "stock_adjustment_reason",
                             
-                            "max": false,
+                            
                             "verbose_name": "Stock Adjustment Reason",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7730,7 +7730,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 100,
                             "python_date_format": null
                         }
@@ -7739,10 +7739,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_name",
                             
-                            "max": false,
+                            
                             "verbose_name": "Facility",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7760,7 +7760,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 83,
                             "python_date_format": null
                         }
@@ -7769,10 +7769,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_type_name",
                             
-                            "max": false,
+                            
                             "verbose_name": "Facility Type",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7790,7 +7790,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 85,
                             "python_date_format": null
                         }
@@ -7799,10 +7799,10 @@
                         "__TableColumn__": {
                             "column_name": "full_product_name",
                             
-                            "max": false,
+                            
                             "verbose_name": "Full Product Name",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -7820,7 +7820,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 87,
                             "python_date_format": null
                         }
@@ -7829,10 +7829,10 @@
                         "__TableColumn__": {
                             "column_name": "created_date",
                             
-                            "max": false,
+                            
                             "verbose_name": "Created Date",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -7850,7 +7850,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 79,
                             "python_date_format": ""
                         }
@@ -7859,10 +7859,10 @@
                         "__TableColumn__": {
                             "column_name": "requisition_line_item_id",
                             
-                            "max": false,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -7880,7 +7880,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 97,
                             "python_date_format": null
                         }
@@ -7889,10 +7889,10 @@
                         "__TableColumn__": {
                             "column_name": "modified_date",
                             
-                            "max": false,
+                            
                             "verbose_name": "Modified Date",
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -7910,7 +7910,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 88,
                             "python_date_format": ""
                         }
@@ -7919,10 +7919,10 @@
                         "__TableColumn__": {
                             "column_name": "requisition_id",
                             
-                            "max": false,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": false,
+                            
                             "is_active": true,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -7940,7 +7940,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": false,
+                            
                             "id": 96,
                             "python_date_format": null
                         }
@@ -8265,10 +8265,10 @@
                         "__TableColumn__": {
                             "column_name": "Not Reported",
                             
-                            "max": null,
+                            
                             "verbose_name": "Not Reported",
                             "created_by_fk": 1,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": 1,
                             "filterable": true,
@@ -8286,7 +8286,7 @@
                                 "__datetime__": "2022-06-03T10:22:19"
                             },
                             "expression": "case when reporting_timeliness = 'Did not report' and (processing_period_enddate >= current_date - INTERVAL '1 month' or processing_period_enddate is null) then 'Did not report' end",
-                            "avg": null,
+                            
                             "id": 405,
                             "python_date_format": null
                         }
@@ -8295,10 +8295,10 @@
                         "__TableColumn__": {
                             "column_name": "Reported",
                             
-                            "max": null,
+                            
                             "verbose_name": "Reported",
                             "created_by_fk": 1,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": 1,
                             "filterable": true,
@@ -8316,7 +8316,7 @@
                                 "__datetime__": "2022-06-03T10:44:21"
                             },
                             "expression": "case when reporting_timeliness = 'Reported' and (processing_period_enddate >= current_date - INTERVAL '1 month') then 'Reported' when reporting_timeliness = 'Did not report' and (processing_period_enddate >= current_date - INTERVAL '1 month' or processing_period_enddate is null) then 'Did not report' end",
-                            "avg": null,
+                            
                             "id": 404,
                             "python_date_format": null
                         }
@@ -8325,10 +8325,10 @@
                         "__TableColumn__": {
                             "column_name": "malawi_program",
                             
-                            "max": null,
+                            
                             "verbose_name": "Malawi Program",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8346,7 +8346,7 @@
                                 "__datetime__": "2022-05-12T08:14:15"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 395,
                             "python_date_format": ""
                         }
@@ -8355,10 +8355,10 @@
                         "__TableColumn__": {
                             "column_name": "facility",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8376,7 +8376,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 108,
                             "python_date_format": null
                         }
@@ -8385,10 +8385,10 @@
                         "__TableColumn__": {
                             "column_name": "program",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8406,7 +8406,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 121,
                             "python_date_format": null
                         }
@@ -8415,10 +8415,10 @@
                         "__TableColumn__": {
                             "column_name": "username",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8436,7 +8436,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 133,
                             "python_date_format": null
                         }
@@ -8445,10 +8445,10 @@
                         "__TableColumn__": {
                             "column_name": "country",
                             
-                            "max": null,
+                            
                             "verbose_name": "Country",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8466,7 +8466,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 104,
                             "python_date_format": ""
                         }
@@ -8475,10 +8475,10 @@
                         "__TableColumn__": {
                             "column_name": "district",
                             
-                            "max": null,
+                            
                             "verbose_name": "District",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8496,7 +8496,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 106,
                             "python_date_format": ""
                         }
@@ -8505,10 +8505,10 @@
                         "__TableColumn__": {
                             "column_name": "emergency_status",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8526,7 +8526,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 107,
                             "python_date_format": null
                         }
@@ -8535,10 +8535,10 @@
                         "__TableColumn__": {
                             "column_name": "name",
                             
-                            "max": null,
+                            
                             "verbose_name": "Facility",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8556,7 +8556,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 113,
                             "python_date_format": ""
                         }
@@ -8565,10 +8565,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_period_name",
                             
-                            "max": null,
+                            
                             "verbose_name": "Processing Period",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8586,7 +8586,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 117,
                             "python_date_format": ""
                         }
@@ -8595,10 +8595,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_schedule_name",
                             
-                            "max": null,
+                            
                             "verbose_name": "Processing Schedule",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8616,7 +8616,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 119,
                             "python_date_format": ""
                         }
@@ -8625,10 +8625,10 @@
                         "__TableColumn__": {
                             "column_name": "region",
                             
-                            "max": null,
+                            
                             "verbose_name": "Region",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8646,7 +8646,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 125,
                             "python_date_format": ""
                         }
@@ -8655,10 +8655,10 @@
                         "__TableColumn__": {
                             "column_name": "reporting_timeliness",
                             
-                            "max": null,
+                            
                             "verbose_name": "Reporting Timeliness",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8676,7 +8676,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 126,
                             "python_date_format": ""
                         }
@@ -8685,10 +8685,10 @@
                         "__TableColumn__": {
                             "column_name": "supported_program_active",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8706,7 +8706,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 131,
                             "python_date_format": null
                         }
@@ -8715,10 +8715,10 @@
                         "__TableColumn__": {
                             "column_name": "type",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8736,7 +8736,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 132,
                             "python_date_format": null
                         }
@@ -8745,10 +8745,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_active_status",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -8766,7 +8766,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 109,
                             "python_date_format": null
                         }
@@ -8775,10 +8775,10 @@
                         "__TableColumn__": {
                             "column_name": "facility_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8796,7 +8796,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 110,
                             "python_date_format": null
                         }
@@ -8805,10 +8805,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_period_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8826,7 +8826,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 116,
                             "python_date_format": null
                         }
@@ -8835,10 +8835,10 @@
                         "__TableColumn__": {
                             "column_name": "program_active_status",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -8856,7 +8856,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 122,
                             "python_date_format": null
                         }
@@ -8865,10 +8865,10 @@
                         "__TableColumn__": {
                             "column_name": "program_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8886,7 +8886,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 123,
                             "python_date_format": null
                         }
@@ -8895,10 +8895,10 @@
                         "__TableColumn__": {
                             "column_name": "operator_name",
                             
-                            "max": null,
+                            
                             "verbose_name": "Operator",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8916,7 +8916,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 114,
                             "python_date_format": null
                         }
@@ -8925,10 +8925,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_period_startdate",
                             
-                            "max": null,
+                            
                             "verbose_name": "Processing Period Start Date",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8946,7 +8946,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 118,
                             "python_date_format": null
                         }
@@ -8955,10 +8955,10 @@
                         "__TableColumn__": {
                             "column_name": "program_name",
                             
-                            "max": null,
+                            
                             "verbose_name": "Program",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -8976,7 +8976,7 @@
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 124,
                             "python_date_format": null
                         }
@@ -8985,10 +8985,10 @@
                         "__TableColumn__": {
                             "column_name": "Number of facilities per district",
                             
-                            "max": null,
+                            
                             "verbose_name": "Number of facilities per district",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -9006,7 +9006,7 @@
                                 "__datetime__": "2022-06-07T07:47:10"
                             },
                             "expression": "select distinct (facility_id) from reporting_rate_and_timeliness rrat",
-                            "avg": null,
+                            
                             "id": 406,
                             "python_date_format": null
                         }
@@ -9015,10 +9015,10 @@
                         "__TableColumn__": {
                             "column_name": "Processing Period End Date calculated",
                             
-                            "max": null,
+                            
                             "verbose_name": "Processing Period End Date calculated",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -9036,7 +9036,7 @@
                                 "__datetime__": "2022-06-07T07:47:10"
                             },
                             "expression": "case when processing_period_enddate notnull then processing_period_enddate else current_date end",
-                            "avg": null,
+                            
                             "id": 407,
                             "python_date_format": null
                         }
@@ -9045,10 +9045,10 @@
                         "__TableColumn__": {
                             "column_name": "ReportedLastMonth",
                             
-                            "max": null,
+                            
                             "verbose_name": "ReportedLastMonth",
                             "created_by_fk": 1,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": 1,
                             "filterable": true,
@@ -9066,7 +9066,7 @@
                                 "__datetime__": "2022-07-06T05:52:02"
                             },
                             "expression": "CASE WHEN reporting_timeliness = 'Reported' and modified_date between (now()-interval '2 month') and (now()-interval '1 month') THEN 1 ELSE 0 END",
-                            "avg": null,
+                            
                             "id": 409,
                             "python_date_format": null
                         }
@@ -9075,10 +9075,10 @@
                         "__TableColumn__": {
                             "column_name": "created_date",
                             
-                            "max": null,
+                            
                             "verbose_name": "Created Date",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -9096,7 +9096,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 105,
                             "python_date_format": null
                         }
@@ -9105,10 +9105,10 @@
                         "__TableColumn__": {
                             "column_name": "modified_date",
                             
-                            "max": null,
+                            
                             "verbose_name": "Modified Date",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -9126,7 +9126,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 112,
                             "python_date_format": null
                         }
@@ -9135,10 +9135,10 @@
                         "__TableColumn__": {
                             "column_name": "number_of_facilities_per_district",
                             
-                            "max": null,
+                            
                             "verbose_name": "Number of facilities per district",
                             "created_by_fk": 1,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": 1,
                             "filterable": true,
@@ -9156,7 +9156,7 @@
                                 "__datetime__": "2022-06-03T08:49:43"
                             },
                             "expression": "select distinct (facility_id) from reporting_rate_and_timeliness rrat",
-                            "avg": null,
+                            
                             "id": 401,
                             "python_date_format": null
                         }
@@ -9165,10 +9165,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_period_enddate",
                             
-                            "max": null,
+                            
                             "verbose_name": "Processing Period End Date",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -9186,7 +9186,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 115,
                             "python_date_format": null
                         }
@@ -9195,10 +9195,10 @@
                         "__TableColumn__": {
                             "column_name": "processing_period_enddate_year",
                             
-                            "max": null,
+                            
                             "verbose_name": "processing_period_enddate_year",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -9216,7 +9216,7 @@
                                 "__datetime__": "2022-04-11T07:21:07"
                             },
                             "expression": "CAST(EXTRACT('year' FROM processing_period_enddate) AS int)",
-                            "avg": null,
+                            
                             "id": 392,
                             "python_date_format": null
                         }
@@ -9225,10 +9225,10 @@
                         "__TableColumn__": {
                             "column_name": "Last Reporting Period",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -9246,7 +9246,7 @@
                                 "__datetime__": "2022-04-11T07:21:07"
                             },
                             "expression": "(SELECT MAX(t.processing_period_name) FROM reporting_rate_and_timeliness t where t.facility_id = facility_id AND t.reporting_timeliness = 'Reported') ",
-                            "avg": null,
+                            
                             "id": 393,
                             "python_date_format": null
                         }
@@ -9255,10 +9255,10 @@
                         "__TableColumn__": {
                             "column_name": "Timeliness of District Reports",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -9276,7 +9276,7 @@
                                 "__datetime__": "2022-04-11T07:21:07"
                             },
                             "expression": "CASE            WHEN extract('day'                         from date_trunc('day', modified_date) - date_trunc('month', modified_date)) + 1 <= 15 THEN 'Before 15th'            WHEN extract('day'                         from date_trunc('day', modified_date) - date_trunc('month', modified_date)) + 1 > 15 AND extract('day'                         from date_trunc('day', modified_date) - date_trunc('month', modified_date)) + 1 <=20 THEN 'Between 16th - 20th'            WHEN extract('day'                         from date_trunc('day', modified_date) - date_trunc('month', modified_date)) + 1 > 20 THEN 'After 20th'        END ",
-                            "avg": null,
+                            
                             "id": 394,
                             "python_date_format": null
                         }
@@ -9285,10 +9285,10 @@
                         "__TableColumn__": {
                             "column_name": "Enddate",
                             
-                            "max": null,
+                            
                             "verbose_name": "Enddate",
                             "created_by_fk": 1,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": 1,
                             "filterable": true,
@@ -9306,7 +9306,7 @@
                                 "__datetime__": "2022-06-03T10:39:56"
                             },
                             "expression": "CASE WHEN processing_period_enddate IS NULL THEN (current_date - INTERVAL '25 day') ELSE processing_period_enddate END",
-                            "avg": null,
+                            
                             "id": 398,
                             "python_date_format": ""
                         }
@@ -9315,10 +9315,10 @@
                         "__TableColumn__": {
                             "column_name": "startdate",
                             
-                            "max": null,
+                            
                             "verbose_name": "Start Date",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -9336,7 +9336,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 129,
                             "python_date_format": null
                         }
@@ -9345,10 +9345,10 @@
                         "__TableColumn__": {
                             "column_name": "supported_program",
                             
-                            "max": null,
+                            
                             "verbose_name": "Supported Program",
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -9366,7 +9366,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 130,
                             "python_date_format": null
                         }
@@ -9375,10 +9375,10 @@
                         "__TableColumn__": {
                             "column_name": "req_id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -9396,7 +9396,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 127,
                             "python_date_format": null
                         }
@@ -9405,10 +9405,10 @@
                         "__TableColumn__": {
                             "column_name": "requisitiongroupid",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -9426,7 +9426,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 128,
                             "python_date_format": null
                         }
@@ -9435,10 +9435,10 @@
                         "__TableColumn__": {
                             "column_name": "processingscheduleid",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": true,
@@ -9456,7 +9456,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 120,
                             "python_date_format": null
                         }
@@ -9465,10 +9465,10 @@
                         "__TableColumn__": {
                             "column_name": "id",
                             
-                            "max": null,
+                            
                             "verbose_name": null,
                             "created_by_fk": null,
-                            "min": null,
+                            
                             "is_active": null,
                             "changed_by_fk": null,
                             "filterable": false,
@@ -9486,7 +9486,7 @@
                                 "__datetime__": "2023-01-30T11:37:48"
                             },
                             "expression": "",
-                            "avg": null,
+                            
                             "id": 111,
                             "python_date_format": null
                         }
