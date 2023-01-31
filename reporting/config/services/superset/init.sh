@@ -30,4 +30,4 @@ superset db upgrade &&
 superset import_datasources -p $CONFIG_DIR/datasources/database.yaml &&
 superset init &&
 
-gunicorn -w 2 --timeout 900 -b 0.0.0.0:8088 --reload --limit-request-line 0 --limit-request-field_size 0 superset:app
+gunicorn -w 2 --timeout 60 -b 0.0.0.0:8088 --reload --limit-request-line 0 --limit-request-field_size 0 "superset.app:create_app()"
