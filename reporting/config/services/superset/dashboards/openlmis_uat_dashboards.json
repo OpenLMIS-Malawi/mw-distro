@@ -8083,28 +8083,6 @@
                     {
                         "__SqlMetric__": {
                             "changed_by_fk": 1,
-                            "expression": "",
-                            "warning_text": null,
-                            "is_restricted": null,
-                            "metric_type": null,
-                            "verbose_name": "",
-                            "id": 201,
-                            "created_on": {
-                                "__datetime__": "2022-06-03T08:47:09"
-                            },
-                            "created_by_fk": 1,
-                            "table_id": 3,
-                            "d3format": null,
-                            "description": null,
-                            "metric_name": "<new metric>",
-                            "changed_on": {
-                                "__datetime__": "2022-06-03T08:47:49"
-                            }
-                        }
-                    },
-                    {
-                        "__SqlMetric__": {
-                            "changed_by_fk": 1,
                             "expression": "sum(case when reporting_timeliness = 'Did not report' then 0.0 else 1.0 end) / number_of_facilities_per_district",
                             "warning_text": null,
                             "is_restricted": null,
