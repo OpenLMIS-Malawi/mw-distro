@@ -2085,7 +2085,6 @@
     "datasources": [
         {
             "__SqlaTable__": {
-                "user_id": null,
                 "offset": 0,
                 "created_on": {
                     "__datetime__": "2022-04-08T07:39:52"
@@ -2741,7 +2740,6 @@
         },
         {
             "__SqlaTable__": {
-                "user_id": null,
                 "offset": 0,
                 "created_on": {
                     "__datetime__": "2022-04-08T07:39:49"
@@ -6837,7 +6835,6 @@
         },
         {
             "__SqlaTable__": {
-                "user_id": null,
                 "offset": 0,
                 "created_on": {
                     "__datetime__": "2022-04-08T07:39:49"
@@ -7978,7 +7975,6 @@
         },
         {
             "__SqlaTable__": {
-                "user_id": null,
                 "offset": 0,
                 "created_on": {
                     "__datetime__": "2022-04-08T07:39:50"
