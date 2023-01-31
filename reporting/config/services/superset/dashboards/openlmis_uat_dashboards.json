@@ -2154,7 +2154,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2184,7 +2184,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2214,7 +2214,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2244,7 +2244,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2274,7 +2274,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2304,7 +2304,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2334,7 +2334,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2364,7 +2364,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2394,7 +2394,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2424,7 +2424,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2454,7 +2454,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2484,7 +2484,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2514,7 +2514,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2544,7 +2544,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2574,7 +2574,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2604,7 +2604,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2634,7 +2634,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2664,7 +2664,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -2694,7 +2694,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 30,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4510,7 +4510,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4540,7 +4540,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4570,7 +4570,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4600,7 +4600,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4630,7 +4630,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4660,7 +4660,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4690,7 +4690,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4720,7 +4720,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4750,7 +4750,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4780,7 +4780,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4810,7 +4810,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4840,7 +4840,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4870,7 +4870,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": true,
                             "sum": null,
                             "changed_on": {
@@ -4900,7 +4900,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4930,7 +4930,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -4960,7 +4960,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": true,
                             "sum": null,
                             "changed_on": {
@@ -4990,7 +4990,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5020,7 +5020,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5050,7 +5050,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5080,7 +5080,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5110,7 +5110,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5140,7 +5140,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5170,7 +5170,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5200,7 +5200,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5230,7 +5230,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5260,7 +5260,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5290,7 +5290,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5320,7 +5320,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5350,7 +5350,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5380,7 +5380,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5410,7 +5410,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5440,7 +5440,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5470,7 +5470,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5500,7 +5500,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5530,7 +5530,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5560,7 +5560,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5590,7 +5590,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": true,
                             "sum": null,
                             "changed_on": {
@@ -5620,7 +5620,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5650,7 +5650,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5680,7 +5680,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5710,7 +5710,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5740,7 +5740,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5770,7 +5770,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5800,7 +5800,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5830,7 +5830,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5860,7 +5860,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5890,7 +5890,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5920,7 +5920,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5950,7 +5950,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -5980,7 +5980,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6010,7 +6010,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": true,
                             "sum": null,
                             "changed_on": {
@@ -6040,7 +6040,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6070,7 +6070,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6100,7 +6100,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6130,7 +6130,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6160,7 +6160,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6190,7 +6190,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6220,7 +6220,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6250,7 +6250,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6280,7 +6280,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6310,7 +6310,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6340,7 +6340,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6370,7 +6370,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6400,7 +6400,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6430,7 +6430,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6460,7 +6460,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6490,7 +6490,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6520,7 +6520,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6550,7 +6550,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6580,7 +6580,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6610,7 +6610,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6640,7 +6640,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": null,
                             "sum": null,
                             "changed_on": {
@@ -6670,7 +6670,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": null,
                             "sum": null,
                             "changed_on": {
@@ -6700,7 +6700,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6730,7 +6730,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6760,7 +6760,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6790,7 +6790,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -6820,7 +6820,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 1,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -7033,7 +7033,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7063,7 +7063,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7093,7 +7093,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7123,7 +7123,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7153,7 +7153,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": null,
+                            
                             "is_dttm": true,
                             "sum": null,
                             "changed_on": {
@@ -7183,7 +7183,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7213,7 +7213,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7243,7 +7243,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7273,7 +7273,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": true,
                             "sum": false,
                             "changed_on": {
@@ -7303,7 +7303,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7333,7 +7333,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7363,7 +7363,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -7393,7 +7393,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -7423,7 +7423,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7453,7 +7453,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7483,7 +7483,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7513,7 +7513,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7543,7 +7543,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7573,7 +7573,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -7603,14 +7603,13 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": true,
                             "changed_on": {
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": true,
                             "id": 74,
                             "python_date_format": null
                         }
@@ -7633,14 +7632,13 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": true,
                             "changed_on": {
                                 "__datetime__": "2022-04-08T07:39:57"
                             },
                             "expression": "",
-                            "avg": true,
                             "id": 75,
                             "python_date_format": null
                         }
@@ -7663,7 +7661,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7693,7 +7691,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7723,7 +7721,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7753,7 +7751,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7783,7 +7781,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7813,7 +7811,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7843,7 +7841,7 @@
                             "description": "",
                             "groupby": false,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": true,
                             "sum": false,
                             "changed_on": {
@@ -7873,7 +7871,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -7903,7 +7901,7 @@
                             "description": "",
                             "groupby": false,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": true,
                             "sum": false,
                             "changed_on": {
@@ -7933,7 +7931,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 2,
-                            "count_distinct": false,
+                            
                             "is_dttm": false,
                             "sum": false,
                             "changed_on": {
@@ -8279,7 +8277,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": null,
                             "sum": null,
                             "changed_on": {
@@ -8309,7 +8307,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": null,
                             "sum": null,
                             "changed_on": {
@@ -8339,7 +8337,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8369,7 +8367,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8399,7 +8397,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8429,7 +8427,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8459,7 +8457,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8489,7 +8487,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8519,7 +8517,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8549,7 +8547,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8579,7 +8577,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8609,7 +8607,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8639,7 +8637,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8669,7 +8667,7 @@
                             "description": "",
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8699,7 +8697,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8729,7 +8727,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8759,7 +8757,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8789,7 +8787,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8819,7 +8817,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8849,7 +8847,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8879,7 +8877,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8909,7 +8907,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8939,7 +8937,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8969,7 +8967,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -8999,7 +8997,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": null,
                             "sum": null,
                             "changed_on": {
@@ -9029,7 +9027,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": true,
                             "sum": null,
                             "changed_on": {
@@ -9059,7 +9057,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": null,
                             "sum": null,
                             "changed_on": {
@@ -9089,7 +9087,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -9119,7 +9117,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -9149,7 +9147,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": null,
                             "sum": null,
                             "changed_on": {
@@ -9179,7 +9177,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -9209,7 +9207,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -9239,7 +9237,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -9269,7 +9267,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -9299,7 +9297,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -9329,7 +9327,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -9359,7 +9357,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -9389,7 +9387,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -9419,7 +9417,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -9449,7 +9447,7 @@
                             "description": null,
                             "groupby": true,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
@@ -9479,7 +9477,7 @@
                             "description": null,
                             "groupby": false,
                             "table_id": 3,
-                            "count_distinct": null,
+                            
                             "is_dttm": false,
                             "sum": null,
                             "changed_on": {
