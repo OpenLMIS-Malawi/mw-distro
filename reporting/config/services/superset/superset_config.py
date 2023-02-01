@@ -47,7 +47,7 @@ OAUTH_PROVIDERS = [
             },
             'api_base_url': '%s/api/oauth' % os.environ['OL_BASE_URL'],
             'access_token_url': '%s/api/oauth/token?grant_type=authorization_code' % os.environ['OL_BASE_URL'],
-            'authorize_url': '%s/api/oauth/authorize?' % os.environ['OL_BASE_URL'],
+            'authorize_url': '%s/api/oauth/authorize?redirect_uri=https%3A%2F%2Freporting-lmis-uat.health.gov.mw%2Foauth-authorized%2Fopenlmis&' % os.environ['OL_BASE_URL'],
             'custom_redirect_url': '%s/oauth-authorized/openlmis?' % os.environ['SUPERSET_URL'],
         }
     }
