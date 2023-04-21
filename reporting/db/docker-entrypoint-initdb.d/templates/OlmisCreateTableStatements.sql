@@ -55,8 +55,7 @@ CREATE TABLE facilities (
     comment text,
     description text,
     extradata json,
-    location character varying(255),
-    supported_program_id character varying(255)
+    location character varying(255)
 );
 
 
