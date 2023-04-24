@@ -37,7 +37,7 @@ ALTER TABLE commodity_types OWNER TO postgres;
 --
 
 CREATE TABLE facilities (
-    id varchar NOT NULL UNIQUE,
+    id varchar NOT NULL,
     code character varying(255),
     name character varying(255),
     status boolean,
