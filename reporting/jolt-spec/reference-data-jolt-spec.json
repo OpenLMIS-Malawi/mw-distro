@@ -1,8 +1,8 @@
 [
     {
-      "endpoint": "facilities",
+      "endpoint": "facilities/full",
       "table": "facilities",
-      "joltspec": [{"operation":"shift","spec":{"id":"id","code":"code","name":"name","active":"status","enabled":"enabled","type":{"name":"type"},"operator":{"code":"operator_code","name":"operator_name","id":"operator_id"},"geographicZone":{"name":"district","parent":{"name":"region","parent":{"name":"country"}}},"location":{"coordinates":"location"}}}]
+      "joltspec": [{"operation": "shift","spec": {"supportedPrograms": {"*":{"@(2,id)":"[&1].id","@(2,code)":"[&1].code","@(2,name)":"[&1].name","@(2,active)":"[&1].status","@(2,enabled)":"[&1].enabled","@(2,type)":{"name":"[&1].type"},"@(2,operator)":{"code":"[&1].operator_code","name":"[&1].operator_name","id":"[&1].operator_id"},"@(2,geographicZone)":{"name":"[&1].district","parent":{"parent":{"name":"[&3].region","parent":{"name":"[&4].country"}}}},"@(2,location)":{"coordinates":"[&1].location"},"id":"[&1].supported_program_id"}}}}]
     },
     {
       "endpoint": "idealStockAmounts",
@@ -65,8 +65,8 @@
       "joltspec": [{"operation":"shift","spec":{"id":"id","description":"description","supervisoryNode":{"id":"supervisorynodeid"},"program":{"id":"programid"},"supplyingFacility":{"id":"supplyingfacilityid"}}}]
     },
     {
-      "endpoint": "stockAdjustmentReasons",
+      "endpoint": "validReasons",
       "table": "stock_adjustment_reasons",
-      "joltspec": [{"operation":"shift","spec":{"id":"id","name":"name","additive":"additive","displayOrder":"displayorder","description":"description","program":{"id":"programid","name":"programname"}}},{"operation":"default","spec":{"displayorder":null}}]
+      "joltspec": [{"operation": "shift","spec": {"reason": {"id": "id","name": "name","description": "description"},"program": {"id": "programid","name": "programname"}}},{"operation": "default","spec": {"additive": null,"displayorder": null,"description": null,"programname": null}}]
     }
-  ]
+]
