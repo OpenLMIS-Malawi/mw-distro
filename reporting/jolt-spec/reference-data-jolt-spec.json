@@ -65,8 +65,8 @@
       "joltspec": [{"operation":"shift","spec":{"id":"id","description":"description","supervisoryNode":{"id":"supervisorynodeid"},"program":{"id":"programid"},"supplyingFacility":{"id":"supplyingfacilityid"}}}]
     },
     {
-      "endpoint": "validReasons",
+      "endpoint": "stockAdjustmentReasons",
       "table": "stock_adjustment_reasons",
-      "joltspec": [{"operation": "shift","spec": {"reason": {"id": "id","name": "name","description": "description"},"program": {"id": "programid","name": "programname"}}},{"operation": "default","spec": {"additive": null,"displayorder": null,"description": null,"programname": null}}]
+      "joltspec": [{"operation":"shift","spec":{"id":"id","name":"name","additive":"additive","displayOrder":"displayorder","description":"description","program":{"id":"programid","name":"programname"}}},{"operation":"default","spec":{"displayorder":null}}]
     }
 ]
