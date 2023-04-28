@@ -1,6 +1,11 @@
 [
     {
       "endpoint": "facilities/full",
+      "table": "supported_programs",
+      "joltspec": [{"operation": "shift","spec": {"supportedPrograms": {"*":{"id":"[&1].programid","@(2,id)":"[&1].facilityid","programActive":"[&1].active","supportLocallyFulfilled":"[&1].locallyfulfilled"}}}}]
+    },
+    {
+      "endpoint": "facilities/full",
       "table": "facilities",
       "joltspec": [{"operation": "shift","spec": {"supportedPrograms": {"*":{"@(2,id)":"[&1].id","@(2,code)":"[&1].code","@(2,name)":"[&1].name","@(2,active)":"[&1].status","@(2,enabled)":"[&1].enabled","@(2,type)":{"name":"[&1].type"},"@(2,operator)":{"code":"[&1].operator_code","name":"[&1].operator_name","id":"[&1].operator_id"},"@(2,geographicZone)":{"name":"[&1].district","parent":{"parent":{"name":"[&3].region","parent":{"name":"[&4].country"}}}},"@(2,location)":{"coordinates":"[&1].location"},"id":"[&1].supported_program_id"}}}}]
     },
