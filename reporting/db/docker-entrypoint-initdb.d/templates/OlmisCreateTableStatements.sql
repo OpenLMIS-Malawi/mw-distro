@@ -557,8 +557,8 @@ SELECT f.id AS id,
        requisitions.processing_schedule_name,
        requisitions.processing_period_name,
        requisitions.processing_period_startdate,
-       sp.programid AS supported_program_id,
-       pr.name AS supported_program_name,
+       sp.id AS supported_program_id,
+       sp.name AS supported_program_name,
        sp.active    AS supported_program_active,
        rgm.requisitiongroupid,
        rgps.processingscheduleid,
@@ -568,15 +568,14 @@ SELECT f.id AS id,
            ELSE 'Did not report'
 END AS reporting_timeliness
 FROM facilities f
-         LEFT JOIN supported_programs sp ON sp.facilityid = f.id
-         LEFT JOIN programs pr on sp.programid = pr.id
+         LEFT JOIN programs sp ON sp.id = f.supported_program_id
          LEFT JOIN (
          	SELECT *
          	FROM requisitions r
          	WHERE r.emergency_status = false
          	AND r.created_date >= (NOW() - INTERVAL '3 year')
          ) requisitions ON requisitions.facility_id = f.id
-         LEFT JOIN requisition_group_members rgm ON (rgm.facilityid = f.id AND sp.facilityid = rgm.facilityid)
+         LEFT JOIN requisition_group_members rgm ON rgm.facilityid = f.id
          LEFT JOIN requisition_group_program_schedules rgps
                    ON rgps.requisitiongroupid = rgm.requisitiongroupid
          LEFT JOIN processing_periods ON processing_periods.id = requisitions.processing_period_id
