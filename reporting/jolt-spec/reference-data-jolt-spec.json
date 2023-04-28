@@ -2,7 +2,7 @@
     {
       "endpoint": "facilities/full",
       "table": "supported_programs",
-      "joltspec": [{"operation": "shift","spec": {"supportedPrograms": {"*":{"id":"[&1].programid","@(2,id)":"[&1].facilityid","programActive":"[&1].active","supportLocallyFulfilled":"[&1].locallyfulfilled"}}}}]
+      "joltspec": [{"operation": "shift","spec": {"supportedPrograms": {"*":{"id":"[&1].programid","@(2,id)":"[&1].facilityid","supportActive":"[&1].active","supportLocallyFulfilled":"[&1].locallyfulfilled"}}}}]
     },
     {
       "endpoint": "facilities/full",
