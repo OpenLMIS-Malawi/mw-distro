@@ -1,4 +1,4 @@
-version: "2"
+version: "3.3"
 services:
 
   consul:
@@ -135,6 +135,15 @@ services:
       context: ./config
     volumes:
       - service-config:/config
+
+  ftp:
+    image: hauptmedia/proftpd
+    ports:
+      - "${OL_FTP_PORT_21:-21}:21"
+      - "${OL_FTP_PORT_20:-20}:20"
+    env_file: .env
+    depends_on: [consul]
+
   redis:
       image: redis:3.2.12
       depends_on: [consul]

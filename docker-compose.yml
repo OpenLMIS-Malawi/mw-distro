@@ -1,4 +1,4 @@
-version: "2"
+version: "3.3"
 services:
 
   consul:
@@ -23,7 +23,7 @@ services:
     depends_on: [consul]
 
   ui:
-    image: openlmismw/ui:1.5.13-SNAPSHOT
+    image: openlmismw/ui:1.6.13-SNAPSHOT
     env_file: .env
     depends_on: [consul]
 
@@ -130,6 +130,7 @@ services:
       context: ./config
     volumes:
       - service-config:/config
+
   redis:
       image: redis:3.2.12
       depends_on: [consul]
