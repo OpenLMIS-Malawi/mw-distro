@@ -11,7 +11,7 @@ services:
       - "53"
 
   nginx:
-    image: openlmis/nginx:latest
+    image: openlmis/nginx:4
     ports:
       - "80:80"
     env_file: .env
@@ -23,12 +23,12 @@ services:
     depends_on: [consul]
 
   ui:
-    image: openlmismw/ui:1.5.8-SNAPSHOT
+    image: openlmismw/ui:1.5.13-SNAPSHOT
     env_file: .env
     depends_on: [consul]
 
   requisition:
-    image: openlmis/requisition:8.3.1
+    image: openlmis/requisition:8.3.5
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -38,7 +38,7 @@ services:
     depends_on: [log]
 
   referencedata:
-    image: openlmis/referencedata:15.2.0
+    image: openlmis/referencedata:15.2.5
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -48,7 +48,7 @@ services:
     depends_on: [log]
 
   auth:
-    image: openlmis/auth:4.3.1
+    image: openlmis/auth:4.3.3
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -58,7 +58,7 @@ services:
     depends_on: [log]
 
   notification:
-    image: openlmis/notification:4.3.1
+    image: openlmis/notification:4.3.3
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml'
@@ -68,7 +68,7 @@ services:
     depends_on: [log]
 
   fulfillment:
-    image: openlmis/fulfillment:8.2.1
+    image: openlmis/fulfillment:9.0.4
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -78,7 +78,7 @@ services:
     depends_on: [log]
 
   reports:
-    image: openlmismw/reports:2.0.9-SNAPSHOT
+    image: openlmismw/reports:2.1.10-SNAPSHOT
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -88,7 +88,7 @@ services:
     depends_on: [log]
 
   dhis2-integration:
-    image: openlmismw/dhis2-integration:1.0.3-SNAPSHOT
+    image: openlmismw/dhis2-integration:1.0.5-SNAPSHOT
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -98,7 +98,7 @@ services:
     depends_on: [log]
 
   stockmanagement:
-    image: openlmis/stockmanagement:5.1.3
+    image: openlmis/stockmanagement:5.1.8
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -108,7 +108,7 @@ services:
     depends_on: [log]
 
   hapifhir:
-    image: openlmis/hapifhir:2.0.0
+    image: openlmis/hapifhir:2.0.2
     env_file: .env
     environment:
       JAVA_OPTS: '-server -Xmx512m -Dlogging.config=/config/log/logback.xml'
