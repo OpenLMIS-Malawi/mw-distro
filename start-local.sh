@@ -27,11 +27,11 @@ findHost() {
 }
 
 checkOrFetchEnv() {
-  if [ ! -f ".env" ]; then
-    echo '.env file not found, fetching from github...'
-    wget -O .env https://raw.githubusercontent.com/OpenLMIS/openlmis-config/master/.env
+  if [ ! -f "settings.env" ]; then
+    echo 'settings.env file not found, fetching from github...'
+    wget -O settings.env https://raw.githubusercontent.com/OpenLMIS/openlmis-config/master/.env
   else
-    echo '.env file found'
+    echo 'settings.env file found'
   fi
 }
 
@@ -46,5 +46,5 @@ checkOrFetchEnv
 setEnvByIp
 
 BOLD=$(tput bold)
-echo "Starting OpenLMIS Blue on ${BOLD}${HOST_ADDR}"
+echo "Starting OpenLMIS on ${BOLD}${HOST_ADDR}"
 docker-compose up --build --remove-orphans --force-recreate
