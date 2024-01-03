@@ -23,12 +23,12 @@ services:
     depends_on: [consul]
 
   ui:
-    image: openlmismw/ui:1.6.13-SNAPSHOT
+    image: openlmismw/ui:1.6.16-SNAPSHOT
     env_file: .env
     depends_on: [consul]
 
   requisition:
-    image: openlmis/requisition:8.3.5
+    image: openlmis/requisition:8.3.6
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -78,7 +78,7 @@ services:
     depends_on: [log]
 
   reports:
-    image: openlmismw/reports:2.1.10-SNAPSHOT
+    image: openlmismw/reports:2.1.13-SNAPSHOT
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
@@ -98,7 +98,7 @@ services:
     depends_on: [log]
 
   stockmanagement:
-    image: openlmis/stockmanagement:5.1.8
+    image: openlmis/stockmanagement:5.1.9
     env_file: .env
     environment:
       JAVA_OPTS: '-Dlogging.config=/config/log/logback.xml -Dflyway.locations=classpath:db/migration'
