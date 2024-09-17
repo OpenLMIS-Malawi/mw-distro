@@ -535,6 +535,8 @@ INSERT INTO reporting_dates(due_days, late_days, country)
 ---
 --- Name: reporting_rate_and_timeliness; Type: TABLE; Schema: referencedata; Owner: postgres
 ---
+DROP MATERIALIZED VIEW IF EXISTS reporting_rate_and_timeliness;
+
 CREATE MATERIALIZED VIEW reporting_rate_and_timeliness AS
 SELECT f.id AS id,
        f.name,
@@ -594,6 +596,8 @@ ALTER MATERIALIZED VIEW reporting_rate_and_timeliness OWNER TO postgres;
 ---
 --- Name: adjustments; Type: TABLE; Schema: referencedata; Owner: postgres
 ---
+DROP MATERIALIZED VIEW IF EXISTS adjustments;
+
 CREATE MATERIALIZED VIEW adjustments AS
 SELECT DISTINCT ON (li.requisition_line_item_id) li.requisition_line_item_id, 
 r.id AS requisition_id, r.created_date, r.modified_date, r.emergency_status, 
@@ -617,6 +621,8 @@ ALTER MATERIALIZED VIEW adjustments OWNER TO postgres;
 ---
 --- Name: stock_status_and_consumption; Type: TABLE; Schema: referencedata; Owner: postgres
 ---
+DROP MATERIALIZED VIEW IF EXISTS stock_status_and_consumption;
+
 CREATE MATERIALIZED VIEW stock_status_and_consumption AS
 SELECT li.requisition_line_item_id, r.id, 
 r.created_date as req_created_date, r.modified_date, r.emergency_status, r.supplying_facility, 
@@ -693,6 +699,8 @@ ALTER MATERIALIZED VIEW stock_status_and_consumption OWNER TO postgres;
 ---
 --- Name: stock_status_and_consumption; Type: TABLE; Schema: referencedata; Owner: postgres
 ---
+DROP MATERIALIZED VIEW IF EXISTS stock_status_and_consumption_2;
+
 CREATE MATERIALIZED VIEW stock_status_and_consumption_2 AS
 SELECT 
 li.full_product_name as full_product_name2, r.processing_period_enddate, r.facility_id, li.with_stock_not_issued, li.total_consumed_quantity
