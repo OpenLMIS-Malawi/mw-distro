@@ -538,30 +538,26 @@ INSERT INTO reporting_dates(due_days, late_days, country)
 DROP MATERIALIZED VIEW IF EXISTS reporting_rate_and_timeliness;
 
 CREATE MATERIALIZED VIEW reporting_rate_and_timeliness AS
-SELECT f.id AS id,
-       f.name,
+SELECT f.id AS facility_id,
+       f.name as facility_name,
        f.district,
        f.region,
        f.country,
        f.type,
        f.operator_name,
        f.status     AS facility_active_status,
-       requisitions.program_id,
        requisitions.id AS reqs_id,
        requisitions.processing_period_id,
        requisitions.processing_period_enddate,
-       requisitions.facility_id,
        requisitions.created_date,
        requisitions.modified_date,
        requisitions.emergency_status,
-       requisitions.program_name,
-       requisitions.program_active_status,
        requisitions.processing_schedule_name,
        requisitions.processing_period_name,
        requisitions.processing_period_startdate,
-       sp.id AS supported_program_id,
-       sp.name AS supported_program_name,
-       sp.active    AS supported_program_active,
+       p.id AS program_id,
+       p.name AS program_name,
+       sp.active    AS program_active,
        rgm.requisitiongroupid,
        rgps.processingscheduleid,
        CASE
@@ -569,26 +565,30 @@ SELECT f.id AS id,
        started_reqs.status = 'SUBMITTED' THEN 'Reported'
            ELSE 'Did not report'
 END AS reporting_timeliness
-FROM facilities f
-         LEFT JOIN programs sp ON sp.id = f.supported_program_id
-         LEFT JOIN (
+FROM supported_programs sp 
+        LEFT JOIN facilities f on f.id = sp.facilityid 
+        LEFT JOIN programs p ON p.id = sp.programid
+        LEFT JOIN (
          	SELECT *
          	FROM requisitions r
          	WHERE r.emergency_status = false
          	AND r.created_date >= (NOW() - INTERVAL '3 year')
-         ) requisitions ON requisitions.facility_id = f.id
-         LEFT JOIN requisition_group_members rgm ON rgm.facilityid = f.id
-         LEFT JOIN requisition_group_program_schedules rgps
-                   ON rgps.requisitiongroupid = rgm.requisitiongroupid
-         LEFT JOIN processing_periods ON processing_periods.id = requisitions.processing_period_id
-         LEFT JOIN (
-		    SELECT rsh.created_date, rsh.status, rsh.requisition_id
+        ) requisitions ON requisitions.facility_id = f.id and requisitions.program_id = sp.programid
+        LEFT JOIN requisition_group_members rgm ON rgm.facilityid = f.id 
+        LEFT JOIN requisition_group_program_schedules rgps
+                   ON rgps.requisitiongroupid = rgm.requisitiongroupid and rgps.programid = sp.programid
+        LEFT JOIN processing_periods ON processing_periods.id = requisitions.processing_period_id
+        LEFT JOIN (
+		    SELECT DISTINCT ON (rsh.requisition_id) rsh.requisition_id, rsh.created_date, rsh.status
 		    FROM requisitions_status_history rsh
 		    WHERE rsh.status = 'SUBMITTED'
 		    AND rsh.created_date >= (NOW() - INTERVAL '3 year')
 		) started_reqs ON started_reqs.requisition_id = requisitions.id
 WHERE f.status = true
-  AND f.enabled = true WITH DATA;
+  AND f.enabled = true 
+  AND sp.active = true
+  and rgps.processingscheduleid is not null
+  WITH DATA;
 
 
 ALTER MATERIALIZED VIEW reporting_rate_and_timeliness OWNER TO postgres;
