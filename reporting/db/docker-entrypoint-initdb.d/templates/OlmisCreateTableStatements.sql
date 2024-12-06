@@ -587,7 +587,6 @@ FROM supported_programs sp
 WHERE f.status = true
   AND f.enabled = true 
   AND sp.active = true
-  and rgps.processingscheduleid is not null
   WITH DATA;
 
 
