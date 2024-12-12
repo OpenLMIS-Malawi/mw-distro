@@ -222,7 +222,7 @@ pyyaml==5.4.1
     # via
     #   apache-superset
     #   apispec
-redis==3.5.3
+redis==4.3.6
     # via apache-superset
 sasl==0.3.1
     # via -r requirements/base.in
