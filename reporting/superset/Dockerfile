@@ -47,7 +47,6 @@ RUN apt-get update && \
         libldap2-dev \
         libpq-dev \
         libsasl2-dev \
-        libssl1.1 \
         git && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
@@ -88,14 +87,15 @@ WORKDIR $APP_DIR
 
 # Node & npm
 ENV NVM_DIR=/usr/local/nvm
-ENV NODE_VERSION=v18.17.1
+ENV NODE_VERSION=v14.21.3
 
 RUN mkdir -p $NVM_DIR \
     && curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash \
     && . $NVM_DIR/nvm.sh \
     && nvm install $NODE_VERSION \
     && nvm alias default $NODE_VERSION \
-    && nvm use default
+    && nvm use default \
+    && npm install -g npm@8
 
 ENV NODE_PATH=$NVM_DIR/versions/node/$NODE_VERSION/lib/node_modules
 ENV PATH=$NVM_DIR/versions/node/$NODE_VERSION/bin:$PATH
@@ -116,7 +116,7 @@ RUN wget -P /tmp https://github.com/apache/superset/archive/${SUPERSET_VERSION}.
     && rm -r /tmp/${SUPERSET_VERSION}.zip
 
 USER superset:superset
-RUN cd $APP_DIR/superset-frontend && npm ci
+RUN cd $APP_DIR/superset-frontend && npm install
 
 # Deploy application
 EXPOSE 8088
