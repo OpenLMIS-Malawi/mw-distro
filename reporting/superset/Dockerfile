@@ -86,26 +86,27 @@ VOLUME /etc/superset \
        /var/lib/superset
 WORKDIR $APP_DIR
 
-# Node & npm
+# Node.js & Yarn
 ENV NVM_DIR=/usr/local/nvm
-ENV NODE_VERSION=v16.16.0
+ENV NODE_VERSION=v18.17.1
 
-RUN curl --silent -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.2/install.sh | bash
-RUN . $NVM_DIR/nvm.sh \
+RUN curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash \
+    && . $NVM_DIR/nvm.sh \
     && nvm install $NODE_VERSION \
     && nvm alias default $NODE_VERSION \
-    && nvm use default
+    && nvm use default \
+    && npm install -g yarn
 
 ENV NODE_PATH=$NVM_DIR/versions/node/$NODE_VERSION/lib/node_modules
 ENV PATH=$NVM_DIR/versions/node/$NODE_VERSION/bin:$PATH
 
 RUN node -v
-RUN npm -v
+RUN yarn -v
 
-# Installing dependecies via npm
-RUN npm install -g po2json
+# Installing dependecies via yarn
+RUN yarn global add po2json
 
-# Fetching dependecies and first build
+# Fetch Superset frontend
 RUN wget -P /tmp https://github.com/apache/superset/archive/${SUPERSET_VERSION}.zip \
     && unzip /tmp/${SUPERSET_VERSION}.zip -d /tmp \
     && rsync -a \
@@ -116,7 +117,7 @@ RUN wget -P /tmp https://github.com/apache/superset/archive/${SUPERSET_VERSION}.
 
 USER superset:superset
 RUN cd $APP_DIR/superset-frontend && \
-    npm ci --unsafe-perm --loglevel=warn --fetch-retries=5 --fetch-retry-factor=2 --fetch-retry-mintimeout=10000 --jobs=2
+    yarn install --frozen-lockfile --network-concurrency 2 --network-timeout 600000
 
 # Deploy application
 EXPOSE 8088
