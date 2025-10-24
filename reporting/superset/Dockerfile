@@ -1,4 +1,4 @@
-FROM python:3.8.13
+FROM python:3.8.13-slim-bullseye
 
 # Superset version
 ARG SUPERSET_VERSION=1.5.2
@@ -28,14 +28,12 @@ ENV GUNICORN_CMD_ARGS="--workers ${GUNICORN_WORKERS} --timeout ${GUNICORN_TIMEOU
 
 COPY requirements.txt requirements.txt
 
-# Create superset user & install dependencies
 RUN useradd -U -m superset && \
-    mkdir /etc/superset  && \
-    mkdir ${SUPERSET_HOME} && \
-    chown -R superset:superset /etc/superset && \
-    chown -R superset:superset ${SUPERSET_HOME} && \
-    apt-get update && \
-    apt-get install -y \
+    mkdir -p /etc/superset ${SUPERSET_HOME} && \
+    chown -R superset:superset /etc/superset ${SUPERSET_HOME}
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
         rsync \
         build-essential \
         curl \
@@ -47,13 +45,15 @@ RUN useradd -U -m superset && \
         libldap2-dev \
         libpq-dev \
         libsasl2-dev \
-        libssl1.1 && \
-    apt-get clean && \
-    rm -r /var/lib/apt/lists/* && \
-    pip install -I --no-cache-dir -r requirements.txt && \
-    rm requirements.txt && \
-    pip install --no-cache-dir \
-        setuptools>=67 \
+        libssl1.1 \
+        git && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+RUN python -m pip install --upgrade pip setuptools==67.8.0 wheel
+
+RUN pip install --no-cache-dir -r requirements.txt && rm requirements.txt
+
+RUN pip install --no-cache-dir \
         flask-mail==0.9.1 \
         flask-oauth==0.12 \
         flask_oauthlib==0.9.5 \
@@ -67,13 +67,15 @@ RUN useradd -U -m superset && \
         pydruid[sqlalchemy]==0.6.2 \
         sqlalchemy-bigquery==1.4.4 \
         clickhouse-sqlalchemy==0.1.10 \
-        sqlalchemy-redshift==0.8.11 \
-        git+${SUPERSET_PATCHUP_REPO} \
-        apache-superset==${SUPERSET_VERSION} \
-        apache-superset[cors]==${SUPERSET_VERSION} && \
-    # MarkupSafe, fix missing 'soft_unicode' from 'markupsafe'
-    pip install -I --no-cache-dir MarkupSafe==2.0.1
+        sqlalchemy-redshift==0.8.11
 
+RUN pip install --no-cache-dir git+${SUPERSET_PATCHUP_REPO}
+
+RUN pip install --no-cache-dir \
+        apache-superset==${SUPERSET_VERSION} \
+        apache-superset[cors]==${SUPERSET_VERSION}
+
+RUN pip install --no-cache-dir MarkupSafe==2.0.1
 
 # Configure Filesystem
 RUN find ${APP_DIR} \! -type l -print0 | xargs -0 chown superset:superset
