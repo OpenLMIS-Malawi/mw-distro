@@ -49,7 +49,7 @@ RUN apt-get update && \
         git && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-RUN python -m pip install --upgrade pip setuptools==67.8.0 wheel
+RUN python -m pip install --upgrade "pip<24.1" setuptools==65.6.3 wheel
 
 RUN pip install --no-cache-dir -r requirements.txt && rm requirements.txt
 
