@@ -86,7 +86,7 @@ VOLUME /etc/superset \
        /var/lib/superset
 WORKDIR $APP_DIR
 
-# Node.js & Yarn
+# Node & npm
 ENV NVM_DIR=/usr/local/nvm
 ENV NODE_VERSION=v18.17.1
 
@@ -95,17 +95,16 @@ RUN mkdir -p $NVM_DIR \
     && . $NVM_DIR/nvm.sh \
     && nvm install $NODE_VERSION \
     && nvm alias default $NODE_VERSION \
-    && nvm use default \
-    && npm install -g yarn
+    && nvm use default
 
 ENV NODE_PATH=$NVM_DIR/versions/node/$NODE_VERSION/lib/node_modules
 ENV PATH=$NVM_DIR/versions/node/$NODE_VERSION/bin:$PATH
 
 RUN node -v
-RUN yarn -v
+RUN npm -v
 
-# Installing dependecies via yarn
-RUN yarn global add po2json
+# Installing dependecies via npm
+RUN npm install -g po2json
 
 # Fetch Superset frontend
 RUN wget -P /tmp https://github.com/apache/superset/archive/${SUPERSET_VERSION}.zip \
@@ -117,8 +116,7 @@ RUN wget -P /tmp https://github.com/apache/superset/archive/${SUPERSET_VERSION}.
     && rm -r /tmp/${SUPERSET_VERSION}.zip
 
 USER superset:superset
-RUN cd $APP_DIR/superset-frontend && \
-    yarn install --frozen-lockfile --network-concurrency 2 --network-timeout 600000
+RUN cd $APP_DIR/superset-frontend && npm ci
 
 # Deploy application
 EXPOSE 8088
