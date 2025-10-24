@@ -34,6 +34,8 @@ RUN useradd -U -m superset && \
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
+        wget \
+        unzip \
         rsync \
         build-essential \
         curl \
