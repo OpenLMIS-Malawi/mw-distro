@@ -115,7 +115,8 @@ RUN wget -P /tmp https://github.com/apache/superset/archive/${SUPERSET_VERSION}.
     && rm -r /tmp/${SUPERSET_VERSION}.zip
 
 USER superset:superset
-RUN cd $APP_DIR/superset-frontend && npm ci
+RUN cd $APP_DIR/superset-frontend && \
+    npm ci --unsafe-perm --loglevel=warn --fetch-retries=5 --fetch-retry-factor=2 --fetch-retry-mintimeout=10000 --jobs=2
 
 # Deploy application
 EXPOSE 8088
