@@ -47,13 +47,13 @@ RUN useradd -U -m superset && \
         libldap2-dev \
         libpq-dev \
         libsasl2-dev \
-        libssl1.0 && \
+        libssl1.1 && \
     apt-get clean && \
     rm -r /var/lib/apt/lists/* && \
     pip install -I --no-cache-dir -r requirements.txt && \
     rm requirements.txt && \
     pip install --no-cache-dir \
-        setuptools==65.6.3 \
+        setuptools>=67 \
         flask-mail==0.9.1 \
         flask-oauth==0.12 \
         flask_oauthlib==0.9.5 \
@@ -62,7 +62,7 @@ RUN useradd -U -m superset && \
         impyla==0.15.0 \
         infi.clickhouse-orm==1.0.2 \
         pyathena==1.2.5 \
-        pyldap==2.4.28 \
+        python-ldap==3.4.0 \
         sqlalchemy_trino==0.5.0 \
         pydruid[sqlalchemy]==0.6.2 \
         sqlalchemy-bigquery==1.4.4 \
