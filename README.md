@@ -1,4 +1,7 @@
 # OpenLMIS Reference Distribution
+
+[![Verified by InfraScan](https://img.shields.io/badge/Verified_by-SolDevelo_InfraScan-0052cc?style=flat&logo=security)](https://github.com/soldevelo/infrascan)
+
 Location for the OpenLMIS v3+ Reference Distribution
 
 The Reference Distribution utilizes Docker Compose to gather the published OpenLMIS Docker Images together and
