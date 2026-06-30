@@ -1,0 +1,77 @@
+# =============================================================================
+# Reporting Stack Integration Overlay
+# =============================================================================
+# Configures the Malawi OpenLMIS database for CDC and provides a shared
+# network for the reporting-stack platform (openlmis-reporting) to connect to.
+#
+# Usage (with dev compose):
+#   docker compose -f docker-compose.dev.yml -f docker-compose.reporting-stack.yml up -d
+#
+# This overlay:
+#   1. Creates a 'reporting-shared' network (auto-managed by Compose)
+#   2. Attaches the DB to it with alias 'olmis-db'
+#   3. Upgrades the DB image to support logical replication (wal_level=logical)
+#   4. Runs a one-shot init container that configures the DB for CDC
+#
+# Note: The DB image is overridden to postgres:14-alpine because the default
+# openlmis/postgres:9.6-postgis does not support pgoutput (required by Debezium).
+# This means you need a FRESH database volume for this overlay — PG 9.6 data
+# is not compatible with PG 14. For production, upgrade the database first.
+# =============================================================================
+
+networks:
+  reporting-shared:
+    name: reporting-shared
+    driver: bridge
+
+services:
+  # Override unavailable FTP image (hauptmedia/proftpd no longer exists)
+  ftp:
+    image: alpine:3
+    entrypoint: ["true"]
+
+  db:
+    image: postgis/postgis:14-3.4-alpine
+    command: >
+      postgres
+        -c max_connections=500
+        -c wal_level=logical
+        -c max_wal_senders=10
+        -c max_replication_slots=10
+        -c password_encryption=md5
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: md5
+      POSTGRES_INITDB_ARGS: "--auth-host=md5"
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: p@ssw0rd
+      POSTGRES_DB: open_lmis
+    volumes:
+      - ./reporting-stack/init-extensions.sql:/docker-entrypoint-initdb.d/00-extensions.sql:ro
+    networks:
+      default:
+      reporting-shared:
+        aliases:
+          - olmis-db
+
+  reporting-stack-init:
+    image: postgres:14-alpine
+    depends_on:
+      db:
+        condition: service_started
+      referencedata:
+        condition: service_started
+      requisition:
+        condition: service_started
+    networks:
+      - default
+    environment:
+      PGHOST: db
+      PGPORT: "5432"
+      PGDATABASE: open_lmis
+      PGUSER: postgres
+      PGPASSWORD: p@ssw0rd
+    volumes:
+      - ./reporting-stack/init-db.sql:/init-db.sql:ro
+      - ./reporting-stack/wait-and-init.sh:/wait-and-init.sh:ro
+    entrypoint: ["bash", "/wait-and-init.sh"]
+    restart: "no"
